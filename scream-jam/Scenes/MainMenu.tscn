@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyph5mqd443d5"]
+[gd_scene load_steps=3 format=3 uid="uid://dyph5mqd443d5"]
 
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_d61cg"]
 [ext_resource type="StyleBox" uid="uid://ci153uwprdb5d" path="res://Styles/Buttons/new_style_box_flat.tres" id="1_pgaum"]
 
 [node name="MainMenu" type="Control"]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_d61cg")
 
 [node name="Backcolor" type="ColorRect" parent="."]
 layout_mode = 1
