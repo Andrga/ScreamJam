@@ -1,3 +1,30 @@
 [gd_scene format=3 uid="uid://ckex341bqe6oj"]
 
 [node name="CyntristScene" type="Node2D"]
+
+[node name="Background TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="Control"]
+layout_mode = 2
+offset_left = 617.0
+offset_top = 344.0
+offset_right = 663.0
+offset_bottom = 375.0
+text = "Start"
+
+[node name="Exit" type="Button" parent="Control"]
+layout_mode = 2
+offset_left = 622.0
+offset_top = 414.0
+offset_right = 659.0
+offset_bottom = 445.0
+text = "Exit
+"
