@@ -68,7 +68,7 @@ var credits = [
 ]
 
 func _ready():
-	colorrect.color = bg_color
+	#colorrect.color = bg_color
 	videoplayer.set_stream(Video)
 	if !Use_Video_Audio:
 		var stream = AudioStreamPlayer.new()
@@ -117,11 +117,11 @@ func _process(delta):
 func finish():
 	if not finished:
 		finished = true
-		if to_scene != null:
-			var path = to_scene.get_path()
-			get_tree().change_scene_to_file(path)
-		else:
-			get_tree().quit()
+		#if to_scene != null:
+			#var path = to_scene.get_path()
+			#get_tree().change_scene_to_file(path)
+		#else:
+			#get_tree().quit()
 
 
 func add_line():

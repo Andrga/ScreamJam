@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://whxja3o8nmc6"]
+[gd_scene load_steps=2 format=3 uid="uid://whxja3o8nmc6"]
+
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_4f4al"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4f4al")
 
 [node name="Backcolor" type="ColorRect" parent="."]
 layout_mode = 1
@@ -37,8 +40,8 @@ grow_vertical = 2
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 600.0
-offset_bottom = 623.0
+offset_top = 720.0
+offset_bottom = 743.0
 grow_horizontal = 2
 size_flags_horizontal = 3
 horizontal_alignment = 1
