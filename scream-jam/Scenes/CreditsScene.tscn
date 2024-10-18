@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4f4al")
 
-[node name="Backcolor" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,4 +44,5 @@ offset_top = 720.0
 offset_bottom = 743.0
 grow_horizontal = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
 horizontal_alignment = 1
