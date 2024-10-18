@@ -3,7 +3,7 @@ extends Control
 
 @onready var start_button: Button = $MarginContainer/VBoxContainer/Start as Button
 @onready var exit_button: Button = $MarginContainer/VBoxContainer/Exit as Button
-@onready var test_scene = preload("res://Scenes/TestScene.tscn")
+@onready var credits_scene = preload("res://Scenes/CreditsScene.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,7 +16,7 @@ func _ready() -> void:
 	#pass
 
 func _on_start_down() -> void:
-	get_tree().change_scene_to_packed(test_scene)
+	get_tree().change_scene_to_packed(credits_scene)
 	
 func _on_exit_down() -> void:
 	get_tree().quit();
