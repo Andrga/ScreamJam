@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkeruh02gg7es"]
+
+[ext_resource type="Script" path="res://Scripts/scene_manager.gd" id="1_iv1q4"]
+[ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/CreditsScene.tscn" id="2_y28pb"]
+[ext_resource type="PackedScene" uid="uid://dyph5mqd443d5" path="res://Scenes/MainMenu.tscn" id="3_b721g"]
+[ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/FadeScene.tscn" id="4_88r4u"]
+
+[node name="SceneManager" type="Node"]
+script = ExtResource("1_iv1q4")
+
+[node name="Credits" parent="." instance=ExtResource("2_y28pb")]
+
+[node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
+
+[node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
+
+[connection signal="totransition" from="MainMenu" to="." method="_on_main_menu_totransition"]
+[connection signal="transitioned" from="FadeScene" to="MainMenu" method="_on_fade_scene_transitioned"]

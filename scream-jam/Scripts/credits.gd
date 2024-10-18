@@ -67,7 +67,7 @@ var credits = [
 	]
 ]
 
-func _ready():
+func start():
 	#colorrect.color = bg_color
 	videoplayer.set_stream(Video)
 	if !Use_Video_Audio:

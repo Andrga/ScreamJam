@@ -1,6 +1,8 @@
 class_name MainMenu
 extends Control
 
+signal totransition
+
 @onready var start_button: Button = $MarginContainer/VBoxContainer/Start as Button
 @onready var exit_button: Button = $MarginContainer/VBoxContainer/Exit as Button
 @onready var credits_scene = preload("res://Scenes/CreditsScene.tscn")
@@ -10,13 +12,13 @@ func _ready() -> void:
 	start_button.button_down.connect(_on_start_down)
 	exit_button.button_down.connect(_on_exit_down)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-	#pass
-
 func _on_start_down() -> void:
-	get_tree().change_scene_to_packed(credits_scene)
+	#get_tree().change_scene_to_packed(credits_scene)
+	print("TOFADE")
+	emit_signal("totransition")
 	
 func _on_exit_down() -> void:
 	get_tree().quit();
+
+func _on_fade_scene_transitioned() -> void:
+	self.visible = false;
