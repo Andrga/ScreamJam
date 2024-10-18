@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://lwyknoxuwful"]
+
+[ext_resource type="Texture2D" uid="uid://mu8q8p8gcxyt" path="res://Images/postit.png" id="1_45ab5"]
+[ext_resource type="Script" path="res://Scripts/Postits/posit_movible.gd" id="1_bmn8m"]
+
+[node name="PositMovible" type="Node2D"]
+script = ExtResource("1_bmn8m")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -79.0
+offset_top = -71.0
+offset_right = 77.0
+offset_bottom = 87.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_45ab5")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -78.0
+offset_top = -34.0
+offset_right = 72.0
+offset_bottom = 36.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -78.0
+offset_top = -35.0
+offset_right = 72.0
+offset_bottom = 37.0
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed"]

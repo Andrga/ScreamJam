@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://df8gensvvo1ta"]
+
+[ext_resource type="PackedScene" uid="uid://bcd4gb5wvrm13" path="res://Scenes/Postits/TacoPostits.tscn" id="1_vvufs"]
+
+[node name="AndresScene" type="Node2D"]
+
+[node name="TacoPostits" parent="." instance=ExtResource("1_vvufs")]
+position = Vector2(1138, 546)
