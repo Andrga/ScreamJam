@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf8vbktsby4gi"]
+
+[ext_resource type="Texture2D" uid="uid://mu8q8p8gcxyt" path="res://Images/postit.png" id="1_cn14j"]
+[ext_resource type="Script" path="res://Scripts/Dialogos/DialogueBox.gd" id="1_ny135"]
+
+[node name="Dialogue" type="Node2D"]
+script = ExtResource("1_ny135")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1, 0.192623)
+texture = ExtResource("1_cn14j")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -111.5
+offset_top = -122.0
+offset_right = -111.5
+offset_bottom = -122.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -22.0
+offset_right = 111.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hola hola soy maite figueroaa"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+justification_flags = 171
+uppercase = true
+text_direction = 1
+
+[connection signal="pressed" from="Sprite2D/Button" to="." method="_next_dialogue"]

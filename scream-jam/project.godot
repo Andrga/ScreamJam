@@ -17,14 +17,12 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-JsonData="*res://Scripts/JsonParser/JsonData.gd"
-JsonParser="*res://Scripts/JsonParser/JsonParser.gd"
+JsonData="*res://Scripts/JsonParser/JsonParser.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/size/mode=4
 window/size/resizable=false
 window/size/borderless=true
 

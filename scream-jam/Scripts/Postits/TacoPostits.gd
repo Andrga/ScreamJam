@@ -14,4 +14,4 @@ func _input(event):
 		#print("Mouse Motion at: ", event.position)
 
 func _ready() -> void:
-	print(JsonData.dialogos.Texts[0].text)
+	pass
