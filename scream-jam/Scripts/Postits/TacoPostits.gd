@@ -12,3 +12,6 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		mousepos = event.position
 		#print("Mouse Motion at: ", event.position)
+
+func _ready() -> void:
+	print(JsonData.dialogos.Texts[0].text)

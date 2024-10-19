@@ -1,0 +1,32 @@
+{
+	"Dialogos":[
+		{
+			"Sound1": "",
+			"Sound2": "",
+			"Texts":[
+				{
+					"Sound": 0,
+					"Text": "Dialogo 1"
+				},
+				{
+					"Sound": 0,
+					"Text": "Dialogo 1"
+				}
+			]
+		},
+		{
+			"Sound1": "",
+			"Sound2": "",
+			"texts":[
+				{
+					"Sound": 0,
+					"Text": "Dialogo 1"
+				},
+				{
+					"Sound": 0,
+					"Text": "Dialogo 1"
+				}
+			]
+		}
+	]
+}

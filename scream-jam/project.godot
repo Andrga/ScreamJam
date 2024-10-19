@@ -15,6 +15,11 @@ run/main_scene="res://Scenes/Managers/SceneManager.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+JsonData="*res://Scripts/JsonParser/JsonData.gd"
+JsonParser="*res://Scripts/JsonParser/JsonParser.gd"
+
 [display]
 
 window/size/viewport_width=1920
