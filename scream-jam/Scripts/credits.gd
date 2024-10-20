@@ -12,7 +12,7 @@ extends Control
 
 const section_time := 2.0
 const line_time := 0.3
-const base_speed := 70
+const base_speed := 100
 const speed_up_multiplier := 10.0
 
 var scroll_speed : float = base_speed
@@ -107,7 +107,7 @@ func _process(delta):
 	if lines.size() > 0:
 		for l in lines:
 			l.set_global_position(l.get_global_position() - Vector2(0, scroll_speed))
-			if l.get_global_position().y < l.get_line_height():
+			if l.get_global_position().y < -l.get_line_height():
 				lines.erase(l)
 				l.queue_free()
 	elif started:
