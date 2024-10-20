@@ -5,7 +5,7 @@ signal totransition
 
 @onready var start_button: Button = $MarginContainer/VBoxContainer/Start as Button
 @onready var exit_button: Button = $MarginContainer/VBoxContainer/Exit as Button
-@onready var credits_scene = preload("res://Scenes/CreditsScene.tscn")
+@onready var credits_scene = preload("res://Scenes/Flujo/CreditsScene.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
