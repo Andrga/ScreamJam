@@ -4,7 +4,7 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_m8vhh"]
 
-[node name="DropZone" type="StaticBody2D" groups=["dropable"]]
+[node name="DropZone" type="StaticBody2D" groups=["dropZone"]]
 script = ExtResource("1_wig5y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -15,3 +15,4 @@ offset_left = -64.0
 offset_top = -64.0
 offset_right = 64.0
 offset_bottom = 64.0
+mouse_filter = 2

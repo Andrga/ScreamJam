@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
 [ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="2_qnm5u"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_04x4w"]
-radius = 102.961
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uonrh"]
+size = Vector2(214, 218)
 
 [node name="Draggable" type="Node2D"]
 script = ExtResource("1_cuke3")
@@ -12,11 +12,22 @@ script = ExtResource("1_cuke3")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_qnm5u")
 
+[node name="Button" type="Button" parent="."]
+offset_left = -101.0
+offset_top = -88.0
+offset_right = 99.0
+offset_bottom = 105.0
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_04x4w")
+position = Vector2(-1, 6)
+shape = SubResource("RectangleShape2D_uonrh")
 
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Button" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_area_2d_mouse_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

@@ -2,32 +2,40 @@ extends Node2D
 
 var isDraggable = false # si se puede draggear
 var inDropZone = false # para saber si esta sobre una drop zone
+var clicked = false # para saber si esta sobre una drop zone
 var refDropZone # guarda referencia a la dropZone cuando el objeto esta dentro
 var offset : Vector2
 var initialPos : Vector2
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _input(event: InputEvent) -> void:
 	if isDraggable:
-		if Input.is_action_just_pressed("click"):
-			initialPos = global_position
+		if event is InputEventMouseButton:
+			#initialPos = global_position
 			offset = get_global_mouse_position() - global_position
 			Dragging.isDragging = true
-		if Input.is_action_pressed("click"):
-			global_position = get_global_mouse_position() - offset
-		elif Input.is_action_just_released("click"):
-			Dragging.isDragging = false
-			# ---- tween
-			var tween = get_tree().create_tween() # crea tween en la jerarquia
-			if inDropZone:
-				tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
-			else:
-				tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
+		if clicked:
+			if event is InputEventMouseMotion:
+				position = (event.position - offset)
+		
 			
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _process(delta: float) -> void:
+	if clicked:
+		global_position = get_global_mouse_position() - offset
+	else:
+		Dragging.isDragging = false
+		# ---- tween
+		var tween = get_tree().create_tween() # crea tween en la jerarquia
+		if inDropZone:
+			tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
+		else:
+			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
+		
+func _ready() -> void:
+	initialPos = global_position
 
+# area
 func _on_area_2d_mouse_entered():
 	if not Dragging.isDragging: # si no se esta draggeando nada
 		isDraggable = true 		# se puede draggear
@@ -46,3 +54,10 @@ func _on_area_2d_body_entered(body:StaticBody2D):
 func _on_area_2d_body_exited(body):
 	if body.is_in_group('dropZone'):
 		inDropZone = false
+
+# button
+func _on_button_button_down() -> void:
+	clicked = true
+
+func _on_button_button_up() -> void:
+	clicked = false
