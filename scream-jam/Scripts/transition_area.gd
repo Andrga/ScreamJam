@@ -13,6 +13,7 @@ func _process(delta: float) -> void:
 
 
 func _on_mouse_entered() -> void:
-	print("SWAP SCENE")
-	get_tree().change_scene_to_packed(to_scene)
+	Global.current_scene = Global.Scenes.CLAVIJAS
+	Global.to_scene = Global.Scenes.PUERTA
+	Global.totransition.emit()
 	
