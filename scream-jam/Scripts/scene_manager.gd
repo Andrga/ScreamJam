@@ -38,7 +38,8 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 			print("hola")
 	match Global.to_scene:
 		Global.Scenes.MAIN_MENU:
-			print("hola")
+			$MainMenu.visible = true
+			$MainMenu.process_mode = Node.PROCESS_MODE_INHERIT
 		Global.Scenes.CLAVIJAS:
 			$ClavijasScene.visible = true
 			$ClavijasScene.process_mode = Node.PROCESS_MODE_INHERIT

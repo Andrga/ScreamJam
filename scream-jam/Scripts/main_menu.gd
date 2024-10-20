@@ -10,7 +10,6 @@ func _ready() -> void:
 	exit_button.button_down.connect(_on_exit_down)
 
 func _on_start_down() -> void:
-	print("TOFADE")
 	Global.current_scene = Global.Scenes.MAIN_MENU
 	Global.to_scene = Global.Scenes.CLAVIJAS
 	Global.totransition.emit()

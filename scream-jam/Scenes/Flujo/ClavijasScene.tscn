@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6ixnnj7d48qe"]
+[gd_scene load_steps=3 format=3 uid="uid://c6ixnnj7d48qe"]
 
+[ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="1_7ruou"]
 [ext_resource type="Script" path="res://Scripts/transition_area.gd" id="1_dmtrx"]
 
 [node name="ClavijasScene" type="Control"]
@@ -31,14 +32,7 @@ text = "Clavijas"
 
 [node name="World" type="Node2D" parent="."]
 
-[node name="Izq" type="Area2D" parent="World"]
-script = ExtResource("1_dmtrx")
-current_scene = 1
-to_scene = 3
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/Izq"]
-position = Vector2(6, 3)
-polygon = PackedVector2Array(150, 141, 146, 911, -2, 1083, 0, 1)
+[node name="Izq" parent="World" instance=ExtResource("1_7ruou")]
 
 [node name="Der" type="Area2D" parent="World"]
 script = ExtResource("1_dmtrx")
@@ -62,4 +56,5 @@ rotation = 1.5708
 scale = Vector2(-1, -1.75208)
 polygon = PackedVector2Array(131.001, 105.589, 131.006, 984.544, -1.99988, 1091.63, 0, 1)
 
-[connection signal="mouse_entered" from="World/Izq" to="World/Izq" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="World/Der" to="World/Der" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="World/Abajo" to="World/Abajo" method="_on_mouse_entered"]

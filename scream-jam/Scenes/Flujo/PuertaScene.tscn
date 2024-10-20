@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://blbnh2wfdgbxj"]
+[gd_scene load_steps=4 format=3 uid="uid://blbnh2wfdgbxj"]
+
+[ext_resource type="PackedScene" uid="uid://cden42mveleua" path="res://Prefabs/Fondo.tscn" id="1_afwql"]
+[ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="2_6bq38"]
+[ext_resource type="Script" path="res://Scripts/transition_area.gd" id="3_kfdc0"]
 
 [node name="PuertaScene" type="Control"]
 layout_mode = 3
@@ -7,15 +11,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
-[node name="Backcolor" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.0784314, 0.0980392, 0.152941, 1)
+[node name="Backcolor" parent="." instance=ExtResource("1_afwql")]
+layout_mode = 0
+anchors_preset = 0
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -26,3 +26,20 @@ offset_bottom = 311.0
 theme_override_font_sizes/font_size = 36
 text = "Puerta
 "
+
+[node name="Izq" parent="." instance=ExtResource("2_6bq38")]
+current_scene = 3
+to_scene = 1
+
+[node name="Der" type="Area2D" parent="."]
+script = ExtResource("3_kfdc0")
+current_scene = 3
+to_scene = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Der"]
+top_level = true
+position = Vector2(1918, 1080)
+scale = Vector2(-1, -1)
+polygon = PackedVector2Array(148, 172, 150, 927, -2, 1083, 0, 1)
+
+[connection signal="mouse_entered" from="Der" to="Der" method="_on_mouse_entered"]
