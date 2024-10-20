@@ -3,7 +3,7 @@ extends Node
 signal totransition
 signal transitioned
 
-enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS }
+enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
 
 var to_scene: Scenes = 0;
 var current_scene : Scenes = 0
