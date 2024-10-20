@@ -20,7 +20,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.0784314, 0.0980392, 0.152941, 1)
-metadata/_edit_use_anchors_ = true
 
 [node name="Background" type="TextureRect" parent="."]
 visible = false

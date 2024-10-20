@@ -9,10 +9,13 @@
 script = ExtResource("1_iv1q4")
 
 [node name="Credits" parent="." instance=ExtResource("2_y28pb")]
+process_mode = 4
+visible = false
 
 [node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
 
 [node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
 
 [connection signal="totransition" from="MainMenu" to="." method="_on_main_menu_totransition"]
+[connection signal="transitioned" from="FadeScene" to="." method="_on_fade_scene_transitioned"]
 [connection signal="transitioned" from="FadeScene" to="MainMenu" method="_on_fade_scene_transitioned"]
