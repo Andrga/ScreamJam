@@ -117,11 +117,11 @@ func _process(delta):
 func finish():
 	if not finished:
 		finished = true
-		#if to_scene != null:
-			#var path = to_scene.get_path()
-			#get_tree().change_scene_to_file(path)
-		#else:
-			#get_tree().quit()
+		if to_scene != null:
+			var path = to_scene.get_path()
+			get_tree().change_scene_to_file(path)
+		else:
+			get_tree().quit()
 
 
 func add_line():
