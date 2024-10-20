@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=3 uid="uid://bgoopn5ii5cak"]
 
 [ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
-
-[sub_resource type="ImageTexture" id="ImageTexture_3cln7"]
+[ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="2_qnm5u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_04x4w"]
+radius = 102.961
 
 [node name="Draggable" type="Node2D"]
 script = ExtResource("1_cuke3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("ImageTexture_3cln7")
+texture = ExtResource("2_qnm5u")
 
 [node name="Area2D" type="Area2D" parent="."]
 
