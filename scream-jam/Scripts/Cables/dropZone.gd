@@ -1,6 +1,7 @@
 extends StaticBody2D
 
 @export var DropZone: int = 0
+var solved = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
