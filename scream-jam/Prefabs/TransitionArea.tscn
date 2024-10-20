@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnjkx16ballsh"]
+
+[ext_resource type="Script" path="res://Scripts/transition_area.gd" id="1_apx62"]
+
+[node name="Izq" type="Area2D"]
+script = ExtResource("1_apx62")
+current_scene = 1
+to_scene = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(6, 3)
+polygon = PackedVector2Array(150, 141, 146, 911, -2, 1083, 0, 1)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
