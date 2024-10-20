@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca00e6afd76xl"]
+
+[ext_resource type="Script" path="res://Scripts/Cables/dropZone.gd" id="1_wig5y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m8vhh"]
+
+[node name="DropZone" type="StaticBody2D" groups=["dropable"]]
+script = ExtResource("1_wig5y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_m8vhh")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
