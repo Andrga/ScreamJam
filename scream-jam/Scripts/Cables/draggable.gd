@@ -44,7 +44,8 @@ func _on_area_2d_mouse_entered():
 
 func _check_Clavija() -> void:
 	if refDropZone.DropZone == Clavija:
-		pass
+		refDropZone.solved = true
+		Global.clavijaConected.emit(true)
 	
 func _on_area_2d_mouse_exited():
 	if not Dragging.isDragging: # si no se esta draggeando nada
