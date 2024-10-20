@@ -1,7 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6ixnnj7d48qe"]
+[gd_scene load_steps=4 format=3 uid="uid://c6ixnnj7d48qe"]
 
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="1_7ruou"]
-[ext_resource type="Script" path="res://Scripts/transition_area.gd" id="1_dmtrx"]
+[ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="1_dmtrx"]
+
+[sub_resource type="GDScript" id="GDScript_yn84d"]
+script/source = "extends Control
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="ClavijasScene" type="Control"]
 layout_mode = 3
@@ -11,6 +25,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+script = SubResource("GDScript_yn84d")
 
 [node name="Backcolor" type="ColorRect" parent="."]
 layout_mode = 1
@@ -23,10 +38,10 @@ mouse_filter = 2
 color = Color(0.0784314, 0.0980392, 0.152941, 1)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 644.0
-offset_top = 288.0
-offset_right = 760.0
-offset_bottom = 338.0
+offset_left = 920.0
+offset_top = 36.0
+offset_right = 1051.0
+offset_bottom = 86.0
 theme_override_font_sizes/font_size = 36
 text = "Clavijas"
 

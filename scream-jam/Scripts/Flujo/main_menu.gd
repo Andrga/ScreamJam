@@ -16,7 +16,3 @@ func _on_start_down() -> void:
 	
 func _on_exit_down() -> void:
 	get_tree().quit()
-
-func _on_fade_scene_transitioned() -> void:
-	self.visible = false
-	self.process_mode = Node.PROCESS_MODE_DISABLED

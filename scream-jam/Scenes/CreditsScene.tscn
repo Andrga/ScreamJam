@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://btjcspqq7pb2i"]
 
-[ext_resource type="Script" path="res://Scripts/credits.gd" id="1_4f4al"]
+[ext_resource type="Script" path="res://Scripts/Flujo/credits.gd" id="1_4f4al"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3

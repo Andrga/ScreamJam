@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://blbnh2wfdgbxj"]
 
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="2_6bq38"]
-[ext_resource type="Script" path="res://Scripts/transition_area.gd" id="3_kfdc0"]
+[ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="3_kfdc0"]
 
 [node name="PuertaScene" type="Control"]
 layout_mode = 3

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://btqpasjgf1reh"]
 
-[ext_resource type="Script" path="res://Scripts/transition_area.gd" id="1_ys18o"]
+[ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="1_ys18o"]
 
 [node name="MesaScene" type="Control"]
 layout_mode = 3

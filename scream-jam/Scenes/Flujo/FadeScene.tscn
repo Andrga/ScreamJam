@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://5w0xl8fledrk"]
 
-[ext_resource type="Script" path="res://Scripts/fade.gd" id="1_mphof"]
+[ext_resource type="Script" path="res://Scripts/Flujo/fade.gd" id="1_mphof"]
 
 [sub_resource type="Animation" id="Animation_slqx3"]
 length = 0.001
