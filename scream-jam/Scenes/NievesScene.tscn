@@ -1,14 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjk1gfot42mot"]
+[gd_scene load_steps=6 format=3 uid="uid://cjk1gfot42mot"]
 
 [ext_resource type="Script" path="res://Scripts/Cables/Dragging.gd" id="1_8svwd"]
 [ext_resource type="PackedScene" uid="uid://bgoopn5ii5cak" path="res://Scenes/Cables/Draggable.tscn" id="2_j18vi"]
 [ext_resource type="PackedScene" uid="uid://ca00e6afd76xl" path="res://Scenes/Cables/DropZone.tscn" id="3_g1v3s"]
+[ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="5_l2p7g"]
+[ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="6_345q4"]
 
 [node name="NievesScene" type="Node2D"]
 script = ExtResource("1_8svwd")
 
 [node name="Draggable" parent="." instance=ExtResource("2_j18vi")]
 position = Vector2(956, 441)
+Clavija = 1
 
 [node name="DropZone" parent="." instance=ExtResource("3_g1v3s")]
 position = Vector2(311, 294)
+DropZone = 1
+
+[node name="DropZone2" parent="." instance=ExtResource("3_g1v3s")]
+position = Vector2(622, 588)
+
+[node name="CheckClavijas" parent="." instance=ExtResource("5_l2p7g")]
+offset_left = 1474.0
+offset_top = 882.0
+offset_right = 1758.0
+offset_bottom = 961.0
+script = ExtResource("6_345q4")
+
+[connection signal="pressed" from="CheckClavijas" to="Draggable" method="_check_Clavija"]
