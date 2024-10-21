@@ -1,8 +1,8 @@
 extends Node
 
 @onready var audio_stream: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var label: RichTextLabel = $Button/RichTextLabel
 @onready var button: Button = $Button
+@onready var label: Label = $Button/Label
 
 #color de cada persona
 var color1 : Color
@@ -40,7 +40,6 @@ func _next_dialogue():
 	else:
 		textDisplayed = 1
 		label.visible_ratio = textDisplayed
-		return
 	
 	# Comprueba si ha acabado el dialogo
 	if dialogueTextID >= JsonData.dialogos[dialogueID].Texts.size() :
@@ -50,10 +49,10 @@ func _next_dialogue():
 	else:
 		if JsonData.dialogos[dialogueID].Texts[dialogueTextID].Person == 0:
 			audio_stream.stream = sound1
-			label.push_color(color1)
+			label.add_theme_color_override("font_color", color1)
 		else:
 			audio_stream.stream = sound2
-			label.push_color(color2)
+			label.add_theme_color_override("font_color", color2)
 		
 		audio_stream.play()
 		

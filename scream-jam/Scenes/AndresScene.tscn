@@ -1,19 +1,23 @@
 [gd_scene load_steps=3 format=3 uid="uid://df8gensvvo1ta"]
 
 [ext_resource type="PackedScene" uid="uid://bcd4gb5wvrm13" path="res://Scenes/Postits/TacoPostits.tscn" id="1_vvufs"]
-[ext_resource type="PackedScene" uid="uid://cqha2levo35q4" path="res://Scenes/Dialogos/Dialogue.tscn" id="2_vkf30"]
+[ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="2_aofui"]
 
 [node name="AndresScene" type="Node2D"]
 
 [node name="TacoPostits" parent="." instance=ExtResource("1_vvufs")]
 position = Vector2(1785, 936)
 
-[node name="Dialogue" parent="." instance=ExtResource("2_vkf30")]
-position = Vector2(1019, 468)
-
 [node name="Button" type="Button" parent="."]
 offset_right = 943.0
 offset_bottom = 110.0
 metadata/hola = 1
 
-[connection signal="pressed" from="Button" to="Dialogue" method="_start_quest" binds= [1]]
+[node name="DialogueBox" parent="." instance=ExtResource("2_aofui")]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_right = 1920.0
+offset_bottom = 128.0
+
+[connection signal="pressed" from="Button" to="DialogueBox" method="_start_quest" binds= [1]]
