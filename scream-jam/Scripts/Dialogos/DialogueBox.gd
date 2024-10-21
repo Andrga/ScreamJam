@@ -1,7 +1,14 @@
 extends Node
 
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var label: Label = $Label
+@onready var label: RichTextLabel = $RichTextLabel
+@onready var audio_stream: AudioStreamPlayer2D = $AudioStreamPlayer2D
+
+var color1 : Color
+var color2 : Color
+
+var sound1
+var sound2 
 
 #contador para que se escriba letra a letra
 var textDisplayed: float = 0
@@ -22,6 +29,10 @@ func _process(delta: float) -> void:
 		label.visible_ratio = textDisplayed
 
 func _next_dialogue():
+	if dialogueTextID == 0:
+		sound1 = load(JsonData.dialogos[dialogueID].Sound1)
+		sound2 = load(JsonData.dialogos[dialogueID].Sound2)
+	
 	#completa el texto si no lo ha hecho
 	if textDisplayed >= 1:
 		textDisplayed = 0
@@ -34,6 +45,12 @@ func _next_dialogue():
 	if dialogueTextID >= JsonData.dialogos[dialogueID].Texts.size() :
 		print("FIN DEL DIALOGO")
 	else:
+		if JsonData.dialogos[dialogueID].Texts[dialogueTextID].Person == 0:
+			audio_stream.stream = sound1
+		else:
+			audio_stream.stream = sound2
+		audio_stream.play()
+		
 		if "@" in JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text:
 			label.text = JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text.replace('@', '')
 			#DEBUG: se llama a este metodo cuando se ha contrastado soluciones

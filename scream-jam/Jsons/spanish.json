@@ -1,9 +1,9 @@
 {
 	"Dialoges":[
 		{
-			"Sound1": "",
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": "",
-			"Sound2": "",
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
 			"Color2": "",
 			"Texts":[
 				{
