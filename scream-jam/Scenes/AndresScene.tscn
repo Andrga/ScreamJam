@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://df8gensvvo1ta"]
 
 [ext_resource type="PackedScene" uid="uid://bcd4gb5wvrm13" path="res://Scenes/Postits/TacoPostits.tscn" id="1_vvufs"]
-[ext_resource type="PackedScene" uid="uid://bf8vbktsby4gi" path="res://Scenes/Dialogos/Dialogue.tscn" id="2_vkf30"]
+[ext_resource type="PackedScene" uid="uid://cqha2levo35q4" path="res://Scenes/Dialogos/Dialogue.tscn" id="2_vkf30"]
 
 [node name="AndresScene" type="Node2D"]
 

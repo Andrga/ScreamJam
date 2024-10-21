@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dkeruh02gg7es"]
+[gd_scene load_steps=8 format=3 uid="uid://dkeruh02gg7es"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/scene_manager.gd" id="1_iv1q4"]
 [ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://dyph5mqd443d5" path="res://Scenes/Flujo/MainMenu.tscn" id="3_b721g"]
 [ext_resource type="PackedScene" uid="uid://c6ixnnj7d48qe" path="res://Scenes/Flujo/ClavijasScene.tscn" id="3_we5ev"]
 [ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/Flujo/FadeScene.tscn" id="4_88r4u"]
-[ext_resource type="Script" path="res://Scripts/Flujo/clavijas_scene.gd" id="4_dqvhj"]
 [ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
 
 [node name="SceneManager" type="Node"]
@@ -27,7 +26,6 @@ visible = false
 [node name="ClavijasScene" parent="." instance=ExtResource("3_we5ev")]
 process_mode = 4
 visible = false
-script = ExtResource("4_dqvhj")
 
 [node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
 

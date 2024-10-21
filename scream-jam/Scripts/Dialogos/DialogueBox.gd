@@ -1,8 +1,8 @@
 extends Node
 
-@onready var audio_stream: AudioStreamPlayer2D = $Subtitles/AudioStreamPlayer2D
-@onready var label: RichTextLabel = $Subtitles/Button/RichTextLabel
-@onready var button: Button = $Subtitles/Button
+@onready var audio_stream: AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var label: RichTextLabel = $Button/RichTextLabel
+@onready var button: Button = $Button
 
 #color de cada persona
 var color1 : Color

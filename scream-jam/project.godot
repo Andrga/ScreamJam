@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 Global="*res://Scripts/global.gd"
 JsonData="*res://Scripts/JsonParser/JsonParser.gd"
-Dragging="*res://Scripts/Cables/Dragging.gd"
 
 [display]
 

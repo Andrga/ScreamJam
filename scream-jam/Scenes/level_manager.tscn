@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4ejt2epaoh1k"]
+
+[ext_resource type="Script" path="res://level_manager.gd" id="1_3d141"]
+[ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
+[ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="3_jtrsg"]
+[ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
+
+[node name="LevesScene" type="Node2D"]
+script = ExtResource("1_3d141")
+
+[node name="CheckClavijas" parent="." instance=ExtResource("2_hs7pb")]
+offset_left = 1487.0
+offset_top = 897.0
+offset_right = 1771.0
+offset_bottom = 976.0
+script = ExtResource("3_jtrsg")
+
+[node name="Clavija y clavijero" type="Node" parent="."]
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1913.0
+offset_bottom = 1078.0
+mouse_filter = 2
+
+[node name="DialogueBox" parent="Control2" instance=ExtResource("4_uq0j3")]
+layout_mode = 1
