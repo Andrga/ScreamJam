@@ -4,7 +4,7 @@ var isDraggable = false # si se puede draggear
 var inDropZone = false 	# para saber si esta sobre una drop zone
 var clicked = false 	# para saber si esta sobre una drop zone
 var snap = false 		# para saber si esta vinculada a una drop zone
-var refDropZone = null	# guarda referencia a la dropZone cuando el objeto esta dentro
+var refDropZone 			# guarda referencia a la dropZone cuando el objeto esta dentro
 var offset : Vector2
 var initialPos : Vector2
 var Clavija: int = 0 # al inicio se le carga un int sol != de 0 a la clavija y a la dropZone 
@@ -52,8 +52,9 @@ func _check_Clavija() -> void:
 		var verdad = false;
 		if (refDropZone.DropZone == Clavija):
 			verdad = true;
-		Global.clavijaConected.emit(verdad)
-		print("CLAVIJA: ", Clavija, " ", verdad)
+		Global.clavijaConected.emit(verdad, Clavija)
+		Global.correctos[Clavija - 1] = verdad
+		print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
 
 func _on_area_2d_body_entered(body:StaticBody2D):
 	if body.is_in_group('dropZone') and not body.ocupada:

@@ -24,7 +24,7 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 			$MainMenu.process_mode = Node.PROCESS_MODE_DISABLED
 		Global.Scenes.CLAVIJAS:
 			$level_manager.visible = false
-			$level_manager.process_mode = Node.PROCESS_MODE_DISABLED
+			$level_manager.process_mode = Node.PROCESS_MODE_INHERIT
 		Global.Scenes.MESA:
 			$MesaScene.visible = false
 			$MesaScene.process_mode = Node.PROCESS_MODE_DISABLED

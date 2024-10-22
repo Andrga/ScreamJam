@@ -4,7 +4,7 @@ extends Node
 signal totransition
 signal transitioned
 #senial que se manda cuando es conectada una clavija: TRUE es correcto || FALSE incorrecto
-signal clavijaConected(correct)
+signal clavijaConected(correct, index) #index es el indice de la clavija conectada
 
 # FLUJO
 enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
