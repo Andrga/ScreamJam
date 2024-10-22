@@ -18,9 +18,12 @@ var dialogueID: int = 0
 #ID texto del dialogo mostrado
 var dialogueTextID: int = 0
 
+var dialogoInicial: int = 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:	
 	Global.playLlamada.connect(_start_quest)
+	Global.allClavijasCorrect.connect(_start_dialogue)
 	
 	label.text = ""
 
@@ -39,7 +42,7 @@ func _next_dialogue():
 		label.visible_ratio = textDisplayed
 	
 	# Comprueba si ha acabado el dialogo
-	if dialogueTextID >= JsonData.dialogos[dialogueID].Texts.size() :
+	if dialogueTextID >= JsonData.json_data.Dialoges[dialogueID].Texts.size() :
 		_end_dialogue()
 		print("FIN DEL DIALOGO")
 		return
@@ -70,7 +73,7 @@ func _start_quest(idText: int):
 	#get_tree().paused = false
 	self.visible = true
 	dialogueID = idText
-	dialogueTextID = 0
+	dialogueTextID = dialogoInicial
 	textDisplayed = 0
 	
 	#asigna las diferentes propiedades
@@ -81,12 +84,15 @@ func _start_quest(idText: int):
 	color2 = Color(JsonData.dialogos[dialogueID].Color2.R,JsonData.dialogos[dialogueID].Color2.G,JsonData.dialogos[dialogueID].Color2.B, 1)
 	_next_dialogue()
 
-func _start_dialogue(check : bool) -> void:
-	if check:
-		dialogueTextID +=1
-		
+func _start_dialogue() -> void:
+	dialogueTextID +=1
+	dialogoInicial = dialogueTextID
+	self.visible = true
+	_next_dialogue()
 
 func _end_dialogue():
-	#get_tree().paused = true
-	label.visible = false
-	button.visible = false
+	dialogoInicial = 0
+	
+	self.visible = false
+	
+	Global._llamada_terminada()

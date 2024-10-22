@@ -1,6 +1,5 @@
 {
-	"Dialoges":[
-		{
+	"Dialoges":[{
 			"Clavijero": 5,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
@@ -47,14 +46,14 @@
 				"B":1,
 				"A":1
 			},
-			"texts":[
+			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Clavijero 1C"
+					"Text": "Clavijero 1C@"
 				},
 				{
 					"Person": 1,
-					"Text": "Dialogo 4"
+					"Text": "segundo dialogo llamada 2"
 				}
 			]
 		},
@@ -74,14 +73,14 @@
 				"B":1,
 				"A":1
 			},
-			"texts":[
+			"Texts":[
 				{
 					"Person": 0,
 					"Text": "clavijero 2B@"
 				},
 				{
 					"Person": 1,
-					"Text": "OLE OLE"
+					"Text": "segundo dialogo llamada 3"
 				}
 			]
 		}

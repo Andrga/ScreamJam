@@ -22,7 +22,7 @@ var bombillas = []
 var noMasLlamadas: bool = false
 
 # tiempo de espera para tener un nuevo nivel
-var maxTime:float = 5
+var maxTime:float = .1
 var elapsedTime: float =0
 var newlevel: bool = false
 
@@ -100,9 +100,7 @@ func _process(delta: float) -> void:
 
 func _onCheck():
 	if noMasLlamadas:
-		Global.current_scene = Global.Scenes.CLAVIJAS
-		Global.to_scene = Global.Scenes.CREDITS
-		Global.totransition.emit()
+		Global._poner_los_creditos()
 		return
 	newlevel = false;
 	elapsedTime =0
