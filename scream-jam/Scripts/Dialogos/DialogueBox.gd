@@ -18,12 +18,13 @@ var dialogueID: int = 0
 #ID texto del dialogo mostrado
 var dialogueTextID: int = 0
 
-var dialogoInicial: int = 0
+var comprobado: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:	
 	Global.playLlamada.connect(_start_quest)
 	Global.allClavijasCorrect.connect(_start_dialogue)
+	Global.nextLevel.connect(_next_level)
 	
 	label.text = ""
 
@@ -66,15 +67,15 @@ func _next_dialogue():
 	
 
 func _start_quest(idText: int):
-	
+	if comprobado:
+		_start_dialogue()
+		return
 	print("START LLAMADA")
 	
 	#hace visible el cuadro de dialogo
 	#get_tree().paused = false
 	self.visible = true
 	dialogueID = idText
-	dialogueTextID = dialogoInicial
-	textDisplayed = 0
 	
 	#asigna las diferentes propiedades
 	sound1 = load(JsonData.dialogos[dialogueID].Sound1)
@@ -85,14 +86,24 @@ func _start_quest(idText: int):
 	_next_dialogue()
 
 func _start_dialogue() -> void:
-	dialogueTextID +=1
-	dialogoInicial = dialogueTextID
+	comprobado = true
 	self.visible = true
+	_avanzar_hasta_quest()
 	_next_dialogue()
 
 func _end_dialogue():
-	dialogoInicial = 0
 	
 	self.visible = false
 	
 	Global._llamada_terminada()
+	
+func _avanzar_hasta_quest()->void:
+	dialogueTextID = 0
+	while not "@" in JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text:
+		dialogueTextID +=1
+	dialogueTextID +=1
+
+func _next_level()->void:
+	comprobado = false
+	dialogueTextID = 0
+	textDisplayed = 0
