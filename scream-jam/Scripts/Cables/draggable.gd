@@ -10,6 +10,7 @@ var initialPos : Vector2
 var Clavija: int = 0 # al inicio se le carga un int sol != de 0 a la clavija y a la dropZone 
 					 # si coinciden respuesta correcta, las dropZones que no sean solucion = 0
 var refBombilla : Sprite2D = null # ref a su bombilla
+var BombillaApagada : Texture = load("res://Images/bombilla_apagada.png")
 var BombillaVerde : Texture = load("res://Images/bombilla_verde.png")
 var BombillaRegu : Texture = load("res://Images/bombilla_regu.png")
 var BombillaRoja : Texture = load("res://Images/bombilla_roja.png")
@@ -66,7 +67,7 @@ func _check_Clavija() -> void:
 	if (refDropZone.DropZone == Clavija):
 		verdad = true;
 	Global.clavijaConected.emit(verdad, Clavija)
-	Global.correctos[Clavija - 1] = verdad
+	Global.correctos[(Global.llamadaActual - Clavija)-1] = verdad
 	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
 	if refBombilla != null && verdad:
 		refBombilla.texture = BombillaVerde

@@ -6,6 +6,7 @@ signal transitioned
 signal levelChanged(level)
 #senial que se manda cuando es conectada una clavija: TRUE es correcto || FALSE incorrecto
 signal clavijaConected(correct, index) #index es el indice de la clavija conectada
+signal nextLevel # senial para avanzar el nivel
 
 # FLUJO
 enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
@@ -24,6 +25,9 @@ var cables = []
 # para saber si se esta draggeando algo o no
 var isDragging = false
 
+# nivel actual
+var nivel: int = 0
+var llamadaActual: int = 0 # llamada por la que va
 
 
 # METODOS

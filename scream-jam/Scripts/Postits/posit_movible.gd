@@ -3,7 +3,7 @@ extends Node2D
 var mousePos: Vector2
 var pressed: bool = false
 @onready var label: Label = $Label
-@onready var text_edit: TextEdit = $TextEdit
+@onready var text_edit: TextEdit = $Label/TextEdit
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
