@@ -43,6 +43,8 @@ script = ExtResource("3_jtrsg")
 
 [node name="Clavija y clavijero" type="Node2D" parent="."]
 
+[node name="Bombillas" type="Node2D" parent="."]
+
 [node name="World" type="Node2D" parent="."]
 
 [node name="Izq" parent="World" instance=ExtResource("5_28rh6")]

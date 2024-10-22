@@ -3,6 +3,7 @@ extends Node
 # SEÑALES
 signal totransition
 signal transitioned
+signal levelChanged(level)
 #senial que se manda cuando es conectada una clavija: TRUE es correcto || FALSE incorrecto
 signal clavijaConected(correct, index) #index es el indice de la clavija conectada
 

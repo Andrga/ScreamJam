@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1xwb2nm08umh"]
+
+[ext_resource type="Texture2D" uid="uid://b0n3cw0d32fxf" path="res://Images/bombilla_roja.png" id="1_8mxt3"]
+
+[node name="Bombilla" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.474308, 0.474308)
+texture = ExtResource("1_8mxt3")

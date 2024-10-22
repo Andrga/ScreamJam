@@ -4,11 +4,15 @@ var isDraggable = false # si se puede draggear
 var inDropZone = false 	# para saber si esta sobre una drop zone
 var clicked = false 	# para saber si esta sobre una drop zone
 var snap = false 		# para saber si esta vinculada a una drop zone
-var refDropZone 			# guarda referencia a la dropZone cuando el objeto esta dentro
+var refDropZone : StaticBody2D = null # guarda referencia a la dropZone cuando el objeto esta dentro
 var offset : Vector2
 var initialPos : Vector2
 var Clavija: int = 0 # al inicio se le carga un int sol != de 0 a la clavija y a la dropZone 
-							 # si coinciden respuesta correcta, las dropZones que no sean solucion = 0
+					 # si coinciden respuesta correcta, las dropZones que no sean solucion = 0
+var refBombilla : Sprite2D = null # ref a su bombilla
+var BombillaVerde : Texture = load("res://Images/bombilla_verde.png")
+var BombillaRegu : Texture = load("res://Images/bombilla_regu.png")
+var BombillaRoja : Texture = load("res://Images/bombilla_roja.png")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event: InputEvent) -> void:
@@ -48,13 +52,17 @@ func _on_area_2d_mouse_exited():
 		scale = Vector2(1, 1) # feedback
 
 func _check_Clavija() -> void:
-	if refDropZone != null:
-		var verdad = false;
-		if (refDropZone.DropZone == Clavija):
-			verdad = true;
-		Global.clavijaConected.emit(verdad, Clavija)
-		Global.correctos[Clavija - 1] = verdad
-		print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
+	if refDropZone == null:
+		return
+	var verdad = false;
+	if (refDropZone.DropZone == Clavija):
+		verdad = true;
+	Global.clavijaConected.emit(verdad, Clavija)
+	Global.correctos[Clavija - 1] = verdad
+	print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
+	if refBombilla != null && verdad:
+		refBombilla.texture = BombillaVerde
+		
 
 func _on_area_2d_body_entered(body:StaticBody2D):
 	if body.is_in_group('dropZone') and not body.ocupada:

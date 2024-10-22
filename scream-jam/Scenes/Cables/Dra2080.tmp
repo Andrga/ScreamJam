@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgoopn5ii5cak"]
+
+[ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
+[ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="2_qnm5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uonrh"]
+size = Vector2(104, 108)
+
+[node name="Draggable" type="Node2D"]
+script = ExtResource("1_cuke3")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -59.0
+offset_top = -62.0
+offset_right = 59.0
+offset_bottom = 67.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("2_qnm5u")
+flat = true
+expand_icon = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 7)
+scale = Vector2(0.52, 0.52)
+shape = SubResource("RectangleShape2D_uonrh")
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Button" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

@@ -13,8 +13,11 @@ var sep_cr_y = 97; # separacion entre clavijeros
 var off_cs_x = 500; # offset clavijas
 var off_cs_y = 300; # aka posicion incial de la primera clavija
 var sep_cs_x = 150; # separacion entre clavijas
+# bombillas
+var off_b_y = 200; # aka posicion incial de la primera clavija
 
 var gridClavijeros = []
+var bombillas = []
 
 func _ready() -> void:
 	Global.clavijaConected.connect(_onCheck)
@@ -36,12 +39,20 @@ func _ready() -> void:
 		w += 1
 	
 	for i in weight:
+		var bombilla = load("res://Prefabs/Bombilla.tscn").instantiate()
+		bombillas.append(bombilla)
+		$Bombillas.add_child(bombilla)
+		bombilla.position = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.screen_get_size().y - off_b_y)
+	
+	for i in weight:
 		var clavija = load("res://Scenes/Cables/Draggable.tscn").instantiate()
 		$CheckClavijas.grid.append(clavija)
 		$"Clavija y clavijero".add_child($CheckClavijas.grid[i])
-		
+		clavija.refBombilla = bombillas[i].get_node("Sprite2D")
 		$CheckClavijas.grid[i].initialPos = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.screen_get_size().y - off_cs_y) 
 		$CheckClavijas.grid[i].position = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.screen_get_size().y - off_cs_y) 
+		
+
 		
 	# Asignacion de valores
 	for i in height * weight:
