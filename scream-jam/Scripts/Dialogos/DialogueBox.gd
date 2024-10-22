@@ -20,12 +20,9 @@ var dialogueTextID: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:	
-	Global.clavijaConected.connect(_start_dialogue)
-	process_mode = Node.PROCESS_MODE_PAUSABLE
+	Global.playLlamada.connect(_start_quest)
 	
 	label.text = ""
-	
-	_start_quest(0)
 
 func _process(delta: float) -> void:
 	if textDisplayed < 1:
@@ -59,7 +56,7 @@ func _next_dialogue():
 		if "@" in JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text:
 			label.text = JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text.replace('@', '')
 			#DEBUG: se llama a este metodo cuando se ha contrastado soluciones
-			_start_dialogue(true)
+			#_start_dialogue(true)
 		else:
 			label.text = JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text
 			dialogueTextID +=1
@@ -67,12 +64,11 @@ func _next_dialogue():
 
 func _start_quest(idText: int):
 	
-	print(idText)
+	print("START LLAMADA")
 	
 	#hace visible el cuadro de dialogo
 	#get_tree().paused = false
-	label.visible = true
-	button.visible = true
+	self.visible = true
 	dialogueID = idText
 	dialogueTextID = 0
 	textDisplayed = 0

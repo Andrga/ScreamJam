@@ -71,6 +71,8 @@ func _check_Clavija() -> void:
 	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
 	if refBombilla != null && verdad:
 		refBombilla.texture = BombillaVerde
+	if refBombilla != null && not verdad:
+		refBombilla.texture = BombillaRoja
 
 
 func _on_area_2d_body_entered(body:StaticBody2D):
