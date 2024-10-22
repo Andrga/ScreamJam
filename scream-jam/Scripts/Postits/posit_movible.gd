@@ -3,11 +3,13 @@ extends Node2D
 var mousePos: Vector2
 var pressed: bool = false
 @onready var label: Label = $Label
-@onready var text_edit: TextEdit = $Label/TextEdit
+@onready var text_edit: TextEdit = $TextEdit
+var basura : Area2D = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#print("Postit Creado")
+	basura = get_node("/root/SceneManager/MesaScene/Basura/Area2D")
 	pass # Replace with function body.
 
 
@@ -37,6 +39,10 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	pressed = false
+	#comprobar si esta encima de un collider para borrarse
+	var bodies = basura.get_overlapping_bodies()
+	if (bodies.has($Sprite2D)):
+		queue_free();
 
 var currentText = ""
 var LIMIT: int = 15

@@ -29,6 +29,7 @@ var isDragging = false
 var nivel: int = 0
 var llamadaActual: int = 0 # llamada por la que va
 
+var nPostits = 0;
 
 # METODOS
 # Called when the node enters the scene tree for the first time.
