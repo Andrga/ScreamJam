@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://btqpasjgf1reh"]
+[gd_scene load_steps=7 format=3 uid="uid://btqpasjgf1reh"]
 
 [ext_resource type="Script" path="res://Scenes/Flujo/mesa_manager.gd" id="1_b02ew"]
 [ext_resource type="Texture2D" uid="uid://cflii03gwvmit" path="res://Images/mesa.png" id="1_udlly"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="1_ys18o"]
 [ext_resource type="PackedScene" uid="uid://bcd4gb5wvrm13" path="res://Scenes/Postits/TacoPostits.tscn" id="3_q2nii"]
 [ext_resource type="PackedScene" uid="uid://cl568k5ri0dju" path="res://Prefabs/Basura.tscn" id="4_inovu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ot1xm"]
+size = Vector2(470, 207)
 
 [node name="MesaScene" type="Control"]
 layout_mode = 3
@@ -38,18 +41,16 @@ scale = Vector2(0.563483, 1.752)
 polygon = PackedVector2Array(131.001, 105.589, 131.006, 984.544, -1.99988, 1091.63, 0, 1)
 
 [node name="Basura" parent="." instance=ExtResource("4_inovu")]
-
-[node name="TextureButton" parent="Basura" index="0"]
-offset_left = 1625.0
-offset_top = 775.0
-offset_right = 1920.0
-offset_bottom = 1071.0
-
-[node name="CollisionPolygon2D" parent="Basura/Area2D" index="0"]
-polygon = PackedVector2Array(1648, 1093, 1629, 1044, 1622, 996, 1625, 949, 1642, 903, 1677, 860, 1734, 816, 1792, 792, 1829, 788, 1831, 828, 1857, 825, 1859, 786, 1879, 782, 1917, 776, 1932, 778, 1944, 1119)
+position = Vector2(1624, 781)
 
 [node name="TacoPostits" parent="." instance=ExtResource("3_q2nii")]
 position = Vector2(107, 877)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(1554, 871)
+shape = SubResource("RectangleShape2D_ot1xm")
 
 [connection signal="mouse_entered" from="Abajo" to="Abajo" method="_on_mouse_entered"]
 

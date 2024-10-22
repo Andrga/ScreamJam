@@ -5,8 +5,8 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rabvl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6nqi"]
-size = Vector2(142, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iugu5"]
+size = Vector2(155, 33)
 
 [node name="PositMovible" type="Node2D"]
 script = ExtResource("1_bmn8m")
@@ -34,11 +34,11 @@ offset_top = -11.0
 offset_right = 55.0
 offset_bottom = 19.0
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-1, 4)
-shape = SubResource("RectangleShape2D_w6nqi")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(0.5, 5.5)
+shape = SubResource("RectangleShape2D_iugu5")
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

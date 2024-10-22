@@ -2,6 +2,7 @@ extends Node
 
 var mousepos: Vector2
 
+
 func _intro():
 	var auxPostit = load("res://Scenes/Postits/PositMovible.tscn").instantiate()
 	Global.nPostits += 1

@@ -5,6 +5,7 @@ var pressed: bool = false
 @onready var label: Label = $Label
 @onready var text_edit: TextEdit = $TextEdit
 var basura : Area2D = null
+var to_delete : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,6 +18,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if pressed:
 		position = mousePos
+	if to_delete:
+		queue_free()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
@@ -40,9 +43,9 @@ func _on_button_button_down() -> void:
 func _on_button_button_up() -> void:
 	pressed = false
 	#comprobar si esta encima de un collider para borrarse
-	var bodies = basura.get_overlapping_bodies()
-	if (bodies.has($Sprite2D)):
-		queue_free();
+	var bodies = basura.get_overlapping_areas()
+	if (bodies.has($Sprite2D) or bodies.has(self) or bodies.has($Area2D) or bodies.has($Area2D/CollisionShape2D)):
+		to_delete = true;
 
 var currentText = ""
 var LIMIT: int = 15
