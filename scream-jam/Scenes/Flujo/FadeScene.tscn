@@ -44,7 +44,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Color(0.0784314, 0.0980392, 0.152941, 1), Color(0.0784314, 0.0980392, 0.152941, 0)]
+"values": [Color(0.054902, 0.054902, 0.054902, 1), Color(0.0784314, 0.0980392, 0.152941, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ja8s8"]
