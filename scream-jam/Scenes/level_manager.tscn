@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b4ejt2epaoh1k"]
+[gd_scene load_steps=8 format=3 uid="uid://b4ejt2epaoh1k"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_3d141"]
 [ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
+[ext_resource type="Texture2D" uid="uid://dstfo3b61l4r6" path="res://Images/clavijero_ph.png" id="2_tv1h2"]
 [ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="3_jtrsg"]
 [ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="5_28rh6"]
@@ -10,15 +11,6 @@
 [node name="LevesScene" type="Node2D"]
 script = ExtResource("1_3d141")
 
-[node name="CheckClavijas" parent="." instance=ExtResource("2_hs7pb")]
-offset_left = 1487.0
-offset_top = 897.0
-offset_right = 1771.0
-offset_bottom = 976.0
-script = ExtResource("3_jtrsg")
-
-[node name="Clavija y clavijero" type="Node2D" parent="."]
-
 [node name="Control2" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -26,8 +18,30 @@ offset_right = 1913.0
 offset_bottom = 1078.0
 mouse_filter = 2
 
+[node name="TextureRect" type="TextureRect" parent="Control2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.5
+offset_top = -1.0
+offset_right = 3.5
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tv1h2")
+
 [node name="DialogueBox" parent="Control2" instance=ExtResource("4_uq0j3")]
 layout_mode = 1
+
+[node name="CheckClavijas" parent="." instance=ExtResource("2_hs7pb")]
+offset_left = 1422.0
+offset_top = 337.0
+offset_right = 1706.0
+offset_bottom = 416.0
+script = ExtResource("3_jtrsg")
+
+[node name="Clavija y clavijero" type="Node2D" parent="."]
 
 [node name="World" type="Node2D" parent="."]
 
