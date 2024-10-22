@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
 [ext_resource type="PackedScene" uid="uid://blbnh2wfdgbxj" path="res://Scenes/Flujo/PuertaScene.tscn" id="3_66sb8"]
 [ext_resource type="PackedScene" uid="uid://dyph5mqd443d5" path="res://Scenes/Flujo/MainMenu.tscn" id="3_b721g"]
-[ext_resource type="PackedScene" uid="uid://c6ixnnj7d48qe" path="res://Scenes/Flujo/ClavijasScene.tscn" id="3_we5ev"]
 [ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/Flujo/FadeScene.tscn" id="4_88r4u"]
 [ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
+[ext_resource type="PackedScene" uid="uid://b4ejt2epaoh1k" path="res://Scenes/level_manager.tscn" id="5_p2e8t"]
 
 [node name="SceneManager" type="Node"]
 script = ExtResource("1_iv1q4")
@@ -23,7 +23,7 @@ visible = false
 process_mode = 4
 visible = false
 
-[node name="ClavijasScene" parent="." instance=ExtResource("3_we5ev")]
+[node name="ClavijasScene" parent="." instance=ExtResource("5_p2e8t")]
 process_mode = 4
 visible = false
 
