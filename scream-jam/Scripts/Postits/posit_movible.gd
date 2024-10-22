@@ -48,7 +48,7 @@ func _on_button_button_up() -> void:
 		to_delete = true;
 
 var currentText = ""
-var LIMIT: int = 15
+var LIMIT: int = 8
 var cursor_line = 0
 var cursor_column = 0
 

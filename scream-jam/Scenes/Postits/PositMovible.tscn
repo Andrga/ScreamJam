@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://lwyknoxuwful"]
+[gd_scene load_steps=6 format=3 uid="uid://lwyknoxuwful"]
 
 [ext_resource type="Script" path="res://Scripts/Postits/posit_movible.gd" id="1_bmn8m"]
 [ext_resource type="Texture2D" uid="uid://c1m6qto4k2xjg" path="res://Images/etiqueta.png" id="2_5dvuu"]
+[ext_resource type="Texture2D" uid="uid://b7fgmvs5kdm6r" path="res://Images/etiqueta_hover.png" id="3_ao6bm"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rabvl"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_300nh"]
+bg_color = Color(0.423652, 0.42365, 0.423651, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w6nqi"]
 size = Vector2(142, 32)
@@ -11,28 +13,29 @@ size = Vector2(142, 32)
 [node name="PositMovible" type="Node2D"]
 script = ExtResource("1_bmn8m")
 
-[node name="Button" type="Button" parent="."]
-offset_left = -79.0
-offset_top = -71.0
-offset_right = 77.0
-offset_bottom = 87.0
-theme_override_styles/normal = SubResource("StyleBoxEmpty_rabvl")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Button" type="TextureButton" parent="."]
+offset_left = -91.0
+offset_top = -35.0
+offset_right = 148.0
+offset_bottom = 56.0
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("2_5dvuu")
+texture_normal = ExtResource("2_5dvuu")
+texture_hover = ExtResource("3_ao6bm")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -78.0
 offset_top = -34.0
 offset_right = 72.0
 offset_bottom = 36.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TextEdit" type="TextEdit" parent="."]
-offset_left = -54.0
-offset_top = -11.0
-offset_right = 55.0
-offset_bottom = 19.0
+offset_left = -49.0
+offset_top = -10.0
+offset_right = 48.0
+offset_bottom = 18.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_300nh")
 
 [node name="Area2D" type="Area2D" parent="."]
 
