@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4ejt2epaoh1k"]
+[gd_scene load_steps=7 format=3 uid="uid://b4ejt2epaoh1k"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_3d141"]
 [ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
 [ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="3_jtrsg"]
 [ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
+[ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="5_28rh6"]
+[ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="6_kq4mj"]
 
 [node name="LevesScene" type="Node2D"]
 script = ExtResource("1_3d141")
@@ -26,3 +28,32 @@ mouse_filter = 2
 
 [node name="DialogueBox" parent="Control2" instance=ExtResource("4_uq0j3")]
 layout_mode = 1
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Izq" parent="World" instance=ExtResource("5_28rh6")]
+
+[node name="Der" type="Area2D" parent="World"]
+script = ExtResource("6_kq4mj")
+current_scene = 1
+to_scene = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/Der"]
+top_level = true
+position = Vector2(1918, 1080)
+scale = Vector2(-1, -1)
+polygon = PackedVector2Array(148, 172, 150, 927, -2, 1083, 0, 1)
+
+[node name="Abajo" type="Area2D" parent="World"]
+script = ExtResource("6_kq4mj")
+current_scene = 1
+to_scene = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/Abajo"]
+position = Vector2(12, 1075)
+rotation = 1.5708
+scale = Vector2(-1, -1.75208)
+polygon = PackedVector2Array(131.001, 105.589, 131.006, 984.544, -1.99988, 1091.63, 0, 1)
+
+[connection signal="mouse_entered" from="World/Der" to="World/Der" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="World/Abajo" to="World/Abajo" method="_on_mouse_entered"]
