@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://lwyknoxuwful"]
 
-[ext_resource type="Texture2D" uid="uid://mu8q8p8gcxyt" path="res://Images/postit.png" id="1_45ab5"]
 [ext_resource type="Script" path="res://Scripts/Postits/posit_movible.gd" id="1_bmn8m"]
+[ext_resource type="Texture2D" uid="uid://c1m6qto4k2xjg" path="res://Images/etiqueta.png" id="2_5dvuu"]
 
 [node name="PositMovible" type="Node2D"]
 script = ExtResource("1_bmn8m")
@@ -14,7 +14,7 @@ offset_bottom = 87.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_45ab5")
+texture = ExtResource("2_5dvuu")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -78.0

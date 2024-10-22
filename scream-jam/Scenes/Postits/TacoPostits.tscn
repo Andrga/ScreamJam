@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bcd4gb5wvrm13"]
 
-[ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="1_j462m"]
 [ext_resource type="Script" path="res://Scripts/Postits/TacoPostits.gd" id="1_raq8x"]
+[ext_resource type="Texture2D" uid="uid://c1m6qto4k2xjg" path="res://Images/etiqueta.png" id="2_e1boy"]
 
 [node name="TacoPostits" type="Node2D"]
 script = ExtResource("1_raq8x")
@@ -16,6 +16,6 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
-texture = ExtResource("1_j462m")
+texture = ExtResource("2_e1boy")
 
 [connection signal="button_down" from="Button" to="." method="_intro"]

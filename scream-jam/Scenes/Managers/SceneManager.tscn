@@ -23,7 +23,7 @@ visible = false
 process_mode = 4
 visible = false
 
-[node name="ClavijasScene" parent="." instance=ExtResource("5_p2e8t")]
+[node name="level_manager" parent="." instance=ExtResource("5_p2e8t")]
 process_mode = 4
 visible = false
 

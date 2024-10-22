@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://btqpasjgf1reh"]
+[gd_scene load_steps=3 format=3 uid="uid://btqpasjgf1reh"]
 
+[ext_resource type="Texture2D" uid="uid://cflii03gwvmit" path="res://Images/mesa.png" id="1_udlly"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="1_ys18o"]
 
 [node name="MesaScene" type="Control"]
@@ -11,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Backcolor" type="ColorRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,16 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.0784314, 0.0980392, 0.152941, 1)
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 644.0
-offset_top = 288.0
-offset_right = 690.0
-offset_bottom = 311.0
-theme_override_font_sizes/font_size = 36
-text = "Mesa "
+texture = ExtResource("1_udlly")
 
 [node name="Abajo" type="Area2D" parent="."]
 script = ExtResource("1_ys18o")
@@ -36,9 +28,9 @@ current_scene = 2
 to_scene = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Abajo"]
-position = Vector2(1915, -1)
+position = Vector2(1915, -1.31111)
 rotation = 1.5708
-scale = Vector2(1, 1.752)
+scale = Vector2(0.563483, 1.752)
 polygon = PackedVector2Array(131.001, 105.589, 131.006, 984.544, -1.99988, 1091.63, 0, 1)
 
 [connection signal="mouse_entered" from="Abajo" to="Abajo" method="_on_mouse_entered"]

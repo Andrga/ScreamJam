@@ -23,8 +23,8 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 			$MainMenu.visible = false
 			$MainMenu.process_mode = Node.PROCESS_MODE_DISABLED
 		Global.Scenes.CLAVIJAS:
-			$ClavijasScene.visible = false
-			$ClavijasScene.process_mode = Node.PROCESS_MODE_DISABLED
+			$level_manager.visible = false
+			$level_manager.process_mode = Node.PROCESS_MODE_DISABLED
 		Global.Scenes.MESA:
 			$MesaScene.visible = false
 			$MesaScene.process_mode = Node.PROCESS_MODE_DISABLED
@@ -41,8 +41,8 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 			$MainMenu.visible = true
 			$MainMenu.process_mode = Node.PROCESS_MODE_INHERIT
 		Global.Scenes.CLAVIJAS:
-			$ClavijasScene.visible = true
-			$ClavijasScene.process_mode = Node.PROCESS_MODE_INHERIT
+			$level_manager.visible = true
+			$level_manager.process_mode = Node.PROCESS_MODE_INHERIT
 		Global.Scenes.MESA:
 			$MesaScene.visible = true
 			$MesaScene.process_mode = Node.PROCESS_MODE_INHERIT
