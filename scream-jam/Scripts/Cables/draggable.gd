@@ -59,10 +59,10 @@ func _check_Clavija() -> void:
 		verdad = true;
 	Global.clavijaConected.emit(verdad, Clavija)
 	Global.correctos[Clavija - 1] = verdad
-	print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
+	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
 	if refBombilla != null && verdad:
 		refBombilla.texture = BombillaVerde
-		
+
 
 func _on_area_2d_body_entered(body:StaticBody2D):
 	if body.is_in_group('dropZone') and not body.ocupada:
