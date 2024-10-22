@@ -1,6 +1,5 @@
 extends Node2D
 
-var nivel : int = 0
 var height : int = 4
 var weight : int = 5
 
@@ -19,8 +18,16 @@ var off_b_y = 200; # aka posicion incial de la primera clavija
 var gridClavijeros = []
 var bombillas = []
 
+#fin de juego
+var noMasLlamadas: bool = false
+
+# tiempo de espera para tener un nuevo nivel
+var maxTime:float = 5
+var elapsedTime: float =0
+var newlevel: bool = false
+
 func _ready() -> void:
-	Global.clavijaConected.connect(_onCheck)
+	Global.nextLevel.connect(_onCheck)
 	
 	# Posicionamiento 
 	var w = 0
@@ -62,13 +69,39 @@ func _ready() -> void:
 	Global.cables = $CheckClavijas.grid
 
 func _new_level():
-	
+	#asigna los numeros 0 a los clavijeros
+	for i in height * weight:
+		gridClavijeros[i].DropZone = -1
 	for i in weight:
-		if i <= nivel:
-			$CheckClavijas.grid[i].Clavija = i
+		$CheckClavijas.grid[i].Clavija = -2;
+		$CheckClavijas.grid[i].refBombilla.texture = $CheckClavijas.grid[i].BombillaApagada;
 	
-	nivel += 1
+	# vamos por el nivel 1, tenemos 1 llamada
+	Global.nivel += 1
+	
+	#establece las llamadas y sus clavijeros
+	for i in Global.nivel:
+		if Global.llamadaActual >= JsonData.json_data.Dialoges.size()-1:
+			noMasLlamadas= true
+			print("Se acabo el juego")
+		gridClavijeros[JsonData.json_data.Dialoges[Global.llamadaActual].Clavijero].DropZone = Global.llamadaActual
+		$CheckClavijas.grid[i].refBombilla.texture = $CheckClavijas.grid[i].BombillaRegu;
+		$CheckClavijas.grid[i].Clavija = Global.llamadaActual;
+		Global.llamadaActual += 1
+	
+func _process(delta: float) -> void:
+	if elapsedTime < maxTime:
+		elapsedTime += delta
+	elif !newlevel:
+		newlevel = true
+		_new_level()
 
 func _onCheck():
-	
+	if noMasLlamadas:
+		Global.current_scene = Global.Scenes.CLAVIJAS
+		Global.to_scene = Global.Scenes.CREDITS
+		Global.totransition.emit()
+		return
+	newlevel = false;
+	elapsedTime =0
 	pass
