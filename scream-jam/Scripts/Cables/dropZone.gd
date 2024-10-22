@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-@export var DropZone: int = 0
+var DropZone: int = 0
 var solved = false
 var ocupada = false
 var clavija: Node

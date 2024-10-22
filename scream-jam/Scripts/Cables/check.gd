@@ -12,3 +12,8 @@ func _check():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_button_down() -> void:
+	_check()
+	pass # Replace with function body.
