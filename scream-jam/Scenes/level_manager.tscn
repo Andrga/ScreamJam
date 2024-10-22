@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://h8ymjrxvnbdw"]
+[gd_scene load_steps=8 format=3 uid="uid://b4ejt2epaoh1k"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_3d141"]
-[ext_resource type="PackedScene" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
+[ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
 [ext_resource type="Texture2D" uid="uid://dstfo3b61l4r6" path="res://Images/clavijero_ph.png" id="2_tv1h2"]
 [ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="3_jtrsg"]
-[ext_resource type="PackedScene" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
+[ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="5_28rh6"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="6_kq4mj"]
 
