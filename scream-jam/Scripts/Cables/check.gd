@@ -15,7 +15,7 @@ func _check():
 		print(Global.correctos[i], " ")
 	print("CORRECTO?: ", correct)
 	if correct:
-		Global.allClavijasCorrect.emit()
+		Global.allClavijasCorrect.emit(grid[0].Clavija, true)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

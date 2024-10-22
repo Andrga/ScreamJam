@@ -8,7 +8,7 @@ signal levelChanged(level)
 signal clavijaConected(correct, index) #index es el indice de la clavija conectada
 signal nextLevel # senial para avanzar el nivel
 signal playLlamada(index) # senial para avanzar el nivel
-signal allClavijasCorrect 
+signal allClavijasCorrect (index) #senial para cuando todas las clavijas dan correcto, se manda la llamada de la clavija mas a la izquierda
 
 # FLUJO
 enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
