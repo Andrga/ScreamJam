@@ -17,7 +17,7 @@ offset_right = 1771.0
 offset_bottom = 976.0
 script = ExtResource("3_jtrsg")
 
-[node name="Clavija y clavijero" type="Node" parent="."]
+[node name="Clavija y clavijero" type="Node2D" parent="."]
 
 [node name="Control2" type="Control" parent="."]
 layout_mode = 3
