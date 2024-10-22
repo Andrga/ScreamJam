@@ -9,10 +9,10 @@
 script = ExtResource("1_bmn8m")
 
 [node name="Button" type="Button" parent="."]
-offset_left = -79.0
-offset_top = -71.0
-offset_right = 77.0
-offset_bottom = 87.0
+offset_left = -89.0
+offset_top = -41.0
+offset_right = 89.0
+offset_bottom = 45.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_rabvl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -21,16 +21,18 @@ texture = ExtResource("2_5dvuu")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -78.0
-offset_top = -34.0
-offset_right = 72.0
-offset_bottom = 36.0
+offset_top = -18.0
+offset_right = 82.0
+offset_bottom = 22.0
 
-[node name="TextEdit" type="TextEdit" parent="."]
-offset_left = -68.0
-offset_top = -17.0
-offset_right = 62.0
-offset_bottom = 19.0
+[node name="TextEdit" type="TextEdit" parent="Label"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
-[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed"]
+[connection signal="text_changed" from="Label/TextEdit" to="." method="_on_TextEdit_text_changed"]

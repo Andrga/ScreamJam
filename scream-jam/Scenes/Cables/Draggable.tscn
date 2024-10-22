@@ -30,6 +30,9 @@ position = Vector2(-1, 7)
 scale = Vector2(0.52, 0.52)
 shape = SubResource("RectangleShape2D_uonrh")
 
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 0, 0, 0)
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
 [connection signal="mouse_entered" from="Button" to="." method="_on_area_2d_mouse_entered"]

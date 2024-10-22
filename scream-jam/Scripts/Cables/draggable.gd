@@ -13,6 +13,9 @@ var refBombilla : Sprite2D = null # ref a su bombilla
 var BombillaVerde : Texture = load("res://Images/bombilla_verde.png")
 var BombillaRegu : Texture = load("res://Images/bombilla_regu.png")
 var BombillaRoja : Texture = load("res://Images/bombilla_roja.png")
+@onready var line_2d: Line2D = $Line2D
+
+var lastpos: Vector2
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event: InputEvent) -> void:
@@ -36,6 +39,11 @@ func _process(delta: float) -> void:
 			tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
 		else:
 			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
+			
+	if lastpos != global_position:
+		line_2d.points[0] = initialPos-global_position
+		line_2d.points[1] = Vector2(0,0)
+		lastpos = global_position
 
 func _ready() -> void:
 	initialPos = position

@@ -26,7 +26,7 @@ func _input(event: InputEvent) -> void:
 		_intro()
 
 func _intro():
-	print("intro")
+	#print("intro")
 	if not text_edit.text == "":
 		label.text = text_edit.text
 		text_edit.hide()
@@ -39,7 +39,7 @@ func _on_button_button_up() -> void:
 	pressed = false
 
 var currentText = ""
-var LIMIT: int = 19
+var LIMIT: int = 15
 var cursor_line = 0
 var cursor_column = 0
 
