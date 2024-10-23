@@ -212,7 +212,7 @@
 			]
 		},
 		{
-			"Clavijero": 14,
+			"Clavijero": 8,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -393,7 +393,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 16,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -448,7 +448,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 12,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -523,7 +523,7 @@
 			]
 		},
 		{
-			"Clavijero": 0,
+			"Clavijero": 13,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -570,7 +570,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 17,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
