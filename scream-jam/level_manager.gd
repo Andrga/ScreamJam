@@ -10,7 +10,7 @@ var sep_cr_x = 115; # separacion entre clavijeros
 var sep_cr_y = 97; # separacion entre clavijeros
 # clavijas
 var off_cs_x = 722; # offset clavijas
-var off_cs_y = 248; # aka posicion incial de la primera clavija
+var off_cs_y = 258; # aka posicion incial de la primera clavija
 var sep_cs_x = 78; # separacion entre clavijas
 # bombillas
 var off_b_x = 565;
