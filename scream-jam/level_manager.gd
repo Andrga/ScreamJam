@@ -79,6 +79,8 @@ func _ready() -> void:
 	Global.cables = $CheckClavijas.grid
 
 func _new_level():
+	
+	
 	#asigna los numeros 0 a los clavijeros
 	for i in height * weight:
 		gridClavijeros[i].DropZone = -1
