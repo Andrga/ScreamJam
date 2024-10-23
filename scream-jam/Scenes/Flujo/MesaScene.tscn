@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://btqpasjgf1reh"]
+[gd_scene load_steps=7 format=3 uid="uid://btqpasjgf1reh"]
 
 [ext_resource type="Script" path="res://Scenes/Flujo/mesa_manager.gd" id="1_b02ew"]
 [ext_resource type="Texture2D" uid="uid://cflii03gwvmit" path="res://Images/mesa.png" id="1_udlly"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="1_ys18o"]
 [ext_resource type="PackedScene" uid="uid://bcd4gb5wvrm13" path="res://Scenes/Postits/TacoPostits.tscn" id="3_q2nii"]
 [ext_resource type="PackedScene" uid="uid://cl568k5ri0dju" path="res://Prefabs/Basura.tscn" id="4_inovu"]
+[ext_resource type="PackedScene" uid="uid://c0nvlhnobhpue" path="res://Prefabs/Flecha.tscn" id="6_5hbod"]
 
 [node name="MesaScene" type="Control"]
 layout_mode = 3
@@ -48,6 +49,10 @@ offset_bottom = 297.0
 
 [node name="TacoPostits" parent="." instance=ExtResource("3_q2nii")]
 position = Vector2(107, 890)
+
+[node name="Flecha" parent="." instance=ExtResource("6_5hbod")]
+position = Vector2(969, 60)
+rotation = 4.71239
 
 [connection signal="mouse_entered" from="Abajo" to="Abajo" method="_on_mouse_entered"]
 

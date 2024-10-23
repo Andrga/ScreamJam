@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://blbnh2wfdgbxj"]
+[gd_scene load_steps=5 format=3 uid="uid://blbnh2wfdgbxj"]
 
 [ext_resource type="Texture2D" uid="uid://cjg05jclufg5g" path="res://Images/puerta.png" id="1_x8256"]
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="2_6bq38"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="3_kfdc0"]
+[ext_resource type="PackedScene" uid="uid://c0nvlhnobhpue" path="res://Prefabs/Flecha.tscn" id="4_mmfgi"]
 
 [node name="PuertaScene" type="Control"]
 layout_mode = 3
@@ -48,5 +49,12 @@ top_level = true
 position = Vector2(1918, 1080)
 scale = Vector2(-1, -1)
 polygon = PackedVector2Array(148, 172, 150, 927, -2, 1083, 0, 1)
+
+[node name="Flecha" parent="." instance=ExtResource("4_mmfgi")]
+position = Vector2(1850, 951.5)
+
+[node name="Flecha2" parent="." instance=ExtResource("4_mmfgi")]
+position = Vector2(68, 951.5)
+rotation = 3.14159
 
 [connection signal="mouse_entered" from="Der" to="Der" method="_on_mouse_entered"]
