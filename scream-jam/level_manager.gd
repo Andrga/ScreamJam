@@ -30,10 +30,6 @@ var newlevel: bool = false
 
 func _ready() -> void:
 	Global.nextLevel.connect(_onCheck)
-	var ambient = SceneManager.ambient_sound
-	#ambient.stream = load("res://Sounds/ambiente.mp3")
-	#ambient.play()
-	#ambient.set_bus_volume_db
 	
 	# Posicionamiento 
 	var w = 0
@@ -79,6 +75,8 @@ func _ready() -> void:
 	Global.cables = $CheckClavijas.grid
 
 func _new_level():
+	
+	
 	#asigna los numeros 0 a los clavijeros
 	for i in height * weight:
 		gridClavijeros[i].DropZone = -1

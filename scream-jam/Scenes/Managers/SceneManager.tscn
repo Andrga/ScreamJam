@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dkeruh02gg7es"]
+[gd_scene load_steps=10 format=3 uid="uid://dkeruh02gg7es"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/scene_manager.gd" id="1_iv1q4"]
 [ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/Flujo/FadeScene.tscn" id="4_88r4u"]
 [ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
 [ext_resource type="PackedScene" uid="uid://b4ejt2epaoh1k" path="res://Scenes/level_manager.tscn" id="5_p2e8t"]
+[ext_resource type="AudioStream" uid="uid://bfbtd3txlu21k" path="res://Sounds/sonidillosOfi.mp3" id="8_dg2h0"]
+[ext_resource type="AudioStream" uid="uid://ch57l0blpkljd" path="res://Sounds/ambiente.mp3" id="8_vnte0"]
 
 [node name="SceneManager" type="Node"]
 script = ExtResource("1_iv1q4")
@@ -31,7 +33,14 @@ visible = false
 
 [node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
 
+[node name="AmbientSound2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_vnte0")
+volume_db = 15.423
+autoplay = true
+
 [node name="AmbientSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_dg2h0")
+autoplay = true
 
 [node name="SFX" type="AudioStreamPlayer2D" parent="."]
 
