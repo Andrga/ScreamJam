@@ -40,6 +40,7 @@ autoplay = true
 
 [node name="AmbientSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_dg2h0")
+volume_db = 5.0
 autoplay = true
 
 [node name="SFX" type="AudioStreamPlayer2D" parent="."]
