@@ -31,6 +31,10 @@ visible = false
 
 [node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
 
+[node name="AmbientSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="transitioned" from="FadeScene" to="." method="_on_fade_scene_transitioned"]
 [connection signal="transitioned" from="FadeScene" to="MainMenu" method="_on_fade_scene_transitioned"]
 
