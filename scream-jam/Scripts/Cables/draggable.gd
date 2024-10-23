@@ -74,6 +74,7 @@ func _on_area_2d_mouse_exited():
 		scale = Vector2(1, 1) # feedback
 
 func _check_Clavija() -> void:
+	# si no esta conectada sale del metodo
 	if refDropZone == null:
 		return
 	var verdad = false;
@@ -82,8 +83,12 @@ func _check_Clavija() -> void:
 	Global.clavijaConected.emit(verdad, Clavija)
 	Global.correctos[(Global.llamadaActual - Clavija)-1] = verdad
 	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
+	#--------Bombillas--------
+	# si no hay bombilla y no esta encendida sale del metodo
 	if refBombilla != null and  not refBombilla.texture == BombillaRegu:
 		return
+	
+	# si la clavija es correcta se pone la bombilla en su color correspondiente
 	if verdad:
 		refBombilla.texture = BombillaVerde
 	if not verdad:
