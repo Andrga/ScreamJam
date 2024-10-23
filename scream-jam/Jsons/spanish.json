@@ -1,6 +1,6 @@
 {
 	"Dialoges":[{
-			"Clavijero": 9,
+			"Clavijero": 9, 
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -212,7 +212,7 @@
 			]
 		},
 		{
-			"Clavijero": 14,
+			"Clavijero": 8,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -287,7 +287,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 10,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -305,64 +305,56 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
-				},
-				{
-					"Person": 1,
-					"Text": "¿Sí? ¿Quién es?"
+					"Text": "Hola, urgente, Calle de la Esperanza 17. Soy de la calle Creación 10.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+					"Text": "¿Hola? Hola, hola hola…"
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
+					"Text": "Buenas, ¿qué pasa?"
 				},
 				{
 					"Person": 0,
-					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+					"Text": "Tenemos un problema, se me ha perdido la regadera, estoy intentando de todas las formas posibles encontrarla, pero no está por ningún sitio, no sé qué hacer."
 				},
 				{
 					"Person": 1,
-					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+					"Text": "No fastidie, hombre…"
 				},
 				{
 					"Person": 0,
-					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+					"Text": "Lo siento, lo siento… ¿podría usted hablar con el jardinero?"
 				},
 				{
 					"Person": 1,
-					"Text": "Isaías…"
+					"Text": "Veré lo que puedo hacer, pero esto no le va a salir barato."
 				},
 				{
 					"Person": 0,
-					"Text": "¿Pero vendrás a visitarme?"
+					"Text": "Por favor, busquen bien, yo ya no sé qué hacer. Sin regadera y abono una semilla no puede crecer.Tengo mucho miedo."
 				},
 				{
 					"Person": 1,
-					"Text": "Siempre que pueda estaré ahí para ti…"
+					"Text": "No me diga que tampoco tiene abono… Veremos lo que se puede hacer, pondremos ojos por todas partes, pero necesitamos que colabore. Le vuelvo a repetir, esto va a tener un coste adicional. Todo trabajo bien realizado ha de ser remunerado."
 				},
 				{
 					"Person": 0,
-					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+					"Text": "Prometo seguir buscando, por el amor de Dios."
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… allí hablaremos de todo esto y más."
+					"Text": "Estese tranquilo. Lo volveremos a llamar."
 				},
 				{
 					"Person": 0,
-					"Text": "Te… quiero…"
-				},
-				{
-					"Person": 1,
-					"Text": "Y… yo…"
+					"Text": "Gracias, gracias."
 				}
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 0,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -409,7 +401,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 16,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -464,7 +456,7 @@
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 12,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -534,6 +526,191 @@
 				},
 				{
 					"Person": 0,
+					"Text": "Que así sea."
+				}
+			]
+		},
+		{
+			"Clavijero": 13,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Conecte Esperanza 17 con Millán Astray 37.@"
+				},
+				{
+					"Person": 1,
+					"Text": "¿Sí?"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Qué es eso que murmuran sobre que usted está disconforme con la evolución interior?"
+				},
+				{
+					"Person": 1,
+					"Text": "Son puras habladurías, no es veraz."
+				},
+				{
+					"Person": 0,
+					"Text": "Él detesta a los falaces, pero se regocija con aquellos que son fidedignos. El que es inteligente no dice todo lo que sabe; en cambio, el bruto todo lo cuenta. El que trabaja duro se convertirá en líder, pero el perezoso siempre estará obligado a hacer trabajos forzados."
+				},
+				{
+					"Person": 1,
+					"Text": "No entiendo."
+				},
+				{
+					"Person": 0,
+					"Text": "Sus ideas se verán dilucidadas pronto, no sea usted impaciente. Su semilla interior aguarda germinar."
+				}
+			]
+		},
+		{
+			"Clavijero": 17,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Calle de Queipo de Llano nº 61 con el nº 37 , gracias, gracias.@"
+				},
+				{
+					"Person": 1,
+					"Text": "¿Sí?"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Antonio? Soy Martirio"
+				},
+				{
+					"Person": 1,
+					"Text": "Sí, dime, ¿qué pasa?"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Está tu mujer y los niños en casa?"
+				},
+				{
+					"Person": 1,
+					"Text": "No, ¿por?"
+				},
+				{
+					"Person": 0,
+					"Text": "Pues diles que vuelvan ahora mismo, dios mío, que se han cargado al vecino, al guardia civil. Está la calle muy peligrosa."
+				},
+				{
+					"Person": 1,
+					"Text": "¡No me diga! ¿Pero qué ha pasado? ¿Quiénes lo han matado?"
+				},
+				{
+					"Person": 0,
+					"Text": "Los camisas azules lo han matado, por maricón. Lo pillaron en la Almorada con otro guardia civil, los siguieron, les metieron dos tiros, y… hasta ahí."
+				},
+				{
+					"Person": 1,
+					"Text": "¿Maricones? Qué pena, ojalá y Dios pueda perdonarlos, guiarlos y que los tenga en su gloria. Qué miedo… Oye, ¿y qué habrá pasado con La Lola?"
+				},
+				{
+					"Person": 0,
+					"Text": "Qué pena más grande Dios mío, está toda la familia destrozada. Voy a rezar diez padrenuestros, cuando lleguen la mujer y los niños cuéntalo, y que tengan cuidado, que últimamente está la cosa muy fea."
+				},
+				{
+					"Person": 1,
+					"Text": "Sí, sí, yo se lo digo. Gracias por avisar, que mal cuerpo se me ha quedado… Hasta luego, Martirio."
+				},
+				{
+					"Person": 0,
+					"Text": "Adiós, adiós, adiós…"
+				}
+			]
+		},
+		{
+			"Clavijero": 10,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Buenas, si me hace el favor, Independencia 34 con Esperanza 17, gracias.@"
+				},
+				{
+					"Person": 1,
+					"Text": "Hola, buenas, tengo un problema. Soy Rut."
+				},
+				{
+					"Person": 0,
+					"Text": "Buenas, ¿Referente a…?"
+				},
+				{
+					"Person": 1,
+					"Text": "Mi vástago rechaza inundar su interior con la savia."
+				},
+				{
+					"Person": 0,
+					"Text": "Ya veo… esto supone un problema…"
+				},
+				{
+					"Person": 1,
+					"Text": "No sé qué hacer, no lo acepta, no me escucha. Quien dijera que hay que susurrar melodías ajenas a las plantas mentía."
+				},
+				{
+					"Person": 0,
+					"Text": "Mentir, lo que se conoce como mentir, no mentía. Si por medio de agua, sol y tonadas no hay florecimiento, habrá que optar por otros medios."
+				},
+				{
+					"Person": 1,
+					"Text": "Lo que sea."
+				},
+				{
+					"Person": 0,
+					"Text": "Haga uso de la Piper methysticum en una dosis altamente concentrada y lleve la planta al vivero. El jardinero se encargará de lo demás. Para ser plenamente consciente muchas veces lo único que hay que hacer es apagar los sentidos y abrir la psique. La única forma de salir es hacia adentro."
+				},
+				{
+					"Person": 1,
+					"Text": "Mil gracias."
+				},
+				{
+					"Person": 0,
+					"Text": "Su retoño es el que estará eternamente agradecido cuando despierte. El jardinero llena todo de su incesante y generoso amor, permitiendo hacer ver con los ojos del corazón."
+				},
+				{
+					"Person": 1,
 					"Text": "Que así sea."
 				}
 			]

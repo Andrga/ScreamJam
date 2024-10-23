@@ -15,6 +15,7 @@ enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
 var to_scene : Scenes = 0
 var current_scene : Scenes = 0
 
+var SceneManager
 # LOGICA
 #grid ejemplo 0
 var grid := [ 0, 0, 0, 0, 1,  
