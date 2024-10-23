@@ -32,11 +32,14 @@ size = Vector2(111.538, 142.308)
 [node name="Draggable" type="Node2D"]
 script = ExtResource("1_cuke3")
 
-[node name="Button" type="Button" parent="."]
-offset_left = -45.0
-offset_top = -91.0
-offset_right = 52.0
-offset_bottom = 90.0
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = -95.0
+offset_top = 46.0
+offset_right = 2.0
+offset_bottom = 227.0
+rotation = 4.71239
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xqe1e")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8gifw")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_olqa7")
@@ -51,6 +54,7 @@ theme_override_styles/normal = SubResource("StyleBoxEmpty_3l4bj")
 icon = ExtResource("2_g2kca")
 flat = true
 expand_icon = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -69,10 +73,10 @@ texture_mode = 1
 
 [node name="Origin" type="Node2D" parent="."]
 
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
-[connection signal="mouse_entered" from="Button" to="." method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Button" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="button_down" from="Node2D/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Node2D/Button" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Node2D/Button" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Button" to="." method="_on_area_2d_mouse_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
 [connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]

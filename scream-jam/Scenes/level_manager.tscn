@@ -43,14 +43,14 @@ offset_right = 1178.0
 offset_bottom = 900.0
 script = ExtResource("3_jtrsg")
 
+[node name="Bombillas" type="Node2D" parent="."]
+
 [node name="Clavija y clavijero" type="Node2D" parent="."]
 z_index = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(957, 539)
 texture = ExtResource("8_jr3s5")
-
-[node name="Bombillas" type="Node2D" parent="."]
 
 [node name="World" type="Node2D" parent="."]
 

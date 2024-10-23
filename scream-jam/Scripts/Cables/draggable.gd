@@ -16,7 +16,7 @@ var BombillaRegu : Texture = load("res://Images/bombilla_regu.png")
 var BombillaRoja : Texture = load("res://Images/bombilla_roja.png")
 var ClavijaSuelta : Texture = load("res://Images/clavija_suelta.png")
 var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
-@onready var Boton : Button = $Button
+@onready var Boton : Button = $"Node2D/Button"
 @onready var line_2d: Line2D = $Line2D
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var origin: Node2D = $Origin
@@ -36,11 +36,14 @@ func _input(event: InputEvent) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _process(delta: float) -> void:
+	
 	if clicked:
 		global_position = get_global_mouse_position() - offset
+		$Node2D.look_at(origin.position)
 		#sprite.rotation_degrees = origin.get_angle_to(get_global_mouse_position())
 		
 	else:
+		$Node2D.rotation_degrees = 90;
 		#sprite.rotation = 0
 		Global.isDragging = false
 		# ---- tween
