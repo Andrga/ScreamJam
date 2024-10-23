@@ -59,7 +59,8 @@ func _ready() -> void:
 		$"Clavija y clavijero".add_child($CheckClavijas.grid[i])
 		clavija.refBombilla = bombillas[i].get_node("Sprite2D")
 		var pos = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.window_get_size().y - off_cs_y) 
-		clavija.origin.global_position = pos;
+		var pos_abajo = Vector2(pos.x + 3, pos.y + 90)
+		clavija.origin.global_position = pos_abajo;
 		$CheckClavijas.grid[i].initialPos = pos
 		$CheckClavijas.grid[i].position = pos
 		
