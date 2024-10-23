@@ -65,3 +65,8 @@ func _on_TextEdit_text_changed():
 	# save current position of cursor for when we have reached the limit
 	cursor_line = text_edit.get_caret_line()
 	cursor_column = text_edit.get_caret_column()
+	for child in get_children():
+		if child is VScrollBar:
+			child.visible = false
+		elif child is HScrollBar:
+			child.visible = false 
