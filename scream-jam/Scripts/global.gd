@@ -15,6 +15,8 @@ enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, INTRO, CONTEXT, NULL }
 var to_scene : Scenes = 0
 var current_scene : Scenes = 0
 
+enum ClavijasState {APAGADA, REGU, VERDE, ROJA, NULL }
+
 var lenguaje: int = 0
 var contexto: Array = [
 	"21st of November, 1946\nTomillar del Alva\nSpain",

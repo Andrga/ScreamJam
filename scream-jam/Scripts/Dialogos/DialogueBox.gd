@@ -8,8 +8,8 @@ extends Node
 var color1 : Color
 var color2 : Color
 #ruta del sonido de cada persona
-var sound1
-var sound2 
+var sound1 = load("res://Sounds/voces/169867__halgrimm__swoosh.wav")
+var sound2 = load("res://Sounds/voces/167842__speedenza__transition-whoosh-4d.wav")
 
 #contador para que se escriba letra a letra
 var textDisplayed: float = 0
@@ -78,10 +78,14 @@ func _start_quest(idText: int):
 	#get_tree().paused = false
 	self.visible = true
 	dialogueID = idText
+	#ultimaLlamadaReprod = dialogueID
 	
 	#asigna las diferentes propiedades
-	sound1 = load(JsonData.dialogos[dialogueID].Sound1)
-	sound2 = load(JsonData.dialogos[dialogueID].Sound2)
+	#sound1 = load(JsonData.dialogos[dialogueID].Sound1)
+	#sound2 = load(JsonData.dialogos[dialogueID].Sound2)
+	
+	sound1 = load("res://Sounds/voces/167842__speedenza__transition-whoosh-4d.wav")
+	sound2 = load("res://Sounds/voces/169867__halgrimm__swoosh.wav")
 	
 	color1 = Color(JsonData.dialogos[dialogueID].Color1.R,JsonData.dialogos[dialogueID].Color1.G,JsonData.dialogos[dialogueID].Color1.B, 1)
 	color2 = Color(JsonData.dialogos[dialogueID].Color2.R,JsonData.dialogos[dialogueID].Color2.G,JsonData.dialogos[dialogueID].Color2.B, 1)

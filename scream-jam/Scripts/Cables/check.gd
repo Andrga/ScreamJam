@@ -16,6 +16,12 @@ func _check():
 	for i in grid.size():
 		if Global.correctos[i]:
 			cantCorrectos += 1
+			print(grid[4-i].Clavija)
+			if grid[4-i].Clavija >= 0:
+				grid[4-i].clavijaState = Global.ClavijasState.VERDE
+		else:
+			if grid[4-i].Clavija >= 0:
+				grid[4-i].clavijaState = Global.ClavijasState.ROJA
 	
 	correct = cantCorrectos == Global.niveles[Global.nivel-1]
 	
@@ -24,6 +30,7 @@ func _check():
 		Global.nivelCorrecto = true;
 		#emite la señal con la clavija de mas a la derecha
 		Global.allClavijasCorrect.emit(grid[0].Clavija)
+		Global.IDCableActual = 0
 		cantCorrectos = 0
 		
 	for i in grid.size():

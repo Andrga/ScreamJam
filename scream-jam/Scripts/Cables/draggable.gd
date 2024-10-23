@@ -20,6 +20,10 @@ var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
 @onready var line_2d: Line2D = $Line2D
 @onready var origin: Node2D = $Origin
 
+
+
+var clavijaState
+
 var lastpos: Vector2
 var desfaseMovimiento: Vector2 = Vector2(0,0)
 
@@ -35,6 +39,20 @@ func _input(event: InputEvent) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _process(delta: float) -> void:
+	#if (clavijaState != Global.ClavijasState.VERDE or clavijaState != Global.ClavijasState.ROJA)and Clavija >= 0 :
+	#	clavijaState = Global.ClavijasState.REGU
+	
+	match clavijaState:
+		Global.ClavijasState.APAGADA:
+			refBombilla.texture = BombillaApagada
+		Global.ClavijasState.REGU:
+			refBombilla.texture = BombillaRegu
+		Global.ClavijasState.VERDE:
+			refBombilla.texture = BombillaVerde
+		Global.ClavijasState.ROJA:
+			refBombilla.texture = BombillaRoja
+		_:
+			refBombilla.texture = BombillaApagada
 	
 	if clicked:
 		global_position = get_global_mouse_position() - offset
@@ -87,19 +105,25 @@ func _check_Clavija() -> void:
 	var verdad = false;
 	if (refDropZone.DropZone == Clavija):
 		verdad = true;
-	Global.clavijaConected.emit(verdad, Clavija)
+	Global.clavijaConected.emit(verdad, Clavija)	
 	Global.correctos[(Global.llamadaActual - Clavija)-1] = verdad
+	
+	if verdad:
+		clavijaState = Global.ClavijasState.VERDE
+	else:
+		clavijaState = Global.ClavijasState.ROJA
+		
 	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
 	#--------Bombillas--------
 	# si no hay bombilla y no esta encendida sale del metodo
-	if refBombilla != null and  not refBombilla.texture == BombillaRegu:
-		return
+	#if refBombilla != null and not refBombilla.texture == BombillaRegu:
+	#	return
 	
 	# si la clavija es correcta se pone la bombilla en su color correspondiente
-	if verdad:
-		refBombilla.texture = BombillaVerde
-	if not verdad:
-		refBombilla.texture = BombillaRoja
+	#if verdad:
+	#	refBombilla.texture = BombillaVerde
+	#if not verdad:
+	#	refBombilla.texture = BombillaRoja
 
 
 func _on_area_2d_body_entered(body:StaticBody2D):
@@ -130,4 +154,4 @@ func _on_button_button_up() -> void:
 	
 
 func _llamada_escuchada() ->void:
-	refBombilla.texture = BombillaApagada
+	clavijaState = Global.ClavijasState.APAGADA

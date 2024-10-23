@@ -10,6 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4f4al")
+bg_color = Color(0.054902, 0.054902, 0.054902, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -18,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.0784314, 0.0980392, 0.152941, 1)
+color = Color(0.054902, 0.054902, 0.054902, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="VideoPlayer" type="VideoStreamPlayer" parent="."]

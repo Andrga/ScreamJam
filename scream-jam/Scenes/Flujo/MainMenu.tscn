@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyph5mqd443d5"]
+[gd_scene load_steps=8 format=3 uid="uid://dyph5mqd443d5"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/main_menu.gd" id="1_d61cg"]
-[ext_resource type="StyleBox" uid="uid://ci153uwprdb5d" path="res://Styles/Buttons/new_style_box_flat.tres" id="1_pgaum"]
+[ext_resource type="Texture2D" uid="uid://c84i6mspgicek" path="res://Scenes/Flujo/mesa_intro.png" id="2_a2t3w"]
+[ext_resource type="Texture2D" uid="uid://c1m6qto4k2xjg" path="res://Images/etiqueta.png" id="3_e1u6u"]
+[ext_resource type="Texture2D" uid="uid://b7fgmvs5kdm6r" path="res://Images/etiqueta_hover.png" id="4_n17e4"]
+[ext_resource type="FontFile" uid="uid://ckwpjql6f81my" path="res://Fonts/posits.ttf" id="5_wtyl3"]
+[ext_resource type="Texture2D" uid="uid://ck70nk16fuhrp" path="res://Images/cascos.png" id="6_qfenh"]
+[ext_resource type="Texture2D" uid="uid://bd3los5blhack" path="res://Images/cascos_hover.png" id="7_xjqyj"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,105 +17,155 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d61cg")
 
-[node name="Backcolor" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.0784314, 0.0980392, 0.152941, 1)
-
 [node name="Background" type="TextureRect" parent="."]
-visible = false
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 200
-theme_override_constants/margin_top = 0
-theme_override_constants/margin_right = 200
-theme_override_constants/margin_bottom = 0
+texture = ExtResource("2_a2t3w")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
+offset_left = -206.0
+offset_top = 388.0
+offset_right = 1314.0
+offset_bottom = 782.0
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.792395, 0.55336, 1)
 theme_override_font_sizes/font_size = 42
 text = "the carlist telephonist"
 horizontal_alignment = 1
 
-[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
+[node name="Separator" type="Control" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Lenguages" type="TextureButton" parent="VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("1_pgaum")
-text = "Start"
+texture_normal = ExtResource("3_e1u6u")
+texture_pressed = ExtResource("4_n17e4")
+texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
-[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(180, 32)
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("1_pgaum")
-text = "Exit
-"
-metadata/_edit_use_anchors_ = true
+[node name="Label" type="Label" parent="VBoxContainer/Lenguages"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 22.0
+offset_right = 187.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("5_wtyl3")
+theme_override_font_sizes/font_size = 25
+text = "Language"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Lenguages" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(180, 32)
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("1_pgaum")
-text = "Lenguages"
-metadata/_edit_use_anchors_ = true
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
-[node name="Español" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="Español" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("1_pgaum")
-text = "Español"
+texture_normal = ExtResource("3_e1u6u")
+texture_pressed = ExtResource("4_n17e4")
+texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
-[node name="English" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Español"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 24.0
+offset_right = 185.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("5_wtyl3")
+theme_override_font_sizes/font_size = 25
+text = "Español
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="English" type="TextureButton" parent="VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = ExtResource("1_pgaum")
-text = "English"
+texture_normal = ExtResource("3_e1u6u")
+texture_pressed = ExtResource("4_n17e4")
+texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_down"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_down"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Lenguages" to="." method="_show_lenguages"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Español" to="." method="_set_espaniol"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/English" to="." method="_set_ingles"]
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/English"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 22.0
+offset_right = 187.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("5_wtyl3")
+theme_override_font_sizes/font_size = 25
+text = "English
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Exit" type="TextureButton" parent="VBoxContainer"]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_e1u6u")
+texture_pressed = ExtResource("4_n17e4")
+texture_hover = ExtResource("4_n17e4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="VBoxContainer/Exit"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 28.0
+offset_right = 187.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("5_wtyl3")
+theme_override_font_sizes/font_size = 25
+text = "Exit
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+anchor_left = 0.101042
+anchor_top = -0.406481
+anchor_right = 0.101042
+anchor_bottom = -0.406481
+offset_left = 492.0
+offset_top = 440.0
+offset_right = 1427.0
+offset_bottom = 1420.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_qfenh")
+texture_pressed = ExtResource("7_xjqyj")
+texture_hover = ExtResource("7_xjqyj")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="VBoxContainer/Lenguages" to="." method="_show_lenguages"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Español" to="." method="_set_espaniol"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/English" to="." method="_set_ingles"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_down"]
+[connection signal="pressed" from="Start" to="." method="_on_start_down"]

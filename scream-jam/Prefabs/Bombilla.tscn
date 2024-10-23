@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://b1xwb2nm08umh"]
+[gd_scene load_steps=15 format=3 uid="uid://b1xwb2nm08umh"]
 
 [ext_resource type="Script" path="res://Scripts/Cables/Bombilla.gd" id="1_px86v"]
 [ext_resource type="Texture2D" uid="uid://b47ldqjmtbv0u" path="res://Images/bombilla_apagada.png" id="2_1pqeo"]
+[ext_resource type="Texture2D" uid="uid://dq8ug4oig1leq" path="res://Images/bombilla_hover.png" id="2_bd6yt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w6cw4"]
 
@@ -50,4 +51,13 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_c6uoo")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_agi4f")
 flat = true
 
+[node name="Button2" type="TextureButton" parent="."]
+offset_left = -39.0
+offset_top = -35.0
+offset_right = 34.0
+offset_bottom = 39.0
+scale = Vector2(1.04, 1.04)
+texture_hover = ExtResource("2_bd6yt")
+
 [connection signal="pressed" from="Button" to="." method="_PlayLlamada"]
+[connection signal="pressed" from="Button2" to="." method="_PlayLlamada"]

@@ -18,7 +18,7 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Origin Street, number 114, with the Lariats Street number 15. You may do so by linking the first peg with the plug 2E.@"
+					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Origin Street, number 114, with the “” Street number 15. You may do so by linking the first peg with the plug 2E.@"
 				},
 				{
 					"Person": 0,
@@ -49,7 +49,7 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hello, please connect the Channeled Avenue number 23 with Lariats Street number 89 for me… My residence is on the far southeastern part of the village.@"
+					"Text": "Hello, please connect the Channeled Avenue number 23 with Cattle Boulevard number 89 for me… My residence is on the far southeastern part of the village.@"
 				},
 				{
 					"Person": 0,
@@ -364,31 +364,31 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hello precious, I'm from Pedro Domecq 22, it's north from Independence Street. I wonder if you would link me with Hope Street number 5, thank you in advance.@"
+					"Text": "Hello, darling, I call from Pedro Domecq 22, it's north from Independence Street. I wonder if you would link me with Hope Street number 5, thank you in advance.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Encarna, my dear nephew, how is it going?, how are you hanging on?, have you opened the book already?"
+					"Text": "Encarna, niece of mine, you. How's everything? Have you taken a gander at the book already?"
 				},
 				{
 					"Person": 1,
-					"Text": "Hi, auntie. I haven't had a chance to open it yet, I just moved into the house. I just haven't had much time."
+					"Text": "Hi, auntie. Not yet, no… I've just moved, I haven't had the time."
 				},
 				{
 					"Person": 0,
-					"Text": "Vale, no te preocupes, pero miratelo, eh, que te conozco, que siempre dejas todo para luego. ¿La casa bien?"
+					"Text": "That's fine, love, but find the time, yes? I know how you always leave everything for the last minute… is the house to your liking?"
 				},
 				{
 					"Person": 1,
-					"Text": "Que sí, que sí. La casa tiene mucha suciedad, pero por el resto bien. Ya he elegido habitación."
+					"Text": "Of course, auntie! And yeah, the house is fine- I mean, minus the filth. I've already chosen my room, though."
 				},
 				{
 					"Person": 0,
-					"Text": "Es que llevaba mucho tiempo sin vivir allí y por eso está de aquella manera, lo siento. Espero que te guste, cariño."
+					"Text": "Oh dear… well,  you know how It's been forever since I had lived there… Sorry it was left in such a state. I do hope you grow to like it, even still, my love."
 				},
 				{
 					"Person": 1,
-					"Text": "Tía, te dejo, se me ha caído una estantería, luego te llamo."
+					"Text": "Auntie, I'll call you back. I think one of my shelves fell off."
 				}
 			]
 		},
@@ -411,39 +411,39 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola… Queipo de Llano 2, que hace esquina con la calle Canalejas, por favor. Estoy en calle Reatas 68…@"
+					"Text": "Evening…  Queipo Plains 2, which borders Channeled Street, please… I am in Cattle Boulevard 68…@"
 				},
 				{
 					"Person": 1,
-					"Text": "¿Sí?"
+					"Text": "Hello?"
 				},
 				{
 					"Person": 0,
-					"Text": "Gonzalo, no podemos seguir escondiéndonos, tenemos que fugarnos."
+					"Text": "Gonzalo, we can't continue this whole hiding thing. We've gotta leave."
 				},
 				{
 					"Person": 1,
-					"Text": "Pero, ¿por qué no?, ¿qué ha pasado?"
+					"Text": "What? Why? Has anything happened?"
 				},
 				{
 					"Person": 0,
-					"Text": "Le he dicho a mi mujer que he ido a matar maquis en una de nuestras escapadas, para que no sospeche. No sé cuánto tiempo más puedo seguir aguantando esta mentira, escapémonos."
+					"Text": "I've been telling my wife that I’ve been hunting for commies during our escapades… just so she keeps her nose out of it… I don't know how much longer I can stomach living a lie. Let 's just leave."
 				},
 				{
 					"Person": 1,
-					"Text": "Pero no tienes de qué preocuparte, nadie lo va a saber nunca. Es nuestro pequeño secreto de monte."
+					"Text": "You've got nothing to worry about, come on. It's our little mountain secret, that's all."
 				},
 				{
 					"Person": 0,
-					"Text": "Gonzalo, no puedo vivir más de esta manera. Escapémonos, dejemos esta vida atrás, nos van a terminar pillando."
+					"Text": "Gonzalo, I cannot bear living like this anymore. Let's run away, leave our lives behind… We're going to end up getting caught."
 				},
 				{
 					"Person": 1,
-					"Text": "¡¿No ves que no?! Siempre tendremos el monte de Almorada."
+					"Text": "Can't you see how paranoid you're being?! We’ll always have Almorada mountains."
 				},
 				{
 					"Person": 0,
-					"Text": "Si sigues en este plan, ni eso nos quedará, cobarde."
+					"Text": "Not for much longer if you keep on having that mindset. Coward."
 				}
 			]
 		},
@@ -466,59 +466,244 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Póngame si es tan amable con Calle de la Independencia 12. Soy de Esperanza 17.@"
+					"Text": "If you could be so kind…put me on call with Street Of Independence 12, please. I'm from Hope Street 17@"
 				},
 				{
 					"Person": 0,
-					"Text": "Es un placer saludarle, Yesbeth."
+					"Text": "It's a pleasure greeting you, Yesbeth"
 				},
 				{
 					"Person": 1,
-					"Text": "Aquí no hay ninguna Yesbeth creo que usted se ha equivocado."
+					"Text": "I believe you are mistaken, sir. There is no such Yesbeth here."
 				},
 				{
 					"Person": 0,
-					"Text": "No hay equivocación que valga, Yesbeth, déjate de tonterías y presta atención."
+					"Text": "No, this is no error. Stop it with this foolishness, Yesbeth, and pay attention."
 				},
 				{
 					"Person": 1,
-					"Text": "[Pausa] Sí… sí, es verdad, pido disculpas, dónde tendré la cabeza, Dios mío. Se llega a una edad que una ya no recuerda ni cómo se llama. Siempre he sido muy despistada, gran fallo mío."
+					"Text": "Yes… Yes, you are right.. I forgive myself- gosh, just where is my mind these days… My god! You reach an age where you simply forget your own name, yes? I've always had my head on the clouds… My bad."
 				},
 				{
 					"Person": 0,
-					"Text": "Pues céntrese de una vez. Le llamaba desde el vivero. Usted tendría que haber acudido hoy y no se le ha visto el polvo, ¿a qué se debe?"
+					"Text": "You better focus on the now. I call you from the greenhouse. You should've been here today. And yet nobody's seen a hide or hair of you. What gives?"
 				},
 				{
 					"Person": 1,
-					"Text": "Me disculpo nuevamente, hoy he tenido que llevar a mi hijo el más pequeño al médico. Ha amanecido con mucha fiebre y se me ha hecho imposible ir."
+					"Text": "I apologize once more, sir… today I had to take my youngest to the doctor… He woke up at dawn burning with fever… it has been impossible for me to attend."
 				},
 				{
 					"Person": 0,
-					"Text": "Pues más le vale que no se vuelva a repetir, se está ganando el enfado de muchos que la esperaban, y eso no le conviene a usted para nada. Ningún tipo de negligencia será tolerada. Si tu forma de obrar se empantana de lobreguez, no existirá hoja que muestre ni un apículo de lozanía. Tenga en cuenta que el remedio natural siempre es mejor que la medicina moderna, si usted hubiera acudido aquí le podríamos haber ayudado mejor."
+					"Text": "This better be a one time occurrence. You are earning the hatred of those who awaited you, and that shall not do any good for you. Under no circumstance shall any kind of negligence be tolerated. Shall your way of work fog with murkiness and gloom, there shall be no leaf revealing itself to be lush. Do not forget- the natural remedy always heals what modern medicine does not. Had you come here, we would've helped you properly."
 				},
 				{
 					"Person": 1,
-					"Text": "T-tiene usted toda la razón, la próxima vez lo haré de esa manera. P-pero, ¿no existen formas de saldar mi deuda por este nimio descuido?"
+					"Text": "R-Right you are, as always…I shall do that next time, sir. B-But, is there perhaps a way to somehow repair my innocuous wrongdoing?"
 				},
 				{
 					"Person": 0,
-					"Text": "Nimio yo no lo llamaría, pero sí, formas hay. Cuando venga le comentamos. No falte."
+					"Text": "Innocuous I would deem it not. Indeed, though, there are ways. We’ll discuss them once you come see us. Don't miss it."
 				},
 				{
 					"Person": 1,
-					"Text": "Que mis bellas raíces me conduzcan a una vivificante travesía…"
+					"Text": "May my wondrous roots lead me to the most exhilarating of journeys…"
 				},
 				{
 					"Person": 0,
-					"Text": "¡Cállese!"
+					"Text": "Silence!"
 				},
 				{
 					"Person": 1,
-					"Text": "Perdón."
+					"Text": "Forgive me."
 				},
 				{
 					"Person": 0,
-					"Text": "Que así sea."
+					"Text": "So be it."
+				}
+			]
+		},
+		{
+			"Clavijero": 13,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Link Hope 17 with Millán Astray 37.@"
+				},
+				{
+					"Person": 1,
+					"Text": "Hello?"
+				},
+				{
+					"Person": 0,
+					"Text": "What’s all this mumbling about you being against the interior evolution?"
+				},
+				{
+					"Person": 1,
+					"Text": "That is nothing but mere hearsay. It doesn't stand to truth as there is no truth to it."
+				},
+				{
+					"Person": 0,
+					"Text": "The lord detests lying lips, but he delights in people who are trustworthy. A prudent man concealeth knowledge… But the heart of fools proclaimeth foolishness. The hand of the diligent shall bear rule; But the slothful shall be put under taskwork."
+				},
+				{
+					"Person": 1,
+					"Text": "I’m afraid I do not understand."
+				},
+				{
+					"Person": 0,
+					"Text": "Your ideas shall soon be elucidated, don't you worry. Your inner seed awaits blooming in the soil."
+				}
+			]
+		},
+		{
+			"Clavijero": 17,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Queipo Plains number 61 with number 37, thanks, thanks.@"
+				},
+				{
+					"Person": 1,
+					"Text": "Yes?"
+				},
+				{
+					"Person": 0,
+					"Text": "Antonio? It's Martirio."
+				},
+				{
+					"Person": 1,
+					"Text": "Yes, tell me, what's going on?"
+				},
+				{
+					"Person": 0,
+					"Text": "Are your wife and children at home?"
+				},
+				{
+					"Person": 1,
+					"Text": "No, why?"
+				},
+				{
+					"Person": 0,
+					"Text": "Tell them they have to go home right away, God! our neighbour, the police officer, has been killed. It's dangerous to be on the streets."
+				},
+				{
+					"Person": 1,
+					"Text": "Don't you say! What in the world happened? Who killed him?"
+				},
+				{
+					"Person": 0,
+					"Text": "The blue shirts killed him for being a fag. They caught him in Almorada with other officer, they chased them, shot them twice... and that's it."
+				},
+				{
+					"Person": 1,
+					"Text": "Fags? What a pity, I wish God forgives them, guides them and have them in his glory. So scary... Hey, what could have happened with Lola?"
+				},
+				{
+					"Person": 0,
+					"Text": "What a great shame, the whole family is devastated. I'm going to pray Our Father ten times, when your family gets home tell them, and they be careful. Things are getting ugly lately."
+				},
+				{
+					"Person": 1,
+					"Text": "Yes, I will tell them. Thank you for calling and telling me, it has left me feeling awful... See you, Martirio."
+				},
+				{
+					"Person": 0,
+					"Text": "Bye, bye..."
+				}
+			]
+		},
+		{
+			"Clavijero": 10,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Good day, if you do me the favour, link Independence Street number 34 with Hope Street number 17. Thank you.@"
+				},
+				{
+					"Person": 0,
+					"Text": "Hi there, I have a problem. I'm Rut."
+				},
+				{
+					"Person": 1,
+					"Text": "Hello, adressing what?"
+				},
+				{
+					"Person": 0,
+					"Text": "My offspring refuses to flood its interior with sap."
+				},
+				{
+					"Person": 1,
+					"Text": "I see... This means trouble."
+				},
+				{
+					"Person": 0,
+					"Text": "I don't know what to do, they won't accept it, he won't listen to me. Whoever said that you have to whisper foreign melodies to plants was lying."
+				},
+				{
+					"Person": 1,
+					"Text": "Well, they weren't doing what is known as lying. If there is no flowering through water, sun and chants, other means will have to be chosen. "
+				},
+				{
+					"Person": 0,
+					"Text": "Anything."
+				},
+				{
+					"Person": 1,
+					"Text": "Make use of Piper methysticum in a highly concentrated dose and take the plant to the nursery garden. The gardener will take care of the rest. To be fully conscious sometimes the only thing to do is turn off your senses and open the psyche. The only way out is towards the inside."
+				},
+				{
+					"Person": 0,
+					"Text": "Thank you so much."
+				},
+				{
+					"Person": 1,
+					"Text": "It will be your sprout who will be eternally grateful when it wakes up. The gardener fills everything with his neverending and generous love, allowing one to see with the heart's eyes."
+				},
+				{
+					"Person": 0,
+					"Text": "So be it."
 				}
 			]
 		}

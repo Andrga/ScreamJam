@@ -60,6 +60,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_la1cv")
 theme_override_font_sizes/font_size = 66
-text = "Alcanciles con miopia"
+text = "Alcanciles con miopía"
 horizontal_alignment = 1
 vertical_alignment = 1

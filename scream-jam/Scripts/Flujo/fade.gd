@@ -10,6 +10,8 @@ func _ready() -> void:
 
 func transition():
 	$AnimationPlayer.play("fade_in")
+	Global.SceneManager.sfx.stream = load("res://Sounds/fade/683096__florianreichelt__woosh.mp3")
+	Global.SceneManager.sfx.play()
 	
 
 

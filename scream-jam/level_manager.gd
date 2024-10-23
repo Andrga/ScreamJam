@@ -87,7 +87,7 @@ func _new_level():
 	for i in weight:
 		$CheckClavijas.grid[i].Clavija = -2;
 		$CheckClavijas.grid[i].refBombilla.get_parent().llamadaID =-1
-		$CheckClavijas.grid[i].refBombilla.texture = $CheckClavijas.grid[i].BombillaApagada;
+		$CheckClavijas.grid[i].clavijaState = Global.ClavijasState.APAGADA
 	
 	# vamos por el nivel 1, tenemos 1 llamada
 	
@@ -97,7 +97,7 @@ func _new_level():
 			noMasLlamadas= true
 			print("Se acabo el juego")
 		gridClavijeros[JsonData.json_data.Dialoges[Global.llamadaActual].Clavijero].DropZone = Global.llamadaActual
-		$CheckClavijas.grid[i].refBombilla.texture = $CheckClavijas.grid[i].BombillaRegu
+		$CheckClavijas.grid[i].clavijaState = Global.ClavijasState.REGU
 		$CheckClavijas.grid[i].Clavija = Global.llamadaActual
 		$CheckClavijas.grid[i].refBombilla.get_parent().llamadaID = Global.llamadaActual
 		Global.llamadaActual += 1
@@ -116,4 +116,9 @@ func _onCheck():
 		return
 	newlevel = false;
 	elapsedTime =0
+	
+	for i in weight:
+		$CheckClavijas.grid[i].Clavija = -2;
+		$CheckClavijas.grid[i].refBombilla.get_parent().llamadaID =-1
+		$CheckClavijas.grid[i].clavijaState = Global.ClavijasState.APAGADA
 	pass
