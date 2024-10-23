@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dkeruh02gg7es"]
+[gd_scene load_steps=12 format=3 uid="uid://dkeruh02gg7es"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/scene_manager.gd" id="1_iv1q4"]
 [ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
@@ -7,7 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/Flujo/FadeScene.tscn" id="4_88r4u"]
 [ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
 [ext_resource type="PackedScene" uid="uid://b4ejt2epaoh1k" path="res://Scenes/level_manager.tscn" id="5_p2e8t"]
-[ext_resource type="PackedScene" uid="uid://dnysdn0d3o7b2" path="res://Scripts/Flujo/Intro.tscn" id="7_qf5p5"]
+[ext_resource type="PackedScene" uid="uid://1wce6sj1bl8d" path="res://Scenes/Flujo/ContextoScene.tscn" id="6_ce53t"]
+[ext_resource type="PackedScene" uid="uid://dnysdn0d3o7b2" path="res://Scenes/Flujo/Intro.tscn" id="7_qf5p5"]
 [ext_resource type="AudioStream" uid="uid://bfbtd3txlu21k" path="res://Sounds/sonidillosOfi.mp3" id="8_dg2h0"]
 [ext_resource type="AudioStream" uid="uid://ch57l0blpkljd" path="res://Sounds/ambiente.mp3" id="8_vnte0"]
 
@@ -27,6 +28,10 @@ process_mode = 4
 visible = false
 
 [node name="level_manager" parent="." instance=ExtResource("5_p2e8t")]
+process_mode = 4
+visible = false
+
+[node name="ContextoScene" parent="." instance=ExtResource("6_ce53t")]
 process_mode = 4
 visible = false
 
