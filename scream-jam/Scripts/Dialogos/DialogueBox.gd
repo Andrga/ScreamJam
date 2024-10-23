@@ -101,7 +101,7 @@ func _end_dialogue():
 	ultimaLlamadaReprod = dialogueID
 	self.visible = false
 	Global._llamada_terminada(dialogueID)
-	
+
 func _avanzar_hasta_quest()->void:
 	dialogueTextID = 0
 	while not "@" in JsonData.dialogos[dialogueID].Texts[dialogueTextID].Text:

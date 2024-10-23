@@ -1,6 +1,6 @@
 {
 	"Dialoges":[{
-			"Clavijero": 5,
+			"Clavijero": 9,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -18,20 +18,20 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Clavijero 2A@"
-				},
-				{
-					"Person": 1,
-					"Text": "HOLA HOLA"
+					"Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15. Para ello conecte la primera clavija con el clavijero 2E.@"
 				},
 				{
 					"Person": 0,
-					"Text": "AAAAAAADIOOOOOS"
+					"Text": "En verdad, no hay mucho más que enseñar, su trabajo aquí consiste básicamente en eso: conectar cables. Para cualquier duda, consulte el detallado mapa que le ofrecemos de las calles de Tomillar del Alba, nuestro municipio."
+				},
+				{
+					"Person": 0,
+					"Text": "¡Que pase usted un maravilloso día, adiós!"
 				}
 			]
 		},
 		{
-			"Clavijero": 2,
+			"Clavijero": 19,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -49,16 +49,44 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Clavijero 1C@"
+					"Text": "Hola, conécteme la Calle de Canalejas nº 23 con la Calle de las Reatas  nº 89, por favor… Mi domicilio está completamente al suroeste del pueblo.@"
+				},
+				{
+					"Person": 0,
+					"Text": "Buenas, ¿hablo con Zacarías?"
 				},
 				{
 					"Person": 1,
-					"Text": "segundo dialogo llamada 2"
+					"Text": "Hola, sí, ¿dígame? ¿Con quién tengo el placer de hablar?"
+				},
+				{
+					"Person": 0,
+					"Text": "Soy Juan Marcos, ¿te acuerdas de mí?"
+				},
+				{
+					"Person": 1,
+					"Text": "Sí, sí, no cabe duda, claro que me acuerdo. Cuénteme, ¿qué necesita?"
+				},
+				{
+					"Person": 0,
+					"Text": "Pues verá, necesitaría su ayuda para conseguir fertilizante para este domingo. Se me está complicando y quizá necesitaría ayuda de otra persona, y he pensado en usted, Zacarías."
+				},
+				{
+					"Person": 1,
+					"Text": "Ya veo… veré lo que puedo hacer. De todas maneras esta tarde me tengo que pasar por el vivero. Acérquese un momento y lo hablamos más detenidamente, ¿le viene bien?"
+				},
+				{
+					"Person": 0,
+					"Text": "Sí, sí, no hay ningún tipo de problema. Nos veremos allí, pase un buen día, ¡gracias!"
+				},
+				{
+					"Person": 1,
+					"Text": "Hasta dentro de un rato, igualmente."
 				}
 			]
 		},
 		{
-			"Clavijero": 6,
+			"Clavijero": 7,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -76,15 +104,260 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "clavijero 2B@"
-				},
-				{
-					"Person": 1,
-					"Text": "segundo dialogo llamada 3"
+					"Text": "Hola, ¿me conecta la calle Creación 60 con la calle de Pedro Domecq 64?. La Pedro Domecq pilla por el centro, un poquito para arriba.@"
 				},
 				{
 					"Person": 0,
-					"Text": "tercer dialogo llamada 3"
+					"Text": "Muy buenas tardes Jorge, ¿cómo estás? Soy Francisco."
+				},
+				{
+					"Person": 1,
+					"Text": "Buenas, Francisco, ¿qué tal todo? Yo estoy divinamente."
+				},
+				{
+					"Person": 0,
+					"Text": "Yo la verdad que no puedo quejarme. Preguntaba para ver si te apetecía venir este sábado a la capital, te he conseguido una entrada para ver a Concha Piquer, que ha sacado un nuevo disco."
+				},
+				{
+					"Person": 1,
+					"Text": "¿Sí? ¡Qué me cuentas, qué ilusión! Pues yo encantado, verás qué envidia le va a dar a mi mujer cuando se lo cuente, con lo que le gusta… Cuenta conmigo."
+				},
+				{
+					"Person": 0,
+					"Text": "Dicho queda. Lo vamos organizando, ¡un abrazo!"
+				},
+				{
+					"Person": 1,
+					"Text": "Lo mismo digo, un abrazo y muchísimas gracias, adiós."
+				},
+				{
+					"Person": 1,
+					"Text": "¡Hasta luego!"
+				}
+			]
+		},
+		{
+			"Clavijero": 11,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
+				},
+				{
+					"Person": 1,
+					"Text": "¿Sí? ¿Quién es?"
+				},
+				{
+					"Person": 0,
+					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
+				},
+				{
+					"Person": 0,
+					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+				},
+				{
+					"Person": 1,
+					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+				},
+				{
+					"Person": 0,
+					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+				},
+				{
+					"Person": 1,
+					"Text": "Isaías…"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Pero vendrás a visitarme?"
+				},
+				{
+					"Person": 1,
+					"Text": "Siempre que pueda estaré ahí para ti…"
+				},
+				{
+					"Person": 0,
+					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… allí hablaremos de todo esto y más."
+				},
+				{
+					"Person": 0,
+					"Text": "Te… quiero…"
+				},
+				{
+					"Person": 1,
+					"Text": "Y… yo…"
+				}
+			]
+		},
+		{
+			"Clavijero": 14,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Buenas, si es tan amable póngame con la Calle de Millán Astray 14, está entre la calle Reatas y la calle Creación. Soy de la calle Reatas nº 68.@"
+				},
+				{
+					"Person": 0,
+					"Text": "Rosario, buenas, ¿qué tal todo? Madre mía lo que te tengo que contar…"
+				},
+				{
+					"Person": 1,
+					"Text": "Ay, Dolores, hija mía, yo fenomenal, ¿y tú qué tal? Cuenta, cuenta."
+				},
+				{
+					"Person": 0,
+					"Text": "¿Tú te acuerdas que mi marido era de la Guardia Civil, verdad?"
+				},
+				{
+					"Person": 1,
+					"Text": "Cómo olvidarlo, qué honor para tu familia."
+				},
+				{
+					"Person": 0,
+					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+				},
+				{
+					"Person": 0,
+					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+				},
+				{
+					"Person": 1,
+					"Text": "Isaías…"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Pero vendrás a visitarme?"
+				},
+				{
+					"Person": 1,
+					"Text": "Siempre que pueda estaré ahí para ti…"
+				},
+				{
+					"Person": 0,
+					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… allí hablaremos de todo esto y más."
+				},
+				{
+					"Person": 0,
+					"Text": "Te… quiero…"
+				},
+				{
+					"Person": 1,
+					"Text": "Y… yo…"
+				}
+			]
+		},
+		{
+			"Clavijero": 11,
+			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
+			"Color1": {
+				"R":0,
+				"G":1,
+				"B":1,
+				"A":1
+			},
+			"Sound2": "res://Sounds/Placeholders/SonidoPH2.wav",
+			"Color2":{
+				"R":1,
+				"G":0,
+				"B":1,
+				"A":1
+			},
+			"Texts":[
+				{
+					"Person": 0,
+					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
+				},
+				{
+					"Person": 1,
+					"Text": "¿Sí? ¿Quién es?"
+				},
+				{
+					"Person": 0,
+					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
+				},
+				{
+					"Person": 0,
+					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+				},
+				{
+					"Person": 1,
+					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+				},
+				{
+					"Person": 0,
+					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+				},
+				{
+					"Person": 1,
+					"Text": "Isaías…"
+				},
+				{
+					"Person": 0,
+					"Text": "¿Pero vendrás a visitarme?"
+				},
+				{
+					"Person": 1,
+					"Text": "Siempre que pueda estaré ahí para ti…"
+				},
+				{
+					"Person": 0,
+					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… allí hablaremos de todo esto y más."
+				},
+				{
+					"Person": 0,
+					"Text": "Te… quiero…"
+				},
+				{
+					"Person": 1,
+					"Text": "Y… yo…"
 				}
 			]
 		}

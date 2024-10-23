@@ -77,6 +77,7 @@ func _check_Clavija() -> void:
 	# si no esta conectada sale del metodo
 	if refDropZone == null:
 		return
+	#-------Comprobacion y señales de que sea verdad-------
 	var verdad = false;
 	if (refDropZone.DropZone == Clavija):
 		verdad = true;

@@ -74,3 +74,41 @@ theme_override_styles/normal = ExtResource("1_pgaum")
 text = "Exit
 "
 metadata/_edit_use_anchors_ = true
+
+[node name="Lenguages" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "Lenguages"
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Español" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "Español"
+metadata/_edit_use_anchors_ = true
+
+[node name="English" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "English"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Lenguages" to="." method="_show_lenguages"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Español" to="." method="_set_espaniol"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/English" to="." method="_set_ingles"]
