@@ -87,6 +87,7 @@ texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/Español"]
+layout_mode = 0
 offset_left = 54.0
 offset_top = 24.0
 offset_right = 185.0
@@ -109,6 +110,7 @@ texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="VBoxContainer/VBoxContainer/English"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = 22.0
 offset_right = 187.0
@@ -131,6 +133,7 @@ texture_hover = ExtResource("4_n17e4")
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="VBoxContainer/Exit"]
+layout_mode = 0
 offset_left = 56.0
 offset_top = 28.0
 offset_right = 187.0
