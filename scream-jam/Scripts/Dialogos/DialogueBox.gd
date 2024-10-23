@@ -30,7 +30,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if textDisplayed < 1:
-		textDisplayed+=0.1
+		textDisplayed+=0.01
 		label.visible_ratio = textDisplayed
 
 func _next_dialogue():
@@ -94,6 +94,7 @@ func _start_quest(idText: int):
 
 func _start_dialogue() -> void:
 	self.visible = true
+	textDisplayed = 0
 	_avanzar_hasta_quest()
 	_next_dialogue()
 

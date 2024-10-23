@@ -18,7 +18,7 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15. Para ello conecte la primera clavija con el clavijero 2E. Tras ello, accione el interruptor para confirmar la conexión.@"
+					"Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15. Para ello conecte la primera clavija con el clavijero 2E.@"
 				},
 				{
 					"Person": 0,
@@ -305,51 +305,59 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola, urgente, Calle de la Esperanza 17. Soy de la calle Creación 10.@"
-				},
-				{
-					"Person": 0,
-					"Text": "¿Hola? Hola, hola hola…"
+					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
 				},
 				{
 					"Person": 1,
-					"Text": "Buenas, ¿qué pasa?"
+					"Text": "¿Sí? ¿Quién es?"
 				},
 				{
 					"Person": 0,
-					"Text": "Tenemos un problema, se me ha perdido la regadera, estoy intentando de todas las formas posibles encontrarla, pero no está por ningún sitio, no sé qué hacer."
+					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
 				},
 				{
 					"Person": 1,
-					"Text": "No fastidie, hombre…"
+					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
 				},
 				{
 					"Person": 0,
-					"Text": "Lo siento, lo siento… ¿podría usted hablar con el jardinero?"
+					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
 				},
 				{
 					"Person": 1,
-					"Text": "Veré lo que puedo hacer, pero esto no le va a salir barato."
+					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
 				},
 				{
 					"Person": 0,
-					"Text": "Por favor, busquen bien, yo ya no sé qué hacer. Sin regadera y abono una semilla no puede crecer.Tengo mucho miedo."
+					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
 				},
 				{
 					"Person": 1,
-					"Text": "No me diga que tampoco tiene abono…Veremos lo que se puede hacer, pondremos ojos por todas partes, pero necesitamos que colabore. Le vuelvo a repetir, esto va a tener un coste adicional. Todo trabajo bien realizado ha de ser remunerado."
+					"Text": "Isaías…"
 				},
 				{
 					"Person": 0,
-					"Text": "Prometo seguir buscando, por el amor de Dios."
+					"Text": "¿Pero vendrás a visitarme?"
 				},
 				{
 					"Person": 1,
-					"Text": "Estese tranquilo. Lo volveremos a llamar."
+					"Text": "Siempre que pueda estaré ahí para ti…"
 				},
 				{
 					"Person": 0,
-					"Text": "Gracias, gracias."
+					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+				},
+				{
+					"Person": 1,
+					"Text": "Sí… allí hablaremos de todo esto y más."
+				},
+				{
+					"Person": 0,
+					"Text": "Te… quiero…"
+				},
+				{
+					"Person": 1,
+					"Text": "Y… yo…"
 				}
 			]
 		},
@@ -397,7 +405,7 @@
 				{
 					"Person": 1,
 					"Text": "Tía, te dejo, se me ha caído una estantería, luego te llamo."
-				},
+				}
 			]
 		},
 		{
@@ -527,8 +535,8 @@
 				{
 					"Person": 0,
 					"Text": "Que así sea."
-				},
+				}
 			]
-		},
+		}
 	]
 }
