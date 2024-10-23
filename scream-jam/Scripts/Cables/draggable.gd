@@ -22,7 +22,7 @@ var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
 @onready var origin: Node2D = $Origin
 
 var lastpos: Vector2
-var desfaseMovimiento: Vector2 = Vector2(0,50)
+var desfaseMovimiento: Vector2 = Vector2(0,0)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event: InputEvent) -> void:
@@ -44,7 +44,6 @@ func _process(delta: float) -> void:
 		
 	else:
 		$Node2D.rotation_degrees = 90;
-		#sprite.rotation = 0
 		Global.isDragging = false
 		# ---- tween
 		var tween = get_tree().create_tween() # crea tween en la jerarquia
@@ -55,7 +54,7 @@ func _process(delta: float) -> void:
 		else:
 			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 			Boton.icon = ClavijaSuelta
-			desfaseMovimiento = Vector2(0,50)
+			desfaseMovimiento = Vector2(0,0)
 			
 	if lastpos != global_position:
 		line_2d.points[0] = initialPos-global_position + Vector2(0,70)
