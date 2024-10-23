@@ -38,6 +38,9 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 		Global.Scenes.CREDITS:
 			$Credits.visible = false
 			$Credits.process_mode = Node.PROCESS_MODE_DISABLED
+		Global.Scenes.INTRO:
+			$Intro.visible = false
+			$Intro.process_mode = Node.PROCESS_MODE_DISABLED
 		_:
 			print("hola")
 	match Global.to_scene:
@@ -56,6 +59,9 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 		Global.Scenes.CREDITS:
 			$Credits.visible = true
 			$Credits.process_mode = Node.PROCESS_MODE_INHERIT
+		Global.Scenes.INTRO:
+			$Intro.visible = true
+			$Intro.process_mode = Node.PROCESS_MODE_INHERIT
 		_:
 			print("hola")
 	Global.current_scene = Global.to_scene

@@ -11,7 +11,7 @@ signal playLlamada(index) # senial para avanzar el nivel
 signal allClavijasCorrect (index) #senial para cuando todas las clavijas dan correcto, se manda la llamada de la clavija mas a la izquierda
 
 # FLUJO
-enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
+enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, INTRO, NULL }
 var to_scene : Scenes = 0
 var current_scene : Scenes = 0
 
