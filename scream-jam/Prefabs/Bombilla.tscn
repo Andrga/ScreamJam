@@ -1,20 +1,53 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfgt4ohx5rl2f"]
+[gd_scene load_steps=14 format=3 uid="uid://b1xwb2nm08umh"]
 
-[ext_resource type="Texture2D" uid="uid://b0n3cw0d32fxf" path="res://Images/bombilla_roja.png" id="1_8mxt3"]
 [ext_resource type="Script" path="res://Scripts/Cables/Bombilla.gd" id="1_px86v"]
+[ext_resource type="Texture2D" uid="uid://b47ldqjmtbv0u" path="res://Images/bombilla_apagada.png" id="2_1pqeo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w6cw4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wox4f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6plux"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pugot"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rn1ca"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xp86j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sryri"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_78qep"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yigx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c6uoo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_agi4f"]
 
 [node name="Bombilla" type="Node2D"]
 script = ExtResource("1_px86v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.474308, 0.474308)
-texture = ExtResource("1_8mxt3")
+scale = Vector2(0.957055, 0.957055)
+texture = ExtResource("2_1pqeo")
 
 [node name="Button" type="Button" parent="."]
 offset_left = -43.0
 offset_top = -56.0
 offset_right = 31.0
 offset_bottom = 45.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w6cw4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wox4f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_6plux")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_pugot")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_rn1ca")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xp86j")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_sryri")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_78qep")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2yigx")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_c6uoo")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_agi4f")
 flat = true
 
 [connection signal="pressed" from="Button" to="." method="_PlayLlamada"]

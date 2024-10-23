@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi8olk2ndemn5"
-path="res://.godot/imported/bombilla_regu.png-d7c35afe318cf5c548b72c69084b2e55.ctex"
+uid="uid://ceft37dhrmapv"
+path="res://.godot/imported/check_off_hover.png-6e598e4ea4c34445cec5ecf2e4327a8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/bombilla_regu.png"
-dest_files=["res://.godot/imported/bombilla_regu.png-d7c35afe318cf5c548b72c69084b2e55.ctex"]
+source_file="res://Images/check_off_hover.png"
+dest_files=["res://.godot/imported/check_off_hover.png-6e598e4ea4c34445cec5ecf2e4327a8d.ctex"]
 
 [params]
 

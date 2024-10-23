@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi8olk2ndemn5"
-path="res://.godot/imported/bombilla_regu.png-d7c35afe318cf5c548b72c69084b2e55.ctex"
+uid="uid://ys56nabdolru"
+path="res://.godot/imported/check_on.png-a77e0450aeaa7fa44d9cd534fd8d7fc0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/bombilla_regu.png"
-dest_files=["res://.godot/imported/bombilla_regu.png-d7c35afe318cf5c548b72c69084b2e55.ctex"]
+source_file="res://Images/check_on.png"
+dest_files=["res://.godot/imported/check_on.png-a77e0450aeaa7fa44d9cd534fd8d7fc0.ctex"]
 
 [params]
 

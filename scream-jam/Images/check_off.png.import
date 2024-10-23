@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi8olk2ndemn5"
-path="res://.godot/imported/bombilla_encendida_blanco.png-f795c7bf2d523efa4d3a7f3d1bf6ce80.ctex"
+uid="uid://cnj0s6w13fqbg"
+path="res://.godot/imported/check_off.png-42f84fb9e01159dcaa6beebfe8e55226.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/bombilla_encendida_blanco.png"
-dest_files=["res://.godot/imported/bombilla_encendida_blanco.png-f795c7bf2d523efa4d3a7f3d1bf6ce80.ctex"]
+source_file="res://Images/check_off.png"
+dest_files=["res://.godot/imported/check_off.png-42f84fb9e01159dcaa6beebfe8e55226.ctex"]
 
 [params]
 

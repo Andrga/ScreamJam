@@ -1,7 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgoopn5ii5cak"]
+[gd_scene load_steps=15 format=3 uid="uid://bgoopn5ii5cak"]
 
 [ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
-[ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="2_qnm5u"]
+[ext_resource type="Texture2D" uid="uid://djiuuiilhi5j6" path="res://Images/clavija_suelta.png" id="2_g2kca"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqe1e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8gifw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_olqa7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovksi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gyxvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iebbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0t1xx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xs0vo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vuy0b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ani6y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3l4bj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uonrh"]
 size = Vector2(104, 108)
@@ -13,13 +35,24 @@ script = ExtResource("1_cuke3")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -59.0
-offset_top = -62.0
-offset_right = 59.0
-offset_bottom = 67.0
+offset_left = -35.0
+offset_top = -38.0
+offset_right = 34.0
+offset_bottom = 91.0
 grow_horizontal = 2
 grow_vertical = 2
-icon = ExtResource("2_qnm5u")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xqe1e")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8gifw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_olqa7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ovksi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gyxvj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_iebbm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0t1xx")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_xs0vo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vuy0b")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ani6y")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3l4bj")
+icon = ExtResource("2_g2kca")
 flat = true
 expand_icon = true
 
