@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0nvlhnobhpue"]
+
+[ext_resource type="Texture2D" uid="uid://d1wqqqqxep4sr" path="res://Images/flecha.png" id="1_igflp"]
+
+[node name="Flecha" type="Sprite2D"]
+texture = ExtResource("1_igflp")

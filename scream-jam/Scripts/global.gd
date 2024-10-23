@@ -19,8 +19,8 @@ enum ClavijasState {APAGADA, REGU, VERDE, ROJA, NULL }
 
 var lenguaje: int = 0
 var contexto: Array = [
-	"21st of November, 1946\nTomillar del Alva\nSpain",
-	"21 de Noviembre, 1946\nTomillar del Alva\nEspaña"
+	"21st of November, 1946\nTomillar del Alba\nSpain",
+	"21 de Noviembre, 1946\nTomillar del Alba\nEspaña"
 ]
 
 var SceneManager

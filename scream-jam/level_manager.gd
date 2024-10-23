@@ -69,8 +69,6 @@ func _ready() -> void:
 		$CheckClavijas.grid[i].initialPos = pos
 		$CheckClavijas.grid[i].position = pos
 		
-
-		
 	# Asignacion de valores
 	for i in height * weight:
 		gridClavijeros[i].DropZone = Global.grid[i]
@@ -107,6 +105,7 @@ func _process(delta: float) -> void:
 	if elapsedTime < maxTime:
 		elapsedTime += delta
 	elif !newlevel:
+		Global.playLlamada.emit(0)
 		newlevel = true
 		_new_level()
 
