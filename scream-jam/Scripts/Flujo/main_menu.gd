@@ -21,34 +21,26 @@ func _on_exit_down() -> void:
 
 func _show_lenguages()-> void:
 	v_box_container.visible = not v_box_container.visible 
-	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
-	Global.SceneManager.sfx.play()
 
 func _set_ingles()->void:
 	JsonData._load_lenguage("res://Jsons/englis.json")
 	Global.lenguaje = 0
 	_show_lenguages()
-	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
-	Global.SceneManager.sfx.play()
 
 func _set_espaniol()->void:
 	JsonData._load_lenguage("res://Jsons/spanish.json")
 	Global.lenguaje = 1
 	_show_lenguages()
-	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
-	Global.SceneManager.sfx.play()
 
 
 func _on_start_button_down() -> void:
 	Global.current_scene = Global.Scenes.MAIN_MENU
 	Global.to_scene = Global.Scenes.CLAVIJAS
 	Global.totransition.emit()
-	Global.SceneManager.sfx.stream = load("res://Sounds/cascos/422651__trullilulli__sfx-player-action-phone-pick-up.wav")
-	Global.SceneManager.sfx.play()
+
+
 
 
 func _on_exit_button_down() -> void:
-	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
-	Global.SceneManager.sfx.play()
 	get_tree().quit()
 	pass # Replace with function body.
