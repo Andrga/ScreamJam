@@ -58,8 +58,10 @@ func _ready() -> void:
 		$CheckClavijas.grid.append(clavija)
 		$"Clavija y clavijero".add_child($CheckClavijas.grid[i])
 		clavija.refBombilla = bombillas[i].get_node("Sprite2D")
-		$CheckClavijas.grid[i].initialPos = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.window_get_size().y - off_cs_y) 
-		$CheckClavijas.grid[i].position = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.window_get_size().y - off_cs_y) 
+		var pos = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.window_get_size().y - off_cs_y) 
+		clavija.origin.global_position = pos;
+		$CheckClavijas.grid[i].initialPos = pos
+		$CheckClavijas.grid[i].position = pos
 		
 
 		

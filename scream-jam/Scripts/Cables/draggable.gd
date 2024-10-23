@@ -18,6 +18,8 @@ var ClavijaSuelta : Texture = load("res://Images/clavija_suelta.png")
 var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
 @onready var Boton : Button = $Button
 @onready var line_2d: Line2D = $Line2D
+@onready var sprite: Sprite2D = $Sprite2D
+@onready var origin: Node2D = $Origin
 
 var lastpos: Vector2
 
@@ -35,7 +37,10 @@ func _input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	if clicked:
 		global_position = get_global_mouse_position() - offset
+		#sprite.rotation_degrees = origin.get_angle_to(get_global_mouse_position())
+		
 	else:
+		#sprite.rotation = 0
 		Global.isDragging = false
 		# ---- tween
 		var tween = get_tree().create_tween() # crea tween en la jerarquia
