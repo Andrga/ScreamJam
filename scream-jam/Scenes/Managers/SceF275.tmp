@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://dkeruh02gg7es"]
+
+[ext_resource type="Script" path="res://Scripts/Flujo/scene_manager.gd" id="1_iv1q4"]
+[ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
+[ext_resource type="PackedScene" uid="uid://blbnh2wfdgbxj" path="res://Scenes/Flujo/PuertaScene.tscn" id="3_66sb8"]
+[ext_resource type="PackedScene" uid="uid://dyph5mqd443d5" path="res://Scenes/Flujo/MainMenu.tscn" id="3_b721g"]
+[ext_resource type="PackedScene" uid="uid://5w0xl8fledrk" path="res://Scenes/Flujo/FadeScene.tscn" id="4_88r4u"]
+[ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
+[ext_resource type="PackedScene" uid="uid://b4ejt2epaoh1k" path="res://Scenes/level_manager.tscn" id="5_p2e8t"]
+
+[node name="SceneManager" type="Node"]
+script = ExtResource("1_iv1q4")
+
+[node name="Credits" parent="." instance=ExtResource("2_y28pb")]
+process_mode = 4
+visible = false
+
+[node name="PuertaScene" parent="." instance=ExtResource("3_66sb8")]
+process_mode = 4
+visible = false
+
+[node name="MesaScene" parent="." instance=ExtResource("4_w2nar")]
+process_mode = 4
+visible = false
+
+[node name="level_manager" parent="." instance=ExtResource("5_p2e8t")]
+process_mode = 4
+visible = false
+
+[node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
+
+[node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
+
+[node name="AmbientSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="transitioned" from="FadeScene" to="." method="_on_fade_scene_transitioned"]
+[connection signal="transitioned" from="FadeScene" to="MainMenu" method="_on_fade_scene_transitioned"]
+
+[editable path="level_manager"]

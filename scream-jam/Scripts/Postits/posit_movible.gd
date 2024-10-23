@@ -25,6 +25,8 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
 		if event.pressed and (event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER):
 			_intro()
+			Global.SceneManager.sfx.stream = load("res://Sounds/papel/181052__jakobhandersen__pencil_check_mark_1.wav")
+			Global.SceneManager.sfx.play()
 	if event is InputEventMouseMotion:
 		mousePos = event.position
 	if not text_edit.has_focus():
