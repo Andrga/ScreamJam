@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://btqpasjgf1reh" path="res://Scenes/Flujo/MesaScene.tscn" id="4_w2nar"]
 [ext_resource type="PackedScene" uid="uid://b4ejt2epaoh1k" path="res://Scenes/level_manager.tscn" id="5_p2e8t"]
 [ext_resource type="PackedScene" uid="uid://1wce6sj1bl8d" path="res://Scenes/Flujo/ContextoScene.tscn" id="6_ce53t"]
-[ext_resource type="PackedScene" uid="uid://dnysdn0d3o7b2" path="res://Scenes/Flujo/Intro.tscn" id="7_qf5p5"]
+[ext_resource type="PackedScene" uid="uid://bthhgptlpqagf" path="res://Scripts/Flujo/Intro.tscn" id="7_qf5p5"]
 [ext_resource type="AudioStream" uid="uid://bfbtd3txlu21k" path="res://Sounds/sonidillosOfi.mp3" id="8_dg2h0"]
 [ext_resource type="AudioStream" uid="uid://ch57l0blpkljd" path="res://Sounds/ambiente.mp3" id="8_vnte0"]
 
