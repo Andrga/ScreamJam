@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
 [ext_resource type="Texture2D" uid="uid://djiuuiilhi5j6" path="res://Images/clavija_suelta.png" id="2_g2kca"]
-[ext_resource type="Texture2D" uid="uid://cp7aujy4ytugc" path="res://Images/cable_solo_rotado.png" id="3_ixhw8"]
+[ext_resource type="Texture2D" uid="uid://c5gde3aod438r" path="res://Images/cable_solo_rellenado.png" id="3_dpcvi"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqe1e"]
 
@@ -67,8 +67,8 @@ shape = SubResource("RectangleShape2D_uonrh")
 z_index = -1
 texture_repeat = 2
 points = PackedVector2Array(0, 0, 0, 0)
-width = 25.0
-texture = ExtResource("3_ixhw8")
+width = 20.0
+texture = ExtResource("3_dpcvi")
 texture_mode = 1
 
 [node name="Origin" type="Node2D" parent="."]
