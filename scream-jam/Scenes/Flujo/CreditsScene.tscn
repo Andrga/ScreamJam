@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://whxja3o8nmc6"]
+[gd_scene load_steps=3 format=3 uid="uid://whxja3o8nmc6"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/credits.gd" id="1_4f4al"]
+[ext_resource type="FontFile" uid="uid://ciftagbtm0u2v" path="res://Fonts/subs.ttf" id="2_mtwmy"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -10,6 +11,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4f4al")
+title_color = Color(0.486275, 0.352941, 0.317647, 1)
+text_color = Color(0.686275, 0.686275, 0.686275, 1)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -18,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.0784314, 0.0980392, 0.152941, 1)
+color = Color(0.054902, 0.054902, 0.054902, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="VideoPlayer" type="VideoStreamPlayer" parent="."]
@@ -46,5 +49,6 @@ offset_top = 1080.0
 offset_bottom = 1106.0
 grow_horizontal = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 18
+theme_override_fonts/font = ExtResource("2_mtwmy")
+theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1

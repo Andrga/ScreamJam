@@ -33,38 +33,63 @@ var lines := []
 
 var credits = [
 	[
-		"TETAS"
-	],[
-		"tetitas",
-		"tetazas", 
-		"tetazas", 
-		"tetorras", 
-		"tetotas",
-		"tetarracas",
-		"tetacas",
-		"tetuzas",
-		"teturras",
-		"tetungas",
-		"tetillas",
-		"bufas",
-		"bufarras",
-		"bufarracas",
-		"bufoncias",
-		"bakugans",
-		"mamelungas",
-		"mamelones",
-		"melones",
-		"domingas",
-		"bubalongas",
-		"babungas",
-		"pechugas",
-		"peras",
-		"peritas",
-		"perolas",
-		"mamellas",
-		"tetolas",
-		"gemelas"
+		"HELLO GIRL"
+	], [
+		"GAME DESIGN",
+		"Nieves Alonso Gilsanz",
+		"Andrés García Navarro",
+		"Carmen Gómez Becerra",
+		"Cynthia Tristán Álvarez"
+	], [
+		"PROGRAMMING",
+		"Nieves Alonso Gilsanz",
+		"Andrés García Navarro",
+		"Cynthia Tristán Álvarez"
+	], [
+		"ART",
+		"Nieves Alonso Gilsanz"
+	], [
+		"SOUND DESIGN",
+		"Ariadna Alicia Ruiz Castillo"
+	], [
+		"LOCALIZATION",
+		"Olivia Sígler Villanova"
+	], [
+		"SPECIAL THANKS",
+		"You :^]",
+		"..."
 	]
+	#],[
+		#"tetitas",
+		#"tetazas", 
+		#"tetazas", 
+		#"tetorras", 
+		#"tetotas",
+		#"tetarracas",
+		#"tetacas",
+		#"tetuzas",
+		#"teturras",
+		#"tetungas",
+		#"tetillas",
+		#"bufas",
+		#"bufarras",
+		#"bufarracas",
+		#"bufoncias",
+		#"bakugans",
+		#"mamelungas",
+		#"mamelones",
+		#"melones",
+		#"domingas",
+		#"bubalongas",
+		#"babungas",
+		#"pechugas",
+		#"peras",
+		#"peritas",
+		#"perolas",
+		#"mamellas",
+		#"tetolas",
+		#"gemelas"
+	#]
 ]
 
 func start():
