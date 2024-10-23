@@ -30,7 +30,7 @@ var newlevel: bool = false
 
 func _ready() -> void:
 	Global.nextLevel.connect(_onCheck)
-	var ambient = get_parent().get_node("AmbientSound")
+	var ambient = SceneManager.ambient_sound
 	ambient.stream = load("res://Sounds/ambiente.mp3")
 	ambient.play()
 	ambient.set_bus_volume_db
