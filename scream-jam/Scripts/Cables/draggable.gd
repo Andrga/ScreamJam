@@ -14,6 +14,9 @@ var BombillaApagada : Texture = load("res://Images/bombilla_apagada.png")
 var BombillaVerde : Texture = load("res://Images/bombilla_verde.png")
 var BombillaRegu : Texture = load("res://Images/bombilla_regu.png")
 var BombillaRoja : Texture = load("res://Images/bombilla_roja.png")
+var ClavijaSuelta : Texture = load("res://Images/clavija_suelta.png")
+var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
+@onready var Boton : Button = $Button
 @onready var line_2d: Line2D = $Line2D
 
 var lastpos: Vector2
@@ -38,8 +41,10 @@ func _process(delta: float) -> void:
 		var tween = get_tree().create_tween() # crea tween en la jerarquia
 		if inDropZone:
 			tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
+			Boton.icon = ClavijaDentro
 		else:
 			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
+			Boton.icon = ClavijaSuelta
 			
 	if lastpos != global_position:
 		line_2d.points[0] = initialPos-global_position
@@ -87,6 +92,7 @@ func _on_area_2d_body_exited(body):
 		inDropZone = false
 		body.ocupada = false
 		body.clavija = null
+		Boton.icon = ClavijaSuelta
 
 # button
 func _on_button_button_down() -> void:

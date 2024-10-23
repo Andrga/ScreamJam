@@ -32,15 +32,10 @@ size = Vector2(104, 108)
 script = ExtResource("1_cuke3")
 
 [node name="Button" type="Button" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -35.0
-offset_top = -38.0
-offset_right = 34.0
-offset_bottom = 91.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -31.0
+offset_top = -59.0
+offset_right = 38.0
+offset_bottom = 70.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xqe1e")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8gifw")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_olqa7")
