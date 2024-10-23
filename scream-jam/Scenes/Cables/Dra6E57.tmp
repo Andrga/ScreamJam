@@ -1,0 +1,83 @@
+[gd_scene load_steps=16 format=3 uid="uid://bgoopn5ii5cak"]
+
+[ext_resource type="Script" path="res://Scripts/Cables/draggable.gd" id="1_cuke3"]
+[ext_resource type="Texture2D" uid="uid://djiuuiilhi5j6" path="res://Images/clavija_suelta.png" id="2_g2kca"]
+[ext_resource type="Texture2D" uid="uid://c5gde3aod438r" path="res://Images/cable_solo_rellenado.png" id="3_dpcvi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqe1e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8gifw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_olqa7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ovksi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gyxvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iebbm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0t1xx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xs0vo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vuy0b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ani6y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3l4bj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uonrh"]
+size = Vector2(111.538, 142.308)
+
+[node name="Draggable" type="Node2D"]
+script = ExtResource("1_cuke3")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Button" type="Button" parent="Node2D"]
+offset_left = -95.0
+offset_top = 46.0
+offset_right = 2.0
+offset_bottom = 227.0
+rotation = 4.71239
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xqe1e")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8gifw")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_olqa7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ovksi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gyxvj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_iebbm")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0t1xx")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_xs0vo")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vuy0b")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ani6y")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3l4bj")
+icon = ExtResource("2_g2kca")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.999999, -4)
+scale = Vector2(0.52, 0.52)
+shape = SubResource("RectangleShape2D_uonrh")
+
+[node name="Line2D" type="Line2D" parent="."]
+z_index = -1
+texture_repeat = 2
+points = PackedVector2Array(0, 0, 0, 0)
+width = 20.0
+texture = ExtResource("3_dpcvi")
+texture_mode = 1
+
+[node name="Origin" type="Node2D" parent="."]
+
+[connection signal="button_down" from="Node2D/Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Node2D/Button" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Node2D/Button" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Node2D/Button" to="." method="_on_area_2d_mouse_exited"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

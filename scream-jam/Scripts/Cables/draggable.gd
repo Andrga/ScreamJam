@@ -18,7 +18,6 @@ var ClavijaSuelta : Texture = load("res://Images/clavija_suelta.png")
 var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
 @onready var Boton : Button = $"Node2D/Button"
 @onready var line_2d: Line2D = $Line2D
-@onready var sprite: Sprite2D = $Sprite2D
 @onready var origin: Node2D = $Origin
 
 var lastpos: Vector2
@@ -49,11 +48,15 @@ func _process(delta: float) -> void:
 		var tween = get_tree().create_tween() # crea tween en la jerarquia
 		if inDropZone:
 			tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
-			Boton.icon = ClavijaDentro
+			if Boton.icon == ClavijaSuelta:
+				Global.SceneManager.sfx.stream = load("res://Sounds/clavijas/131896__bertrof__plugging-in-guitar.wav")
+				Global.SceneManager.sfx.play()
+				Boton.icon = ClavijaDentro
 			desfaseMovimiento = Vector2(0,0)
 		else:
 			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
-			Boton.icon = ClavijaSuelta
+			if Boton.icon == ClavijaDentro:
+				Boton.icon = ClavijaSuelta
 			desfaseMovimiento = Vector2(0,0)
 			
 	if lastpos != global_position:
@@ -69,6 +72,7 @@ func _on_area_2d_mouse_entered():
 	if not Global.isDragging: # si no se esta draggeando nada
 		isDraggable = true 		# se puede draggear
 		scale = Vector2(1.05, 1.05) # feedback
+		
 
 func _on_area_2d_mouse_exited():
 	if not Global.isDragging: # si no se esta draggeando nada
@@ -104,13 +108,18 @@ func _on_area_2d_body_entered(body:StaticBody2D):
 		refDropZone = body
 		body.ocupada = true
 		body.clavija = self
+		
 
 func _on_area_2d_body_exited(body):
 	if body.is_in_group('dropZone') and body.ocupada and body.clavija == self:
+		if Boton.icon == ClavijaDentro:
+			Global.SceneManager.sfx.stream = load("res://Sounds/clavijas/210313__soundscape_leuphana__20131209_plug-out_olympusls10_xy.wav")
+			Global.SceneManager.sfx.play()
 		inDropZone = false
 		body.ocupada = false
 		body.clavija = null
 		Boton.icon = ClavijaSuelta
+
 
 # button
 func _on_button_button_down() -> void:
