@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b4ejt2epaoh1k"]
+[gd_scene load_steps=9 format=3 uid="uid://b4ejt2epaoh1k"]
 
 [ext_resource type="Script" path="res://level_manager.gd" id="1_3d141"]
 [ext_resource type="Texture2D" uid="uid://bo0hhbtrlysoo" path="res://Images/clavijero.png" id="2_dc1t8"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="5_28rh6"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="6_kq4mj"]
+[ext_resource type="Texture2D" uid="uid://bjli4v16j6psk" path="res://Images/clavijeroAbajo.png" id="8_jr3s5"]
 
 [node name="LevesScene" type="Node2D"]
 script = ExtResource("1_3d141")
@@ -43,6 +44,11 @@ offset_bottom = 900.0
 script = ExtResource("3_jtrsg")
 
 [node name="Clavija y clavijero" type="Node2D" parent="."]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(957, 539)
+texture = ExtResource("8_jr3s5")
 
 [node name="Bombillas" type="Node2D" parent="."]
 

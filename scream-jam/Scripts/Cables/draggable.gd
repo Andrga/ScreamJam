@@ -22,6 +22,7 @@ var ClavijaDentro : Texture = load("res://Images/clavija_inser.png")
 @onready var origin: Node2D = $Origin
 
 var lastpos: Vector2
+var desfaseMovimiento: Vector2 = Vector2(0,50)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event: InputEvent) -> void:
@@ -47,13 +48,15 @@ func _process(delta: float) -> void:
 		if inDropZone:
 			tween.tween_property(self, "position", refDropZone.position, 0.2).set_ease(Tween.EASE_OUT)
 			Boton.icon = ClavijaDentro
+			desfaseMovimiento = Vector2(0,0)
 		else:
 			tween.tween_property(self, "global_position", initialPos, 0.2).set_ease(Tween.EASE_OUT)
 			Boton.icon = ClavijaSuelta
+			desfaseMovimiento = Vector2(0,50)
 			
 	if lastpos != global_position:
-		line_2d.points[0] = initialPos-global_position
-		line_2d.points[1] = Vector2(0,0)
+		line_2d.points[0] = initialPos-global_position + Vector2(0,70)
+		line_2d.points[1] = desfaseMovimiento
 		lastpos = global_position
 
 func _ready() -> void:
@@ -79,9 +82,11 @@ func _check_Clavija() -> void:
 	Global.clavijaConected.emit(verdad, Clavija)
 	Global.correctos[(Global.llamadaActual - Clavija)-1] = verdad
 	#print("CLAVIJA ", Clavija, ": ", Global.correctos[Clavija - 1])
-	if refBombilla != null && verdad:
+	if refBombilla != null and  not refBombilla.texture == BombillaRegu:
+		return
+	if verdad:
 		refBombilla.texture = BombillaVerde
-	if refBombilla != null && not verdad:
+	if not verdad:
 		refBombilla.texture = BombillaRoja
 
 
@@ -105,3 +110,7 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	clicked = false
+	
+
+func _llamada_escuchada() ->void:
+	refBombilla.texture = BombillaApagada
