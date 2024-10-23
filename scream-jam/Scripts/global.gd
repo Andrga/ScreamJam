@@ -30,7 +30,9 @@ var isDragging = false
 
 # nivel actual
 var nivel: int = 0
+var niveles = [1,1,2,2,3,3]
 var llamadaActual: int = 0 # llamada por la que va
+var IDCableActual: int = 0 # llamada por la que va
 
 var nPostits = 0;
 
@@ -47,8 +49,8 @@ var llamadasReprodEnEsteNivel: int = 0
 #funcion para cuando termina una llamada suma uno al contador de llamadas y decide cuando generar el siguiente caso
 func _llamada_terminada(llamadaEnReproduccion: int)->void:
 	llamadasReprodEnEsteNivel +=1
-	cables[llamadaEnReproduccion - llamadaActual + nivel]._llamada_escuchada()
-	if llamadasReprodEnEsteNivel >= nivel:
+	cables[IDCableActual]._llamada_escuchada()
+	if llamadasReprodEnEsteNivel >= niveles[nivel]:
 		nextLevel.emit()
 		nivelCorrecto = false
 		llamadasReprodEnEsteNivel = 0

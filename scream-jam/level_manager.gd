@@ -24,7 +24,7 @@ var bombillas = []
 var noMasLlamadas: bool = false
 
 # tiempo de espera para tener un nuevo nivel
-var maxTime:float = .1
+var maxTime:float = 1
 var elapsedTime: float =0
 var newlevel: bool = false
 
@@ -49,6 +49,7 @@ func _ready() -> void:
 	
 	for i in weight: # bombillas
 		var bombilla = load("res://Prefabs/Bombilla.tscn").instantiate()
+		bombilla.cableID = i
 		bombillas.append(bombilla)
 		$Bombillas.add_child(bombilla)
 		bombilla.position = Vector2(DisplayServer.window_get_size().x - off_b_x, i * sep_b_y + off_b_y)
@@ -83,10 +84,9 @@ func _new_level():
 		$CheckClavijas.grid[i].refBombilla.texture = $CheckClavijas.grid[i].BombillaApagada;
 	
 	# vamos por el nivel 1, tenemos 1 llamada
-	Global.nivel += 1
 	
 	#establece las llamadas y sus clavijeros
-	for i in Global.nivel:
+	for i in Global.niveles[Global.nivel]:
 		if Global.llamadaActual >= JsonData.json_data.Dialoges.size()-1:
 			noMasLlamadas= true
 			print("Se acabo el juego")
@@ -96,6 +96,7 @@ func _new_level():
 		$CheckClavijas.grid[i].refBombilla.get_parent().llamadaID = Global.llamadaActual
 		Global.llamadaActual += 1
 	
+	Global.nivel += 1
 func _process(delta: float) -> void:
 	if elapsedTime < maxTime:
 		elapsedTime += delta
