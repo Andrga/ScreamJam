@@ -18,7 +18,11 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Origin Street, number 114, with the “” Street number 15. You may do so by linking the first peg with the plug 2E.@"
+					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Origin Street, number 114, with the “” Street number 15."
+				},
+				{
+					"Person": 0,
+					"Text": "The lightbulb indicates the peg with an incoming call, tap it to listen to the caller's indications. You may proceed by linking the first peg with the plug 2E. Please flick the switch beside the pegs to check the connection.@"
 				},
 				{
 					"Person": 0,
