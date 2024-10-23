@@ -9,6 +9,8 @@ func _intro():
 	auxPostit.name = str("PostIt", Global.nPostits)
 	add_sibling(auxPostit)
 	auxPostit.position = mousepos
+	Global.SceneManager.sfx.stream = load("res://Sounds/papel/82379__gynation__paper-flip-3.wav")
+	Global.SceneManager.sfx.play()
 
 func _input(event):
 	if event is InputEventMouseMotion:

@@ -19,12 +19,16 @@ func _process(delta: float) -> void:
 	if pressed:
 		position = mousePos
 	if to_delete:
+		Global.SceneManager.sfx.stream = load("res://Sounds/papel/409098__kash15__cigerette-being-put-out-in-water-sound.wav")
+		Global.SceneManager.sfx.play()
 		queue_free()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
 		if event.pressed and (event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER):
 			_intro()
+			Global.SceneManager.sfx.stream = load("res://Sounds/papel/181052__jakobhandersen__pencil_check_mark_1.wav")
+			Global.SceneManager.sfx.play()
 	if event is InputEventMouseMotion:
 		mousePos = event.position
 	if not text_edit.has_focus():
@@ -43,6 +47,8 @@ func _on_button_button_down() -> void:
 func _on_button_button_up() -> void:
 	pressed = false
 	#comprobar si esta encima de un collider para borrarse
+	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
+	Global.SceneManager.sfx.play()
 	var bodies = basura.get_overlapping_areas()
 	if (bodies.has($Sprite2D) or bodies.has(self) or bodies.has($Area2D) or bodies.has($Area2D/CollisionShape2D)):
 		to_delete = true;
