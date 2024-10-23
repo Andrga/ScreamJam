@@ -31,9 +31,9 @@ var newlevel: bool = false
 func _ready() -> void:
 	Global.nextLevel.connect(_onCheck)
 	var ambient = SceneManager.ambient_sound
-	ambient.stream = load("res://Sounds/ambiente.mp3")
-	ambient.play()
-	ambient.set_bus_volume_db
+	#ambient.stream = load("res://Sounds/ambiente.mp3")
+	#ambient.play()
+	#ambient.set_bus_volume_db
 	
 	# Posicionamiento 
 	var w = 0
