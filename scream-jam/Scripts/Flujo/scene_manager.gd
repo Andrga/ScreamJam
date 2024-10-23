@@ -49,6 +49,8 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 		Global.Scenes.MAIN_MENU:
 			$MainMenu.visible = true
 			$MainMenu.process_mode = Node.PROCESS_MODE_INHERIT
+			ambient_sound.play()
+			ambient_sound_2.play()
 		Global.Scenes.CLAVIJAS:
 			$level_manager.visible = true
 			$level_manager.process_mode = Node.PROCESS_MODE_INHERIT
