@@ -9,7 +9,7 @@ var json_data = {}
 var dialogos = []
 
 func _ready():
-	_load_lenguage("res://Jsons/spanish.json")
+	_load_lenguage("res://Jsons/englis.json")
 
 func _load_lenguage(root:String)->void:
 	load_json_data(root)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bthhgptlpqagf"]
+[gd_scene load_steps=4 format=3 uid="uid://dnysdn0d3o7b2"]
 
 [ext_resource type="Texture2D" uid="uid://o8manu1tqdc6" path="res://Images/alcachofita2.png" id="1_blthk"]
 [ext_resource type="Script" path="res://Scripts/Flujo/intro.gd" id="1_bqrie"]

@@ -78,6 +78,7 @@ func _start_quest(idText: int):
 	#get_tree().paused = false
 	self.visible = true
 	dialogueID = idText
+	#ultimaLlamadaReprod = dialogueID
 	
 	#asigna las diferentes propiedades
 	#sound1 = load(JsonData.dialogos[dialogueID].Sound1)
