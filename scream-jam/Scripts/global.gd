@@ -50,7 +50,7 @@ var llamadasReprodEnEsteNivel: int = 0
 func _llamada_terminada(llamadaEnReproduccion: int)->void:
 	llamadasReprodEnEsteNivel +=1
 	cables[IDCableActual]._llamada_escuchada()
-	if llamadasReprodEnEsteNivel >= niveles[nivel]:
+	if llamadasReprodEnEsteNivel >= niveles[nivel-1]:
 		nextLevel.emit()
 		nivelCorrecto = false
 		llamadasReprodEnEsteNivel = 0

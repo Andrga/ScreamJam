@@ -16,7 +16,6 @@ func _check():
 	for i in grid.size():
 		if Global.correctos[i]:
 			cantCorrectos += 1
-		#print(Global.correctos[i], " ")
 	
 	correct = cantCorrectos == Global.niveles[Global.nivel-1]
 	
