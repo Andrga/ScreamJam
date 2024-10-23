@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey:
-		if event.pressed and event.keycode == KEY_ENTER:
+		if event.pressed and (event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER):
 			_intro()
 	if event is InputEventMouseMotion:
 		mousePos = event.position
