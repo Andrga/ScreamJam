@@ -8,7 +8,6 @@ func _ready() -> void:
 	Global.SceneManager = self
 	Global.totransition.connect(_on_totransition)
 	Global.transitioned.connect(_on_fade_scene_transitioned)
-	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -41,6 +40,9 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 		Global.Scenes.INTRO:
 			$Intro.visible = false
 			$Intro.process_mode = Node.PROCESS_MODE_DISABLED
+		Global.Scenes.CONTEXT:
+			$ContextoScene.visible = false
+			$ContextoScene.process_mode = Node.PROCESS_MODE_DISABLED
 		_:
 			print("hola")
 	match Global.to_scene:
@@ -62,6 +64,9 @@ func _on_fade_scene_transitioned() -> void: #justo antes del fadeout, la idea es
 		Global.Scenes.INTRO:
 			$Intro.visible = true
 			$Intro.process_mode = Node.PROCESS_MODE_INHERIT
+		Global.Scenes.CONTEXT:
+			$ContextoScene.visible = true
+			$ContextoScene.process_mode = Node.PROCESS_MODE_INHERIT
 		_:
 			print("hola")
 	Global.current_scene = Global.to_scene

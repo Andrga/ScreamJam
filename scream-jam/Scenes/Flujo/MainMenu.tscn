@@ -1,13 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dyph5mqd443d5"]
+[gd_scene load_steps=3 format=3 uid="uid://dyph5mqd443d5"]
 
 [ext_resource type="Script" path="res://Scripts/Flujo/main_menu.gd" id="1_d61cg"]
 [ext_resource type="StyleBox" uid="uid://ci153uwprdb5d" path="res://Styles/Buttons/new_style_box_flat.tres" id="1_pgaum"]
-[ext_resource type="Texture2D" uid="uid://jogfg61jhdg0" path="res://Images/mesa_intro.png" id="2_yeuit"]
-[ext_resource type="Texture2D" uid="uid://c1m6qto4k2xjg" path="res://Images/etiqueta.png" id="3_65tpx"]
-[ext_resource type="Texture2D" uid="uid://b7fgmvs5kdm6r" path="res://Images/etiqueta_hover.png" id="4_jbcqk"]
-[ext_resource type="Texture2D" uid="uid://ck70nk16fuhrp" path="res://Images/cascos.png" id="4_k2sxq"]
-[ext_resource type="FontFile" uid="uid://ckwpjql6f81my" path="res://Fonts/posits.ttf" id="4_wvwqp"]
-[ext_resource type="Texture2D" uid="uid://bd3los5blhack" path="res://Images/cascos_hover.png" id="5_nd5p8"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -18,85 +12,85 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_d61cg")
 
-[node name="Backcolor" type="TextureRect" parent="."]
+[node name="Backcolor" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_yeuit")
+color = Color(0.0784314, 0.0980392, 0.152941, 1)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="Background" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-offset_left = 434.0
-offset_top = 508.0
-offset_right = 673.0
-offset_bottom = 710.0
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
-[node name="Label" type="Label" parent="VBoxContainer"]
-visible = false
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 0.792395, 0.55336, 1)
 theme_override_font_sizes/font_size = 42
 text = "the carlist telephonist"
 horizontal_alignment = 1
 
-[node name="Separator" type="Control" parent="VBoxContainer"]
+[node name="Separator" type="Control" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Exit" type="TextureButton" parent="VBoxContainer"]
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("3_65tpx")
-texture_hover = ExtResource("4_jbcqk")
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "Start"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="VBoxContainer/Exit"]
-layout_mode = 0
-offset_left = 90.0
-offset_top = 28.0
-offset_right = 138.0
-offset_bottom = 81.0
-theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
-theme_override_fonts/font = ExtResource("4_wvwqp")
-theme_override_font_sizes/font_size = 24
-text = "Exit"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Lenguages" type="TextureButton" parent="VBoxContainer"]
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
-texture_normal = ExtResource("3_65tpx")
-texture_hover = ExtResource("4_jbcqk")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "Exit
+"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="VBoxContainer/Lenguages"]
-layout_mode = 0
-offset_left = 58.0
-offset_top = 22.0
-offset_right = 183.0
-offset_bottom = 75.0
-theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
-theme_override_fonts/font = ExtResource("4_wvwqp")
+[node name="Lenguages" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 24
-text = "Language"
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_styles/normal = ExtResource("1_pgaum")
+text = "Lenguages"
+metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 visible = false
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 
-[node name="Español" type="Button" parent="VBoxContainer/VBoxContainer"]
+[node name="Español" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -106,7 +100,7 @@ theme_override_styles/normal = ExtResource("1_pgaum")
 text = "Español"
 metadata/_edit_use_anchors_ = true
 
-[node name="English" type="Button" parent="VBoxContainer/VBoxContainer"]
+[node name="English" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -115,27 +109,8 @@ theme_override_styles/normal = ExtResource("1_pgaum")
 text = "English"
 metadata/_edit_use_anchors_ = true
 
-[node name="Start" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(180, 32)
-layout_mode = 2
-anchor_left = 0.0984375
-anchor_top = -0.0462963
-anchor_right = 0.0984375
-anchor_bottom = -0.0462963
-offset_left = 492.0
-offset_top = 50.0
-offset_right = 1427.0
-offset_bottom = 1030.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = ExtResource("4_k2sxq")
-texture_pressed = ExtResource("5_nd5p8")
-texture_hover = ExtResource("5_nd5p8")
-metadata/_edit_use_anchors_ = true
-
-[connection signal="button_down" from="VBoxContainer/Exit" to="." method="_on_exit_button_down"]
-[connection signal="pressed" from="VBoxContainer/Lenguages" to="." method="_show_lenguages"]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/Español" to="." method="_set_espaniol"]
-[connection signal="pressed" from="VBoxContainer/VBoxContainer/English" to="." method="_set_ingles"]
-[connection signal="button_down" from="Start" to="." method="_on_start_button_down"]
-[connection signal="button_up" from="Start" to="." method="_on_start_button_up"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_down"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_down"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Lenguages" to="." method="_show_lenguages"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Español" to="." method="_set_espaniol"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/English" to="." method="_set_ingles"]
