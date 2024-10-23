@@ -30,7 +30,7 @@
 				}
 			]
 		},
-		{
+		{ 
 			"Clavijero": 19,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
@@ -286,7 +286,6 @@
 				}
 			]
 		},
-// De aquí en adelante no está puesto bien lo de los clavijeros.
 		{
 			"Clavijero": 11,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
@@ -395,7 +394,6 @@
 					"Person": 0,
 					"Text": "Es que llevaba mucho tiempo sin vivir allí y por eso está de aquella manera, lo siento. Espero que te guste, cariño."
 				},
-				// Habría q meter aqui un sonido de estanteria en caso de poderse.
 				{
 					"Person": 1,
 					"Text": "Tía, te dejo, se me ha caído una estantería, luego te llamo."
@@ -476,12 +474,60 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola… Queipo de Llano 2, que hace esquina con la calle Canalejas, por favor. Estoy en calle Reatas 68…@"
+					"Text": "Póngame si es tan amable con Calle de la Independencia 12. Soy de Esperanza 17.@"
+				},
+				{
+					"Person": 0,
+					"Text": "Es un placer saludarle, Yesbeth."
 				},
 				{
 					"Person": 1,
-					"Text": "¿Sí?"
-				}, // SEGUIR
+					"Text": "Aquí no hay ninguna Yesbeth creo que usted se ha equivocado."
+				},
+				{
+					"Person": 0,
+					"Text": "No hay equivocación que valga, Yesbeth, déjate de tonterías y presta atención."
+				},
+				{
+					"Person": 1,
+					"Text": "[Pausa] Sí… sí, es verdad, pido disculpas, dónde tendré la cabeza, Dios mío. Se llega a una edad que una ya no recuerda ni cómo se llama. Siempre he sido muy despistada, gran fallo mío."
+				},
+				{
+					"Person": 0,
+					"Text": "Pues céntrese de una vez. Le llamaba desde el vivero. Usted tendría que haber acudido hoy y no se le ha visto el polvo, ¿a qué se debe?"
+				},
+				{
+					"Person": 1,
+					"Text": "Me disculpo nuevamente, hoy he tenido que llevar a mi hijo el más pequeño al médico. Ha amanecido con mucha fiebre y se me ha hecho imposible ir."
+				},
+				{
+					"Person": 0,
+					"Text": "Pues más le vale que no se vuelva a repetir, se está ganando el enfado de muchos que la esperaban, y eso no le conviene a usted para nada. Ningún tipo de negligencia será tolerada. Si tu forma de obrar se empantana de lobreguez, no existirá hoja que muestre ni un apículo de lozanía. Tenga en cuenta que el remedio natural siempre es mejor que la medicina moderna, si usted hubiera acudido aquí le podríamos haber ayudado mejor."
+				},
+				{
+					"Person": 1,
+					"Text": "T-tiene usted toda la razón, la próxima vez lo haré de esa manera. P-pero, ¿no existen formas de saldar mi deuda por este nimio descuido?"
+				},
+				{
+					"Person": 0,
+					"Text": "Nimio yo no lo llamaría, pero sí, formas hay. Cuando venga le comentamos. No falte."
+				},
+				{
+					"Person": 1,
+					"Text": "Que mis bellas raíces me conduzcan a una vivificante travesía…"
+				},
+				{
+					"Person": 0,
+					"Text": "¡Cállese!"
+				},
+				{
+					"Person": 1,
+					"Text": "Perdón."
+				},
+				{
+					"Person": 0,
+					"Text": "Que así sea."
+				},
 			]
 		},
 	]
