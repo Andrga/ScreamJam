@@ -31,11 +31,14 @@ texture_hover = ExtResource("3_ao6bm")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -78.0
-offset_top = -34.0
+offset_top = -26.0
 offset_right = 72.0
 offset_bottom = 36.0
 theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
 theme_override_fonts/font = ExtResource("4_8k4nl")
+theme_override_font_sizes/font_size = 16
+text = "
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 
