@@ -18,15 +18,15 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15. Para ello conecte la primera clavija con el clavijero 2E.@"
+					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Origin Street, number 114, with the “” Street number 15. You may do so by linking the first peg with the plug 2E.@"
 				},
 				{
 					"Person": 0,
-					"Text": "En verdad, no hay mucho más que enseñar, su trabajo aquí consiste básicamente en eso: conectar cables. Para cualquier duda, consulte el detallado mapa que le ofrecemos de las calles de Tomillar del Alba, nuestro municipio."
+					"Text": "Excellent! You've already gotten the hang of it! Truthfully, there's not much left to teach you. You’ve already learnt the basics of what your work entails. Connecting wires, that is! Have you any questions, see the detailed map available at “Thyme of the Dawn”, our county!"
 				},
 				{
 					"Person": 0,
-					"Text": "¡Que pase usted un maravilloso día, adiós!"
+					"Text": "Have a wonderful day, goodbye!"
 				}
 			]
 		},
@@ -49,39 +49,39 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola, conécteme la Calle de Canalejas nº 23 con la Calle de las Reatas  nº 89, por favor… Mi domicilio está completamente al suroeste del pueblo.@"
+					"Text": "Hello, please connect the Channeled Avenue number 23 with Cattle Boulevard number 89 for me… My residence is on the far southeastern part of the village.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Buenas, ¿hablo con Zacarías?"
+					"Text": "Hey, is this Zacarías?"
 				},
 				{
 					"Person": 1,
-					"Text": "Hola, sí, ¿dígame? ¿Con quién tengo el placer de hablar?"
+					"Text": "Hello, yes. Greetings. With whom do I have the pleasure of speaking?"
 				},
 				{
 					"Person": 0,
-					"Text": "Soy Juan Marcos, ¿te acuerdas de mí?"
+					"Text": "Juan Marcos. Remember me?"
 				},
 				{
 					"Person": 1,
-					"Text": "Sí, sí, no cabe duda, claro que me acuerdo. Cuénteme, ¿qué necesita?"
+					"Text": "Why, yes, of course. Of course I remember. Pray tell, what is it that you need?"
 				},
 				{
 					"Person": 0,
-					"Text": "Pues verá, necesitaría su ayuda para conseguir fertilizante para este domingo. Se me está complicando y quizá necesitaría ayuda de otra persona, y he pensado en usted, Zacarías."
+					"Text": "Well, you see… I need your help with acquiring fertilizer for this Sunday. Ive found it hard to do so by myself… and so I thought you might lend me a hand, Zacharias."
 				},
 				{
 					"Person": 1,
-					"Text": "Ya veo… veré lo que puedo hacer. De todas maneras esta tarde me tengo que pasar por el vivero. Acérquese un momento y lo hablamos más detenidamente, ¿le viene bien?"
+					"Text": "I see… I’ll see what I can do. Either way I was planning to go to the greenhouse later this evening. Stop by and we may talk about this more in depth. Is this ok with you?"
 				},
 				{
 					"Person": 0,
-					"Text": "Sí, sí, no hay ningún tipo de problema. Nos veremos allí, pase un buen día, ¡gracias!"
+					"Text": "Oh, sure! Fine by me. I’ll see you there- Have a good day, thanks!"
 				},
 				{
 					"Person": 1,
-					"Text": "Hasta dentro de un rato, igualmente."
+					"Text": "You too! See you in a bit."
 				}
 			]
 		},
@@ -104,35 +104,35 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola, ¿me conecta la calle Creación 60 con la calle de Pedro Domecq 64?. La Pedro Domecq pilla por el centro, un poquito para arriba.@"
+					"Text": "Hello. May you please connect the Creation 60 street with the Pedro Domecq 64 Street? The latter is towards the center, a bit to the north.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Muy buenas tardes Jorge, ¿cómo estás? Soy Francisco."
+					"Text": "Good afternoon Jorge, how’s it going? It's Francisco speaking."
 				},
 				{
 					"Person": 1,
-					"Text": "Buenas, Francisco, ¿qué tal todo? Yo estoy divinamente."
+					"Text": "Greetings, Francisco. I'm stupendously well. How's everything on your end?"
 				},
 				{
 					"Person": 0,
-					"Text": "Yo la verdad que no puedo quejarme. Preguntaba para ver si te apetecía venir este sábado a la capital, te he conseguido una entrada para ver a Concha Piquer, que ha sacado un nuevo disco."
+					"Text": "Honestly, so far so good. I was wondering… Would you want to go this Saturday to the city? I've got a ticket to see Concha Piquer live- She's just released a new record."
 				},
 				{
 					"Person": 1,
-					"Text": "¿Sí? ¡Qué me cuentas, qué ilusión! Pues yo encantado, verás qué envidia le va a dar a mi mujer cuando se lo cuente, con lo que le gusta… Cuenta conmigo."
+					"Text": "Is that so? Oh, that sounds wonderful! I'd be delighted- My wife will be green with envy when she hears, she loves her music! Count me in!"
 				},
 				{
 					"Person": 0,
-					"Text": "Dicho queda. Lo vamos organizando, ¡un abrazo!"
+					"Text": "Got it. We can get down to the details later. Cheers!"
 				},
 				{
 					"Person": 1,
-					"Text": "Lo mismo digo, un abrazo y muchísimas gracias, adiós."
+					"Text": "For sure. Thank you so much. Take care. Cheers!"
 				},
 				{
 					"Person": 1,
-					"Text": "¡Hasta luego!"
+					"Text": "See you!"
 				}
 			]
 		},
@@ -155,59 +155,59 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
+					"Text": "Good afternoon… Would you be so kind as to please connect the Hope Avenue 46 with the Street of Independence number 34 for me? The Street of Independence is around the village center, facing the west just a smidge. It corners with Hope Avenue 46.@"
 				},
 				{
 					"Person": 1,
-					"Text": "¿Sí? ¿Quién es?"
+					"Text": "Yes? Who is this?"
 				},
 				{
 					"Person": 0,
-					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+					"Text": "Hi Magdalene, I'm Isaiah. Do you recognize my voice?"
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
+					"Text": "Why… yes, I do… Is something the matter?"
 				},
 				{
 					"Person": 0,
-					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+					"Text": "Oh, nothing… I was just calling to ask if we could go out for a coffee before I leave… as a farwell. I'm embarking on a trip this Sunday and I don't know if we'll see each other again."
 				},
 				{
 					"Person": 1,
-					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+					"Text": "Indeed… Truthfully, it quite saddens me that you have to leave so soon… But you  have got to look on the bright side- this is going to be good for you, it’s a completely unique opportunity for you to bloom! Were you to stay here, you would stagnate… And I know you can aim a lot higher than that- you are worth so much more!"
 				},
 				{
 					"Person": 0,
-					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+					"Text": "Yes, you are completely right… I’m going to miss you."
 				},
 				{
 					"Person": 1,
-					"Text": "Isaías…"
+					"Text": "Isaiah…"
 				},
 				{
 					"Person": 0,
-					"Text": "¿Pero vendrás a visitarme?"
+					"Text": "Will you come visit me, though?"
 				},
 				{
 					"Person": 1,
-					"Text": "Siempre que pueda estaré ahí para ti…"
+					"Text": "I will do everything in my power to be there for you."
 				},
 				{
 					"Person": 0,
-					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+					"Text": "I've always thought I would've been happier were I to have been with you… If it's ok, we could meet tomorrow morning at Plaza de España and discuss everything."
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… allí hablaremos de todo esto y más."
+					"Text": "Yes… Let's talk about it all."
 				},
 				{
 					"Person": 0,
-					"Text": "Te… quiero…"
+					"Text": "I love you…"
 				},
 				{
 					"Person": 1,
-					"Text": "Y… yo…"
+					"Text": "And I… you."
 				}
 			]
 		},
@@ -230,64 +230,56 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Buenas, si es tan amable póngame con la Calle de Millán Astray 14, está entre la calle Reatas y la calle Creación. Soy de la calle Reatas nº 68.@"
+					"Text": "Good Afternoon… If you are so kind as to link me with the Millán Astray 14 Street… it's the one between Cattle Boulevard and Creation Street…I am from Cattle Boulevard number 68.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Rosario, buenas, ¿qué tal todo? Madre mía lo que te tengo que contar…"
+					"Text": "Rosario, hey, how's it going? My god, the stuff I've got for you to hear…"
 				},
 				{
 					"Person": 1,
-					"Text": "Ay, Dolores, hija mía, yo fenomenal, ¿y tú qué tal? Cuenta, cuenta."
+					"Text": "Oh, Dolores, I'm a happy camper! How about you? And, pray tell!"
 				},
 				{
 					"Person": 0,
-					"Text": "¿Tú te acuerdas que mi marido era de la Guardia Civil, verdad?"
+					"Text": "You remember that my husband worked in the police force, yes?"
 				},
 				{
 					"Person": 1,
-					"Text": "Cómo olvidarlo, qué honor para tu familia."
+					"Text": "How could I ever forget! Such an honor for your family."
 				},
 				{
 					"Person": 0,
-					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
-				},
-				{
-					"Person": 0,
-					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+					"Text": "Well… just yesterday they sent out a warning… a complaint about commies…. a sighting near the mountains! It was a Shepard, one passing through, the one who saw them first-hand."
 				},
 				{
 					"Person": 1,
-					"Text": "Isaías…"
+					"Text": "So…"
 				},
 				{
 					"Person": 0,
-					"Text": "¿Pero vendrás a visitarme?"
+					"Text": "So it was true! They sent out a workforce and as soon as they saw them, they opened fire, of course. No gangsters left alive!"
 				},
 				{
 					"Person": 1,
-					"Text": "Siempre que pueda estaré ahí para ti…"
+					"Text": "Just terrifying! Thank heavens for your husband and his kind- our national pride-those who cleanse our Spain of the filth. Those plagues… rats! Long live Spain and its police!"
 				},
 				{
 					"Person": 0,
-					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+					"Text": "Long live Spain, now and forever!"
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… allí hablaremos de todo esto y más."
+					"Text": "Lola, you better tell me everything anytime something like this happens- they just don’t mention anything on the radio these days! Dear, I’ve gotta go, I have something on the stove."
 				},
 				{
 					"Person": 0,
-					"Text": "Te… quiero…"
-				},
-				{
-					"Person": 1,
-					"Text": "Y… yo…"
+					"Text": "Bye, bye!"
 				}
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 10,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -305,64 +297,56 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
-				},
-				{
-					"Person": 1,
-					"Text": "¿Sí? ¿Quién es?"
+					"Text": "Hello, this is of the most utmost importance. Hope Avenue Number 17, please. I'm from Creation street number 10.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+					"Text": "Hello? Hello, hi, hello…"
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… sí la reconozco, ¿qué ocurre?"
+					"Text": "Good evening. What's up?"
 				},
 				{
 					"Person": 0,
-					"Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+					"Text": "We’ve got a problem, I've misplaced my watering can… I've looked for it everywhere, but I can't find it for the life of me… I don't know what to do…"
 				},
 				{
 					"Person": 1,
-					"Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+					"Text": "You've gotta be kidding me…"
 				},
 				{
 					"Person": 0,
-					"Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+					"Text": "I'm sorry, I'm sorry…! May I speak to the Gardner?"
 				},
 				{
 					"Person": 1,
-					"Text": "Isaías…"
+					"Text": "I'll see what I can do… but this won't be cheap."
 				},
 				{
 					"Person": 0,
-					"Text": "¿Pero vendrás a visitarme?"
+					"Text": "Please search for it dutifully… with intent… I don't know what to do anymore. No seed can grow without a watering can nor fertilizer… I'm scared. Deeply so."
 				},
 				{
 					"Person": 1,
-					"Text": "Siempre que pueda estaré ahí para ti…"
+					"Text": "Don't tell me you're missing fertilizer, too.. I'll see what can be arranged, we’ll keep our peepers open, but you have to do your part, too. I'll repeat myself: This won't be done free of charge. There will be an additional fee. Every dutiful job must be dutifully rewarded."
 				},
 				{
 					"Person": 0,
-					"Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+					"Text": "I'll keep looking for it, for the love of God."
 				},
 				{
 					"Person": 1,
-					"Text": "Sí… allí hablaremos de todo esto y más."
+					"Text": "You sir tight, sir. We’ll call you back."
 				},
 				{
 					"Person": 0,
-					"Text": "Te… quiero…"
-				},
-				{
-					"Person": 1,
-					"Text": "Y… yo…"
+					"Text": "Thank you. Thank you."
 				}
 			]
 		},
 		{
-			"Clavijero": 11,
+			"Clavijero": 0,
 			"Sound1": "res://Sounds/Placeholders/SonidoPH1.wav",
 			"Color1": {
 				"R":0,
@@ -380,15 +364,15 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "Hola, hermosura, soy de Pedro Domecq 22, que está al norte de la calle Independencia. A ver si me puede poner con la calle de la Esperanza 5, gracias, eh.@"
+					"Text": "Hello precious, I'm from Pedro Domecq 22, it's north from Independence Street. I wonder if you would link me with Hope Street number 5, thank you in advance.@"
 				},
 				{
 					"Person": 0,
-					"Text": "Encarna, sobrina mía, qué tal, ¿cómo estás?, ¿has abierto ya el libro?"
+					"Text": "Encarna, my dear nephew, how is it going?, how are you hanging on?, have you opened the book already?"
 				},
 				{
 					"Person": 1,
-					"Text": "Hola, tía. Todavía no me ha dado por abrir el libro, me acabo de mudar a la casa, no he tenido tiempo."
+					"Text": "Hi, auntie. I haven't had a chance to open it yet, I just moved into the house. I just haven't had much time."
 				},
 				{
 					"Person": 0,
