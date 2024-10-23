@@ -159,15 +159,7 @@
 			"Texts":[
 				{
 					"Person": 0,
-					"Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15"
-				},
-				{
-					"Person": 0,
-					"Text": "La luz indica la Clavija con la llamada entrante, al pulsarla conoceras el sitio destino Para ello conecte la primera clavija con el clavijero 2E. Compreuebe la conexión utilizando el interruptor junto a las clavijas@"
-				},
-				{
-					"Person": 0,
-					"Text": "En verdad, no hay mucho más que enseñar, su trabajo aquí consiste básicamente en eso: conectar cables. Para cualquier duda, consulte el detallado mapa que le ofrecemos de las calles de Tomillar del Alba, nuestro municipio."
+					"Text": "Muy buenas, ¿podría conectarme la Calle de la Esperanza 46 con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
 				},
 				{
 					"Person": 1,
