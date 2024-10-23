@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://blbnh2wfdgbxj"]
+[gd_scene load_steps=4 format=3 uid="uid://blbnh2wfdgbxj"]
 
+[ext_resource type="Texture2D" uid="uid://cjg05jclufg5g" path="res://Images/puerta.png" id="1_x8256"]
 [ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="2_6bq38"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="3_kfdc0"]
 
@@ -12,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Backcolor" type="ColorRect" parent="."]
+[node name="Backcolor" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,9 +21,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0.054902, 0.054902, 0.054902, 1)
+texture = ExtResource("1_x8256")
 
 [node name="Label" type="Label" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 644.0
 offset_top = 288.0
