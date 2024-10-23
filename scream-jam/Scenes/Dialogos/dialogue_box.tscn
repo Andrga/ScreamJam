@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqotj6knnoc8g"]
+[gd_scene load_steps=6 format=3 uid="uid://cqhpk5lnxqt8g"]
 
 [ext_resource type="Script" path="res://Scripts/Dialogos/DialogueBox.gd" id="1_scsyc"]
-[ext_resource type="Texture2D" uid="uid://bo8a5hwmhc7p7" path="res://postit.png" id="2_5vt5h"]
+[ext_resource type="StyleBox" uid="uid://bg66b6fu8do5t" path="res://Styles/Buttons/dialogue_box.tres" id="2_451hf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v8o80"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cin5k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwjd2"]
+bg_color = Color(0.105882, 0.105882, 0.105882, 0.654902)
 
 [node name="DialogueBox" type="Control"]
 layout_mode = 3
@@ -16,10 +23,13 @@ script = ExtResource("1_scsyc")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 174.0
+offset_bottom = 134.0
 grow_horizontal = 2
-icon = ExtResource("2_5vt5h")
-flat = true
+theme_override_styles/focus = SubResource("StyleBoxEmpty_v8o80")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_cin5k")
+theme_override_styles/hover = ExtResource("2_451hf")
+theme_override_styles/pressed = ExtResource("2_451hf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wwjd2")
 autowrap_mode = 3
 icon_alignment = 1
 expand_icon = true

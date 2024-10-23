@@ -9,13 +9,13 @@ var off_cr_y = 246; # aka posicion incial del primer clavijero
 var sep_cr_x = 115; # separacion entre clavijeros
 var sep_cr_y = 97; # separacion entre clavijeros
 # clavijas
-var off_cs_x = 500; # offset clavijas
-var off_cs_y = 300; # aka posicion incial de la primera clavija
-var sep_cs_x = 150; # separacion entre clavijas
+var off_cs_x = 725; # offset clavijas
+var off_cs_y = 265; # aka posicion incial de la primera clavija
+var sep_cs_x = 78; # separacion entre clavijas
 # bombillas
-var off_b_x = 600;
-var off_b_y = 190; 
-var sep_b_y = 80;
+var off_b_x = 580;
+var off_b_y = 220; 
+var sep_b_y = 90;
 
 var gridClavijeros = []
 var bombillas = []
