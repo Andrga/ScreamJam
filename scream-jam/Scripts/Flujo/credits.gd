@@ -55,9 +55,11 @@ var credits = [
 		"LOCALIZATION",
 		"Olivia Sígler Villanova"
 	], [
-		"SPECIAL THANKS",
-		"You :^]",
-		"..."
+		"SPECIAL THANKS TO",
+		"Andrés por su casa y su cariño",
+		"The jasón",
+		"The creator",
+		"and you :^]"
 	]
 	#],[
 		#"tetitas",

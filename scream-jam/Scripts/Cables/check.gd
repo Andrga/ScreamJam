@@ -37,4 +37,6 @@ func _process(delta: float) -> void:
 
 func _on_button_down() -> void:
 	_check()
+	Global.SceneManager.sfx.stream = load("res://Sounds/218115__mastersdisaster__switch-on-livingroom.wav")
+	Global.SceneManager.sfx.play()
 	pass # Replace with function body.
