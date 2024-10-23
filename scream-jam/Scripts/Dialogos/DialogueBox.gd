@@ -18,8 +18,6 @@ var dialogueID: int = 0
 #ID texto del dialogo mostrado
 var dialogueTextID: int = 0
 
-var comprobado: bool = false
-
 var ultimaLlamadaReprod: int = -1
 
 # Called when the node enters the scene tree for the first time.
@@ -68,10 +66,13 @@ func _next_dialogue():
 			dialogueTextID +=1
 	
 
-func _start_quest(idText: int, check: bool = false):
+func _start_quest(idText: int):
 	if idText == ultimaLlamadaReprod:
 		return
 	
+	
+	dialogueTextID = 0
+	textDisplayed = 0
 	
 	#hace visible el cuadro de dialogo
 	#get_tree().paused = false
@@ -85,15 +86,13 @@ func _start_quest(idText: int, check: bool = false):
 	color1 = Color(JsonData.dialogos[dialogueID].Color1.R,JsonData.dialogos[dialogueID].Color1.G,JsonData.dialogos[dialogueID].Color1.B, 1)
 	color2 = Color(JsonData.dialogos[dialogueID].Color2.R,JsonData.dialogos[dialogueID].Color2.G,JsonData.dialogos[dialogueID].Color2.B, 1)
 	
-	comprobado = check
-	if comprobado:
+	if Global.nivelCorrecto:
 		_start_dialogue()
 		return
 	print("START LLAMADA")
 	_next_dialogue()
 
 func _start_dialogue() -> void:
-	comprobado = true
 	self.visible = true
 	_avanzar_hasta_quest()
 	_next_dialogue()
@@ -110,6 +109,4 @@ func _avanzar_hasta_quest()->void:
 	dialogueTextID +=1
 
 func _next_level()->void:
-	comprobado = false
-	dialogueTextID = 0
-	textDisplayed = 0
+	self.visible = false

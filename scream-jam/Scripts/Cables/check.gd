@@ -15,7 +15,9 @@ func _check():
 		print(Global.correctos[i], " ")
 	print("CORRECTO?: ", correct)
 	if correct:
-		Global.allClavijasCorrect.emit(grid[0].Clavija, true)
+		Global.nivelCorrecto = true;
+		#emite la señal con la clavija de mas a la derecha
+		Global.allClavijasCorrect.emit(grid[0].Clavija)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

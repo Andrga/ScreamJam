@@ -22,6 +22,7 @@ var grid := [ 0, 0, 0, 0, 1,
 			  3, 0, 0, 0, 5,
 			  0, 0, 4, 0, 0]
 var correctos := [false, false, false, false, false]
+var nivelCorrecto : bool = false
 var cables = []
 
 # para saber si se esta draggeando algo o no
@@ -48,6 +49,7 @@ func _llamada_terminada()->void:
 	llamadasReprodEnEsteNivel +=1
 	if llamadasReprodEnEsteNivel >= nivel:
 		nextLevel.emit()
+		nivelCorrecto = false
 		llamadasReprodEnEsteNivel = 0
 
 func _poner_los_creditos()->void:
