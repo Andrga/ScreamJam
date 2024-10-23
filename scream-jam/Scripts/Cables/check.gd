@@ -18,7 +18,7 @@ func _check():
 			cantCorrectos += 1
 		#print(Global.correctos[i], " ")
 	
-	correct = cantCorrectos == Global.niveles[Global.nivel]
+	correct = cantCorrectos == Global.niveles[Global.nivel-1]
 	
 	print("CORRECTO?: ", correct)
 	if correct:
