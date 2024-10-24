@@ -22,6 +22,8 @@ func _check():
 		else:
 			if grid[4-i].Clavija >= 0:
 				grid[4-i].clavijaState = Global.ClavijasState.ROJA
+				Global.SceneManager.sfx_2.stream = load("res://Sounds/clavijas/Clavija_mal.wav")
+				Global.SceneManager.sfx_2.play()
 	
 	correct = cantCorrectos == Global.niveles[Global.nivel-1]
 	

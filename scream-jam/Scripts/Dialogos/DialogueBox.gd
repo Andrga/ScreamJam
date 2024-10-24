@@ -8,8 +8,9 @@ extends Node
 var color1 : Color
 var color2 : Color
 #ruta del sonido de cada persona
-var sound1 = load("res://Sounds/voces/169867__halgrimm__swoosh.wav")
-var sound2 = load("res://Sounds/voces/167842__speedenza__transition-whoosh-4d.wav")
+var sound = load("res://Sounds/voces/random.wav")
+var sound1: float
+var sound2: float
 
 #contador para que se escriba letra a letra
 var textDisplayed: float = 0
@@ -49,10 +50,10 @@ func _next_dialogue():
 		return
 	else:
 		if JsonData.dialogos[dialogueID].Texts[dialogueTextID].Person == 0:
-			audio_stream.stream = sound1
+			audio_stream.pitch_scale = sound1
 			label.add_theme_color_override("font_color", color1)
 		else:
-			audio_stream.stream = sound2
+			audio_stream.pitch_scale = sound2
 			label.add_theme_color_override("font_color", color2)
 		
 		audio_stream.play()
@@ -83,9 +84,10 @@ func _start_quest(idText: int):
 	#asigna las diferentes propiedades
 	#sound1 = load(JsonData.dialogos[dialogueID].Sound1)
 	#sound2 = load(JsonData.dialogos[dialogueID].Sound2)
-	
-	sound1 = load("res://Sounds/voces/167842__speedenza__transition-whoosh-4d.wav")
-	sound2 = load("res://Sounds/voces/169867__halgrimm__swoosh.wav")
+	var rng = RandomNumberGenerator.new() 
+	sound1 = rng.randf_range(0.5, 2.5)
+	sound2 = rng.randf_range(0.5, 2.5)
+	audio_stream.stream = sound
 	
 	color1 = Color(JsonData.dialogos[dialogueID].Color1.R,JsonData.dialogos[dialogueID].Color1.G,JsonData.dialogos[dialogueID].Color1.B, 1)
 	color2 = Color(JsonData.dialogos[dialogueID].Color2.R,JsonData.dialogos[dialogueID].Color2.G,JsonData.dialogos[dialogueID].Color2.B, 1)

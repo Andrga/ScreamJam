@@ -22,6 +22,14 @@ var contexto: Array = [
 	"21st of November, 1946\nTomillar del Alba\nSpain",
 	"21 de Noviembre, 1946\nTomillar del Alba\nEspaña"
 ]
+var botonLenguaje: Array = [
+	"Language",
+	"Idioma"
+]
+var botonSalir: Array = [
+	"Exit",
+	"Salir"
+]
 
 var SceneManager
 # LOGICA

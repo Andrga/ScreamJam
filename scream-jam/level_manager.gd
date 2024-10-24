@@ -56,14 +56,15 @@ func _ready() -> void:
 		bombilla.cableID = i
 		bombillas.append(bombilla)
 		$Bombillas.add_child(bombilla)
-		bombilla.position = Vector2(DisplayServer.window_get_size().x - off_b_x, i * sep_b_y + off_b_y)
+		#print(DisplayServer.window_get_size().y)
+		bombilla.position = Vector2(1918 - off_b_x, i * sep_b_y + off_b_y)
 	
 	for i in weight: #clavijas
 		var clavija = load("res://Scenes/Cables/Draggable.tscn").instantiate()
 		$CheckClavijas.grid.append(clavija)
 		$"Clavija y clavijero".add_child($CheckClavijas.grid[i])
 		clavija.refBombilla = bombillas[i].get_node("Sprite2D")
-		var pos = Vector2(i*sep_cs_x + off_cs_x, DisplayServer.window_get_size().y - off_cs_y) 
+		var pos = Vector2(i*sep_cs_x + off_cs_x, 1078 - off_cs_y) 
 		var pos_abajo = Vector2(pos.x + 3, pos.y + 90)
 		clavija.origin.global_position = pos_abajo;
 		$CheckClavijas.grid[i].initialPos = pos
@@ -96,6 +97,8 @@ func _new_level():
 			print("Se acabo el juego")
 		gridClavijeros[JsonData.json_data.Dialoges[Global.llamadaActual].Clavijero].DropZone = Global.llamadaActual
 		$CheckClavijas.grid[i].clavijaState = Global.ClavijasState.REGU
+		Global.SceneManager.sfx_2.stream = load("res://Sounds/clavijas/encendido_bombilla.wav")
+		Global.SceneManager.sfx_2.play()
 		$CheckClavijas.grid[i].Clavija = Global.llamadaActual
 		$CheckClavijas.grid[i].refBombilla.get_parent().llamadaID = Global.llamadaActual
 		Global.llamadaActual += 1
@@ -105,7 +108,8 @@ func _process(delta: float) -> void:
 	if elapsedTime < maxTime:
 		elapsedTime += delta
 	elif !newlevel:
-		Global.playLlamada.emit(0)
+		if Global.nivel == 1:
+			Global.playLlamada.emit(0)
 		newlevel = true
 		_new_level()
 

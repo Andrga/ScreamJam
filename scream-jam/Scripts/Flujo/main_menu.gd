@@ -17,7 +17,8 @@ func _on_start_down() -> void:
 	Global.totransition.emit()
 	Global.SceneManager.sfx.stream = load("res://Sounds/cascos/422651__trullilulli__sfx-player-action-phone-pick-up.wav")
 	Global.SceneManager.sfx.play()
-	
+	$VBoxContainer/Lenguages/Label.text = Global.botonLenguaje[Global.lenguaje]
+	$VBoxContainer/Exit/Label.text = Global.botonSalir[Global.lenguaje]
 func _on_exit_down() -> void:
 	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
 	Global.SceneManager.sfx.play()
@@ -28,6 +29,8 @@ func _show_lenguages()-> void:
 	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
 	Global.SceneManager.sfx.play()
 	v_box_container.visible = not v_box_container.visible 
+	$VBoxContainer/Lenguages/Label.text = Global.botonLenguaje[Global.lenguaje]
+	$VBoxContainer/Exit/Label.text = Global.botonSalir[Global.lenguaje]
 
 func _set_ingles()->void:
 	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")

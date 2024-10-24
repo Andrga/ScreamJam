@@ -28,7 +28,7 @@ script = ExtResource("1_scsyc")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 134.0
+offset_bottom = 179.0
 grow_horizontal = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_v8o80")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_cin5k")
@@ -47,12 +47,14 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_m2pdd")
-theme_override_font_sizes/font_size = 22
+theme_override_font_sizes/font_size = 29
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2vx2i")
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+volume_db = 2.39
+pitch_scale = 3.0
 
 [connection signal="pressed" from="Button" to="." method="_next_dialogue"]
