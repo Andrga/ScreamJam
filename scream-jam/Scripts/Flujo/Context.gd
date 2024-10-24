@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 	if elapsedTime<= maxTime:
 		if textDisplay < 1:
 			label.visible_ratio =  textDisplay
-			textDisplay += 0.005
+			textDisplay += delta
 		else:
 			label.visible_ratio =  1
 		elapsedTime += delta

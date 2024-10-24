@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://blbnh2wfdgbxj"]
 
 [ext_resource type="Texture2D" uid="uid://cjg05jclufg5g" path="res://Images/puerta.png" id="1_x8256"]
-[ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="2_6bq38"]
+[ext_resource type="StyleBox" uid="uid://ci153uwprdb5d" path="res://Styles/Buttons/new_style_box_flat.tres" id="3_e7dei"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="3_kfdc0"]
-[ext_resource type="PackedScene" uid="uid://c0nvlhnobhpue" path="res://Prefabs/Flecha.tscn" id="4_mmfgi"]
+[ext_resource type="PackedScene" path="res://Prefabs/Flecha.tscn" id="4_mmfgi"]
 
 [node name="PuertaScene" type="Control"]
 layout_mode = 3
@@ -35,9 +35,35 @@ theme_override_font_sizes/font_size = 36
 text = "Puerta
 "
 
-[node name="Izq" parent="." instance=ExtResource("2_6bq38")]
+[node name="Izq" type="Area2D" parent="."]
+script = ExtResource("3_kfdc0")
 current_scene = 3
 to_scene = 1
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Izq"]
+position = Vector2(6, 3)
+polygon = PackedVector2Array(150, 141, 146, 911, -2, 1083, 0, 1)
+
+[node name="Button" type="Button" parent="Izq"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 154.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = ExtResource("3_e7dei")
+theme_override_styles/hover = ExtResource("3_e7dei")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Flecha" parent="Izq" instance=ExtResource("4_mmfgi")]
+position = Vector2(68, 951.5)
+rotation = 3.14159
 
 [node name="Der" type="Area2D" parent="."]
 script = ExtResource("3_kfdc0")
@@ -50,11 +76,29 @@ position = Vector2(1918, 1080)
 scale = Vector2(-1, -1)
 polygon = PackedVector2Array(148, 172, 150, 927, -2, 1083, 0, 1)
 
-[node name="Flecha" parent="." instance=ExtResource("4_mmfgi")]
+[node name="Button" type="Button" parent="Der"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1758.0
+offset_top = -4.0
+offset_right = 1916.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = ExtResource("3_e7dei")
+theme_override_styles/hover = ExtResource("3_e7dei")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Flecha" parent="Der" instance=ExtResource("4_mmfgi")]
 position = Vector2(1850, 951.5)
 
-[node name="Flecha2" parent="." instance=ExtResource("4_mmfgi")]
-position = Vector2(68, 951.5)
-rotation = 3.14159
-
-[connection signal="mouse_entered" from="Der" to="Der" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="Izq/Button" to="Izq" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Izq/Button" to="Izq" method="_on_mouse_exited"]
+[connection signal="pressed" from="Izq/Button" to="Izq" method="_on_click"]
+[connection signal="mouse_entered" from="Der/Button" to="Der" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Der/Button" to="Der" method="_on_mouse_exited"]
+[connection signal="pressed" from="Der/Button" to="Der" method="_on_click"]

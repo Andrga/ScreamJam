@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bg5e1gbjrhc4l" path="res://Scenes/Cables/checkClavijas.tscn" id="2_hs7pb"]
 [ext_resource type="Script" path="res://Scripts/Cables/check.gd" id="3_jtrsg"]
 [ext_resource type="PackedScene" uid="uid://cqhpk5lnxqt8g" path="res://Scenes/Dialogos/dialogue_box.tscn" id="4_uq0j3"]
-[ext_resource type="PackedScene" uid="uid://dnjkx16ballsh" path="res://Prefabs/TransitionArea.tscn" id="5_28rh6"]
 [ext_resource type="Script" path="res://Scripts/Flujo/transition_area.gd" id="6_kq4mj"]
+[ext_resource type="StyleBox" uid="uid://ci153uwprdb5d" path="res://Styles/Buttons/new_style_box_flat.tres" id="8_6angf"]
 [ext_resource type="Texture2D" uid="uid://bjli4v16j6psk" path="res://Images/clavijeroAbajo.png" id="8_jr3s5"]
 [ext_resource type="PackedScene" path="res://Prefabs/Flecha.tscn" id="9_3jwss"]
 
@@ -55,7 +55,35 @@ texture = ExtResource("8_jr3s5")
 
 [node name="World" type="Node2D" parent="."]
 
-[node name="Izq" parent="World" instance=ExtResource("5_28rh6")]
+[node name="Izq" type="Area2D" parent="World"]
+script = ExtResource("6_kq4mj")
+current_scene = 1
+to_scene = 3
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/Izq"]
+position = Vector2(6, 3)
+polygon = PackedVector2Array(150, 141, 146, 911, -2, 1083, 0, 1)
+
+[node name="Button" type="Button" parent="World/Izq"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 154.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = ExtResource("8_6angf")
+theme_override_styles/hover = ExtResource("8_6angf")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Flecha" parent="World/Izq" instance=ExtResource("9_3jwss")]
+position = Vector2(68, 951.5)
+rotation = 3.14159
 
 [node name="Der" type="Area2D" parent="World"]
 script = ExtResource("6_kq4mj")
@@ -68,6 +96,26 @@ position = Vector2(1918, 1080)
 scale = Vector2(-1, -1)
 polygon = PackedVector2Array(148, 172, 150, 927, -2, 1083, 0, 1)
 
+[node name="Button" type="Button" parent="World/Der"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1758.0
+offset_top = -4.0
+offset_right = 1916.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = ExtResource("8_6angf")
+theme_override_styles/hover = ExtResource("8_6angf")
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Flecha" parent="World/Der" instance=ExtResource("9_3jwss")]
+position = Vector2(1850, 951.5)
+
 [node name="Abajo" type="Area2D" parent="World"]
 script = ExtResource("6_kq4mj")
 current_scene = 1
@@ -79,17 +127,34 @@ rotation = 1.5708
 scale = Vector2(-0.80264, -1.75208)
 polygon = PackedVector2Array(131.001, 105.589, 131.006, 984.544, -1.99988, 1091.63, 0, 1)
 
-[node name="Flecha" parent="." instance=ExtResource("9_3jwss")]
-position = Vector2(1850, 951.5)
-
-[node name="Flecha2" parent="." instance=ExtResource("9_3jwss")]
-position = Vector2(68, 951.5)
-rotation = 3.14159
-
-[node name="Flecha3" parent="." instance=ExtResource("9_3jwss")]
+[node name="Flecha" parent="World/Abajo" instance=ExtResource("9_3jwss")]
 position = Vector2(956, 1025)
 rotation = 1.5708
 
+[node name="Button" type="Button" parent="World/Abajo"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 120.0
+offset_top = 980.0
+offset_right = 1795.0
+offset_bottom = 1076.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = ExtResource("8_6angf")
+theme_override_styles/hover = ExtResource("8_6angf")
+flat = true
+metadata/_edit_use_anchors_ = true
+
 [connection signal="button_down" from="CheckClavijas" to="CheckClavijas" method="_on_button_down"]
-[connection signal="mouse_entered" from="World/Der" to="World/Der" method="_on_mouse_entered"]
-[connection signal="mouse_entered" from="World/Abajo" to="World/Abajo" method="_on_mouse_entered"]
+[connection signal="mouse_entered" from="World/Izq/Button" to="World/Izq" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="World/Izq/Button" to="World/Izq" method="_on_mouse_exited"]
+[connection signal="pressed" from="World/Izq/Button" to="World/Izq" method="_on_click"]
+[connection signal="mouse_entered" from="World/Der/Button" to="World/Der" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="World/Der/Button" to="World/Der" method="_on_mouse_exited"]
+[connection signal="pressed" from="World/Der/Button" to="World/Der" method="_on_click"]
+[connection signal="mouse_entered" from="World/Abajo/Button" to="World/Abajo" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="World/Abajo/Button" to="World/Abajo" method="_on_mouse_exited"]
+[connection signal="pressed" from="World/Abajo/Button" to="World/Abajo" method="_on_click"]

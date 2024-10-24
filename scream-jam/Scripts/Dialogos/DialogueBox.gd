@@ -31,7 +31,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if textDisplayed < 1:
-		textDisplayed+=0.01
+		textDisplayed+= delta 
 		label.visible_ratio = textDisplayed
 
 func _next_dialogue():

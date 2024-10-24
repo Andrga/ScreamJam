@@ -108,7 +108,7 @@ func _process(delta: float) -> void:
 	if elapsedTime < maxTime:
 		elapsedTime += delta
 	elif !newlevel:
-		if Global.nivel == 1:
+		if Global.nivel == 0:
 			Global.playLlamada.emit(0)
 		newlevel = true
 		_new_level()

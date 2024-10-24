@@ -14,6 +14,13 @@ func _process(delta: float) -> void:
 
 
 func _on_mouse_entered() -> void:
+	$Flecha.scale = Vector2(1.2,1.2)
+
+func _on_mouse_exited() -> void:
+	$Flecha.scale = Vector2(1,1)
+
+func _on_click() -> void:
 	Global.current_scene = current_scene
 	Global.to_scene = to_scene
 	Global.totransition.emit()
+	pass # Replace with function body.
