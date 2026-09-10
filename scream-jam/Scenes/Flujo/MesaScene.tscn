@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://btqpasjgf1reh"]
+[gd_scene format=3 uid="uid://btqpasjgf1reh"]
 
 [ext_resource type="Script" uid="uid://j1k4tpjc0ybl" path="res://Scripts/Flujo/Mesa/mesa_manager.gd" id="1_b02ew"]
 [ext_resource type="Texture2D" uid="uid://cflii03gwvmit" path="res://Images/mesa.png" id="1_udlly"]
@@ -23,7 +23,7 @@ corner_radius_bottom_left = 3
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n8drw"]
 size = Vector2(142, 32)
 
-[node name="MesaScene" type="Control"]
+[node name="MesaScene" type="Control" unique_id=854668072]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,7 +33,7 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_b02ew")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2132094615]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -43,7 +43,7 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("1_udlly")
 
-[node name="Basura" parent="." instance=ExtResource("4_inovu")]
+[node name="Basura" parent="." unique_id=747775862 instance=ExtResource("4_inovu")]
 position = Vector2(1624, 783)
 
 [node name="TextureButton" parent="Basura" index="0"]
@@ -52,14 +52,14 @@ offset_top = 1.0
 offset_right = 293.0
 offset_bottom = 297.0
 
-[node name="TacoPostits" parent="." instance=ExtResource("3_q2nii")]
+[node name="TacoPostits" parent="." unique_id=167835172 instance=ExtResource("3_q2nii")]
 position = Vector2(107, 890)
 
-[node name="PostitiTutoPapel" type="Node2D" parent="."]
+[node name="PostitiTutoPapel" type="Node2D" parent="." unique_id=1359755939]
 position = Vector2(385, 956)
 script = ExtResource("8_srlq0")
 
-[node name="Button" type="TextureButton" parent="PostitiTutoPapel"]
+[node name="Button" type="TextureButton" parent="PostitiTutoPapel" unique_id=961068854]
 offset_left = -91.0
 offset_top = -35.0
 offset_right = 148.0
@@ -69,7 +69,7 @@ texture_normal = ExtResource("8_atrgb")
 texture_hover = ExtResource("9_hr3oy")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="PostitiTutoPapel"]
+[node name="Label" type="Label" parent="PostitiTutoPapel" unique_id=408168750]
 offset_left = -78.0
 offset_top = -26.0
 offset_right = 72.0
@@ -82,7 +82,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="TextEdit" type="TextEdit" parent="PostitiTutoPapel"]
+[node name="TextEdit" type="TextEdit" parent="PostitiTutoPapel" unique_id=1531201904]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -101,17 +101,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_443pt")
 caret_blink = true
 script = ExtResource("12_p2gf5")
 
-[node name="Area2D" type="Area2D" parent="PostitiTutoPapel"]
+[node name="Area2D" type="Area2D" parent="PostitiTutoPapel" unique_id=2046667928]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoPapel/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoPapel/Area2D" unique_id=510013285]
 position = Vector2(-1, 4)
 shape = SubResource("RectangleShape2D_n8drw")
 
-[node name="PostitiTutoBasura" type="Node2D" parent="."]
+[node name="PostitiTutoBasura" type="Node2D" parent="." unique_id=345764621]
 position = Vector2(1505, 935)
 script = ExtResource("8_srlq0")
 
-[node name="Button" type="TextureButton" parent="PostitiTutoBasura"]
+[node name="Button" type="TextureButton" parent="PostitiTutoBasura" unique_id=822878193]
 offset_left = -91.0
 offset_top = -35.0
 offset_right = 148.0
@@ -121,7 +121,7 @@ texture_normal = ExtResource("8_atrgb")
 texture_hover = ExtResource("9_hr3oy")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="PostitiTutoBasura"]
+[node name="Label" type="Label" parent="PostitiTutoBasura" unique_id=304226953]
 offset_left = -78.0
 offset_top = -26.0
 offset_right = 72.0
@@ -134,7 +134,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="TextEdit" type="TextEdit" parent="PostitiTutoBasura"]
+[node name="TextEdit" type="TextEdit" parent="PostitiTutoBasura" unique_id=436096068]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -153,17 +153,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_443pt")
 caret_blink = true
 script = ExtResource("12_p2gf5")
 
-[node name="Area2D" type="Area2D" parent="PostitiTutoBasura"]
+[node name="Area2D" type="Area2D" parent="PostitiTutoBasura" unique_id=1848189538]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoBasura/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoBasura/Area2D" unique_id=955225498]
 position = Vector2(-1, 4)
 shape = SubResource("RectangleShape2D_n8drw")
 
-[node name="PostitiTutoCalle" type="Node2D" parent="."]
+[node name="PostitiTutoCalle" type="Node2D" parent="." unique_id=1177936411]
 position = Vector2(1432, 364)
 script = ExtResource("8_srlq0")
 
-[node name="Button" type="TextureButton" parent="PostitiTutoCalle"]
+[node name="Button" type="TextureButton" parent="PostitiTutoCalle" unique_id=780296190]
 offset_left = -91.0
 offset_top = -35.0
 offset_right = 148.0
@@ -173,7 +173,7 @@ texture_normal = ExtResource("8_atrgb")
 texture_hover = ExtResource("9_hr3oy")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="PostitiTutoCalle"]
+[node name="Label" type="Label" parent="PostitiTutoCalle" unique_id=802899764]
 offset_left = -78.0
 offset_top = -26.0
 offset_right = 72.0
@@ -186,7 +186,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="TextEdit" type="TextEdit" parent="PostitiTutoCalle"]
+[node name="TextEdit" type="TextEdit" parent="PostitiTutoCalle" unique_id=1609492296]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -205,16 +205,119 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_443pt")
 caret_blink = true
 script = ExtResource("12_p2gf5")
 
-[node name="Area2D" type="Area2D" parent="PostitiTutoCalle"]
+[node name="Area2D" type="Area2D" parent="PostitiTutoCalle" unique_id=1012002529]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoCalle/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoCalle/Area2D" unique_id=1037162054]
 position = Vector2(-1, 4)
 shape = SubResource("RectangleShape2D_n8drw")
 
-[node name="TransitionAreaManager" parent="." instance=ExtResource("10_oahgd")]
+[node name="PostitiTutoCalle2" type="Node2D" parent="." unique_id=1437122585]
+position = Vector2(540, 225)
+script = ExtResource("8_srlq0")
+
+[node name="Button" type="TextureButton" parent="PostitiTutoCalle2" unique_id=1665496391]
+offset_left = -91.0
+offset_top = -35.0
+offset_right = 148.0
+offset_bottom = 56.0
+scale = Vector2(0.75, 0.75)
+texture_normal = ExtResource("8_atrgb")
+texture_hover = ExtResource("9_hr3oy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="PostitiTutoCalle2" unique_id=1037499702]
+offset_left = -78.0
+offset_top = -26.0
+offset_right = 72.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("10_mdqb7")
+theme_override_font_sizes/font_size = 16
+text = "Discarts ->"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="PostitiTutoCalle2" unique_id=496732161]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -10.0
+offset_right = 62.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_mdqb7")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_443pt")
+caret_blink = true
+script = ExtResource("12_p2gf5")
+
+[node name="Area2D" type="Area2D" parent="PostitiTutoCalle2" unique_id=1873699575]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoCalle2/Area2D" unique_id=23680172]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_n8drw")
+
+[node name="PostitiTutoMapa" type="Node2D" parent="." unique_id=268435574]
+position = Vector2(977, 131)
+script = ExtResource("8_srlq0")
+
+[node name="Button" type="TextureButton" parent="PostitiTutoMapa" unique_id=1511801715]
+offset_left = -91.0
+offset_top = -35.0
+offset_right = 148.0
+offset_bottom = 56.0
+scale = Vector2(0.75, 0.75)
+texture_normal = ExtResource("8_atrgb")
+texture_hover = ExtResource("9_hr3oy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="PostitiTutoMapa" unique_id=128747261]
+offset_left = -78.0
+offset_top = -26.0
+offset_right = 72.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0.054902, 0.054902, 0.054902, 1)
+theme_override_fonts/font = ExtResource("10_mdqb7")
+theme_override_font_sizes/font_size = 16
+text = "Discarts ->"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextEdit" type="TextEdit" parent="PostitiTutoMapa" unique_id=548560580]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -10.0
+offset_right = 62.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10_mdqb7")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_443pt")
+caret_blink = true
+script = ExtResource("12_p2gf5")
+
+[node name="Area2D" type="Area2D" parent="PostitiTutoMapa" unique_id=1785439810]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostitiTutoMapa/Area2D" unique_id=2139791209]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_n8drw")
+
+[node name="TransitionAreaManager" parent="." unique_id=1422044641 instance=ExtResource("10_oahgd")]
 layout_mode = 0
-current_scene = 2
-to_scene_top = 1
+to_scene_top = 3
 
 [connection signal="button_down" from="PostitiTutoPapel/Button" to="PostitiTutoPapel" method="_on_button_button_down"]
 [connection signal="button_up" from="PostitiTutoPapel/Button" to="PostitiTutoPapel" method="_on_button_button_up"]
@@ -222,5 +325,9 @@ to_scene_top = 1
 [connection signal="button_up" from="PostitiTutoBasura/Button" to="PostitiTutoBasura" method="_on_button_button_up"]
 [connection signal="button_down" from="PostitiTutoCalle/Button" to="PostitiTutoCalle" method="_on_button_button_down"]
 [connection signal="button_up" from="PostitiTutoCalle/Button" to="PostitiTutoCalle" method="_on_button_button_up"]
+[connection signal="button_down" from="PostitiTutoCalle2/Button" to="PostitiTutoCalle2" method="_on_button_button_down"]
+[connection signal="button_up" from="PostitiTutoCalle2/Button" to="PostitiTutoCalle2" method="_on_button_button_up"]
+[connection signal="button_down" from="PostitiTutoMapa/Button" to="PostitiTutoMapa" method="_on_button_button_down"]
+[connection signal="button_up" from="PostitiTutoMapa/Button" to="PostitiTutoMapa" method="_on_button_button_up"]
 
 [editable path="Basura"]

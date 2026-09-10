@@ -10,7 +10,7 @@ func _ready() -> void:
 	buton = $TextureButton
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	mousepos = get_global_mouse_position();
 
 
@@ -21,8 +21,10 @@ func _on_area_2d_mouse_exited() -> void:
 	buton.texture_normal = texture_normal
 
 
-func _on_area_2d_area_entered(area: Area2D) -> void:
+func _on_area_2d_area_entered(_area: Area2D) -> void:
 	buton.texture_normal = texture_hover
+	if _area.get_parent() is Posit:
+		_area.get_parent().to_delete = true
 
-func _on_area_2d_area_exited(area: Area2D) -> void:
+func _on_area_2d_area_exited(_area: Area2D) -> void:
 	buton.texture_normal = texture_normal

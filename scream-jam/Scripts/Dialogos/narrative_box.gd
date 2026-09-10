@@ -6,13 +6,13 @@ class_name NarrativeBox
 var actualNarrative := -1
 
 #var textDisplayed: float = 0 # contador para que se escriba letra a letra
-
+@export var chars_per_second: float = 2.0
 func _ready() -> void:
 	pass
 
 func _process(delta: float) -> void:
 	if label.visible_ratio < 1:
-		label.visible_ratio += delta 
+		label.visible_ratio += delta * chars_per_second
 
 ### METODOS BOTONES
 
@@ -22,10 +22,12 @@ func next_dialogue() -> void:
 		Global.endedCall.emit(actualNarrative) # Notifica que se ha terminado la actual narrative
 		actualNarrative = -1
 		self.visible = false
+		return
 	
 	if label.visible_ratio < 1 : 
 		label.visible_ratio = 1
 		return
+	
 	Global.narrativas[actualNarrative].advance_block(label)
 	label.visible_ratio = 0
 

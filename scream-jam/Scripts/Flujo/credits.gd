@@ -1,4 +1,4 @@
-extends Control
+extends Scene
 
 @export var bg_color : Color = Color.BLACK
 @export var to_scene : PackedScene = null
@@ -61,37 +61,6 @@ var credits = [
 		"The creator",
 		"and you :^]"
 	]
-	#],[
-		#"tetitas",
-		#"tetazas", 
-		#"tetazas", 
-		#"tetorras", 
-		#"tetotas",
-		#"tetarracas",
-		#"tetacas",
-		#"tetuzas",
-		#"teturras",
-		#"tetungas",
-		#"tetillas",
-		#"bufas",
-		#"bufarras",
-		#"bufarracas",
-		#"bufoncias",
-		#"bakugans",
-		#"mamelungas",
-		#"mamelones",
-		#"melones",
-		#"domingas",
-		#"bubalongas",
-		#"babungas",
-		#"pechugas",
-		#"peras",
-		#"peritas",
-		#"perolas",
-		#"mamellas",
-		#"tetolas",
-		#"gemelas"
-	#]
 ]
 
 func start():
@@ -107,6 +76,10 @@ func start():
 		videoplayer.set_volume_db(0)
 	videoplayer.play()
 	
+
+func on_enable() -> void:
+	# SONIDO AQUI
+	AudioManager.set_ambience_param("Mirada", 4)
 
 func _process(delta):
 	scroll_speed = base_speed * delta

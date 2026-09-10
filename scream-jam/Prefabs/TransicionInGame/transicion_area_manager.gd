@@ -1,6 +1,4 @@
 extends Control
-# Escena actual
-@export var current_scene : Global.Scenes = Global.Scenes.NULL
 # Izquierda
 @export var to_scene_left : Global.Scenes = Global.Scenes.NULL
 # Abajo
@@ -28,5 +26,4 @@ func _configure_button(TA, to_scene) -> void:
 	if to_scene == Global.Scenes.NULL: 
 		TA.visible  = false
 		return
-	TA.current_scene = current_scene
 	TA.to_scene = to_scene

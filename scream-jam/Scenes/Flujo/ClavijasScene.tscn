@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c6ixnnj7d48qe"]
+[gd_scene format=3 uid="uid://c6ixnnj7d48qe"]
 
 [ext_resource type="Script" uid="uid://cyt5aihkhokub" path="res://Scripts/Flujo/Mesa/clavija_scene.gd" id="1_kktuk"]
 [ext_resource type="Texture2D" uid="uid://bo0hhbtrlysoo" path="res://Images/clavijero.png" id="2_1203f"]
@@ -9,17 +9,17 @@
 [ext_resource type="PackedScene" uid="uid://c5ixutm1rtqq0" path="res://Prefabs/Bombillas/BombillasManager.tscn" id="7_kktuk"]
 [ext_resource type="PackedScene" uid="uid://dcod2yvxj0ak3" path="res://Prefabs/TransicionInGame/TransitionAreaManager.tscn" id="8_ok6cb"]
 
-[node name="ClavijasScene" type="Node2D"]
+[node name="ClavijasScene" type="Node2D" unique_id=1488512364]
 script = ExtResource("1_kktuk")
 
-[node name="Fondo" type="Control" parent="."]
+[node name="Fondo" type="Control" parent="." unique_id=1622500015]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1913.0
 offset_bottom = 1078.0
 mouse_filter = 2
 
-[node name="TextureRect" type="TextureRect" parent="Fondo"]
+[node name="TextureRect" type="TextureRect" parent="Fondo" unique_id=597056688]
 z_index = -1
 layout_mode = 1
 anchors_preset = 15
@@ -33,33 +33,33 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1203f")
 
-[node name="DialogueBox" parent="Fondo" instance=ExtResource("3_n760j")]
+[node name="DialogueBox" parent="Fondo" unique_id=335414623 instance=ExtResource("3_n760j")]
 visible = false
 layout_mode = 1
 
-[node name="ClavijasManager" parent="." instance=ExtResource("5_ok6cb")]
+[node name="ClavijasManager" parent="." unique_id=1259313954 instance=ExtResource("5_ok6cb")]
+z_index = 2
 position = Vector2(723, 770)
 separacion = 79
 
-[node name="EnchufesManager" parent="." instance=ExtResource("6_c3kym")]
+[node name="EnchufesManager" parent="." unique_id=1739909491 instance=ExtResource("6_c3kym")]
 position = Vector2(723, 246)
 height = 4
 weight = 5
 
-[node name="BombillasManager" parent="." instance=ExtResource("7_kktuk")]
+[node name="BombillasManager" parent="." unique_id=1541987907 instance=ExtResource("7_kktuk")]
 position = Vector2(1343, 216)
 separacion = 90
 
-[node name="CheckClavijas" parent="." instance=ExtResource("4_56dma")]
+[node name="CheckClavijas" parent="." unique_id=902015981 instance=ExtResource("4_56dma")]
 offset_left = 1111.0
 offset_top = 808.0
 offset_right = 1179.0
 offset_bottom = 900.0
 
-[node name="TransitionAreaManager" parent="." instance=ExtResource("8_ok6cb")]
-current_scene = 1
-to_scene_left = 3
-to_scene_right = 3
-to_scene_down = 2
+[node name="TransitionAreaManager" parent="." unique_id=1012397243 instance=ExtResource("8_ok6cb")]
+to_scene_left = 5
+to_scene_right = 5
+to_scene_down = 4
 
 [connection signal="button_down" from="CheckClavijas" to="." method="_on_check_clavijas_button_down"]

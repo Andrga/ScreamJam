@@ -35,7 +35,13 @@ func _process(delta: float) -> void:
 # --- METODOS PUBLICOS ------------------------------------------------
 func setCall(id:int) -> void:
 	llamadaID = id
+	if llamadaID <0: return
 	setState(Global.BombillaState.ENCENDIDA)
+	# SONIDO AQUI
+	AudioManager.play_sfx("event:/SFX/BombillaEnciende")
+	# Si la id de la llamada es 0, empezamos el tutorial
+	if id == 0:
+		Global.startTutorial.emit()
 
 func setState(state: Global.BombillaState) -> void:
 	# Guardar el estado anterior si vamos a entrar en MAL.
@@ -59,8 +65,12 @@ func reset() -> void:
 
 func check(correcta: bool) -> void:
 	if correcta:
+		# SONIDO AQUI
+		AudioManager.play_sfx("event:/SFX/BombillaBien")
 		setState(Global.BombillaState.BIEN)
 	else:
+		# SONIDO AQUI
+		AudioManager.play_sfx("event:/SFX/BombillaMal")
 		setState(Global.BombillaState.MAL)
 
 func unPlug() -> void:
@@ -68,10 +78,6 @@ func unPlug() -> void:
 		setState(Global.BombillaState.ENCENDIDA)
 	else:
 		setState(Global.BombillaState.APAGADA)
-
-func setLlamada(id: int) -> void:
-	llamadaID = id
-	setState(Global.BombillaState.ENCENDIDA)
 
 # --- METODOS PRIVADOS ------------------------------------------------
 func _setImage() -> void:

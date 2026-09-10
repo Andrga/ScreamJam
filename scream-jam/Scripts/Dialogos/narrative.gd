@@ -4,6 +4,7 @@ class_name Narrative
 var narrativeBlqs: Array[NarrativeBLock]
 var actualblock: int = -1
 var label : Label
+var emitter = null
 
 func _init() -> void:
 	pass
@@ -49,8 +50,7 @@ func advance_block(lbl: Label) -> void:
 		printerr("[NARRATIVE ERROR] No hay dialogo valido.")
 		return 
 	
-	block.configure_label(label)
-	label.text = block.reproduce()
+	reproduce(block)
 
 ## Retrocede 1 bloque
 ## [code]return[code] (String) el bloque anterior
@@ -64,8 +64,7 @@ func retreat_block() -> void:
 	if actualblock > 0 and block.can_continue():
 		actualblock -= 1
 	
-	block.configure_label(label)
-	label.text = block.reproduce()
+	reproduce(block)
 
 ## Reestablece la narrativa desde el principio
 func restart_block_begin() -> void:
@@ -76,8 +75,7 @@ func restart_block_begin() -> void:
 		printerr("[NARRATIVE ERROR] No hay bloque narrativo valido.")
 		return
 	
-	block.configure_label(label)
-	label.text = block.reproduce()
+	reproduce(block)
 
 ## Reestablece la narrativa desde el final
 func restart_block_end() -> void:
@@ -88,6 +86,9 @@ func restart_block_end() -> void:
 		printerr("[NARRATIVE ERROR] No hay bloque narrativo valido.")
 		return
 	
+	reproduce(block)
+
+func reproduce(block):
 	block.configure_label(label)
 	label.text = block.reproduce()
 

@@ -1,0 +1,1135 @@
+{
+    "UI": {
+        "Lenguage": "Idioma",
+        "Exit": "Salir",
+        "Context": "21 de Noviembre, 1946\nTomillar del Alba\nEspaña",
+        "Papers": "<- Papeles",
+        "Discarts": "Descartes ->",
+        "Clue": "c/Reatas 15"
+    },
+    "Persons": [
+        {
+            "Name": "M.A.I.T.E",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Juan Marcos",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Zacarías",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Francisco",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Jorge",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Isaías",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Magdalena",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Dolores",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Rosario",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "???",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 0.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "???",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Sagrario",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Encarna",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Felipe",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Gonzalo",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Yesbeth",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Martirio",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 0.0,
+                "G": 1.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Antonio",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        },
+        {
+            "Name": "Rut",
+            "Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+            "Sound": {
+                "neutral": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "happy": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "sad": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ],
+                "angry": [
+                    "res://Sounds/Placeholders/SonidoPH1.wav"
+                ]
+            },
+            "Color": {
+                "R": 1.0,
+                "G": 0.0,
+                "B": 1.0,
+                "A": 1.0
+            }
+        }
+    ],
+    "Dialoges": [
+        {
+            "Clavijero": 9.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¡Hola, mi nombre es M.A.I.T.E (Máquina Altamente Integrada para la Telefonía Española)! Soy una grabación programada. Comencemos: comunique la calle de la Creación nº 114 con la calle de Las Reatas nº 15."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "La luz indica la clavija con la llamada entrante, al pulsarla el abonado en cuestión le contará el sitio destino. Para ello conecte la clavija acorde al número de la bomiblla con el clavijero 2E. Compruebe la conexión utilizando el interruptor junto a las clavijas.@"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "En verdad, no hay mucho más que enseñar, su trabajo aquí consiste básicamente en eso: conectar cables. Para cualquier duda, consulte el detallado mapa que le ofrecemos de las calles de Tomillar del Alba, nuestro municipio."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¡Que pase usted un maravilloso día, adiós!"
+                }
+            ]
+        },
+        {
+            "Clavijero": 19.0,
+            "Texts": [
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Hola, conécteme con la Calle de las Reatas  nº 89, por favor… Está completamente al sureste del pueblo.@"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Buenas, ¿hablo con Zacarías?"
+                },
+                {
+                    "Person": 2,
+                    "Emotion": "neutral",
+                    "Text": "Hola, sí, ¿dígame? ¿Con quién tengo el placer de hablar?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Soy Juan Marcos, ¿te acuerdas de mí?"
+                },
+                {
+                    "Person": 2,
+                    "Emotion": "neutral",
+                    "Text": "Sí, sí, no cabe duda, claro que me acuerdo. Cuénteme, ¿qué necesita?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Pues verá, necesitaría su ayuda para conseguir fertilizante para este domingo. Se me está complicando y quizá necesitaría ayuda de otra persona, y he pensado en usted, Zacarías."
+                },
+                {
+                    "Person": 2,
+                    "Emotion": "neutral",
+                    "Text": "Ya veo… veré lo que puedo hacer. De todas maneras esta tarde me tengo que pasar por el vivero. Acérquese un momento y lo hablamos más detenidamente, ¿le viene bien?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "happy",
+                    "Text": "Sí, sí, no hay ningún tipo de problema. Nos veremos allí, pase un buen día, ¡gracias!"
+                },
+                {
+                    "Person": 2,
+                    "Emotion": "neutral",
+                    "Text": "Hasta dentro de un rato, igualmente."
+                }
+            ]
+        },
+        {
+            "Clavijero": 7.0,
+            "Texts": [
+                {
+                    "Person": 3,
+                    "Emotion": "neutral",
+                    "Text": "Hola, ¿me conecta con la calle de Pedro Domecq 64?. La Pedro Domecq pilla por el centro, un poquito para arriba.@"
+                },
+                {
+                    "Person": 3,
+                    "Emotion": "happy",
+                    "Text": "Muy buenas tardes Jorge, ¿cómo estás? Soy Francisco."
+                },
+                {
+                    "Person": 4,
+                    "Emotion": "happy",
+                    "Text": "Buenas, Francisco, ¿qué tal todo? Yo estoy divinamente."
+                },
+                {
+                    "Person": 3,
+                    "Emotion": "neutral",
+                    "Text": "Yo la verdad que no puedo quejarme. Preguntaba para ver si te apetecía venir este sábado a la capital, te he conseguido una entrada para ver a Concha Piquer, que ha sacado un nuevo disco."
+                },
+                {
+                    "Person": 4,
+                    "Emotion": "happy",
+                    "Text": "¿Sí? ¡Qué me cuentas, qué ilusión! Pues yo encantado, verás qué envidia le va a dar a mi mujer cuando se lo cuente, con lo que le gusta… Cuenta conmigo."
+                },
+                {
+                    "Person": 3,
+                    "Emotion": "happy",
+                    "Text": "Dicho queda. Lo vamos organizando, ¡un abrazo!"
+                },
+                {
+                    "Person": 4,
+                    "Emotion": "happy",
+                    "Text": "Lo mismo digo, un abrazo y muchísimas gracias, adiós."
+                },
+                {
+                    "Person": 3,
+                    "Emotion": "happy",
+                    "Text": "¡Hasta luego!"
+                }
+            ]
+        },
+        {
+            "Clavijero": 11.0,
+            "Texts": [
+                {
+                    "Person": 5,
+                    "Emotion": "neutral",
+                    "Text": "Muy buenas, ¿podría conectarme con la Calle de la Independencia nº 34 si es tan amable? La calle Independencia está por el centro, mirando ligeramente al oeste. Hace esquina con la calle Esperanza.@"
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "neutral",
+                    "Text": "¿Sí? ¿Quién es?"
+                },
+                {
+                    "Person": 5,
+                    "Emotion": "neutral",
+                    "Text": "Hola Magdalena, soy Isaías, ¿reconoces mi voz?"
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "neutral",
+                    "Text": "Sí… sí la reconozco, ¿qué ocurre?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Nada, era únicamente para ver si podríamos tomar un último café antes de irme y así despedirnos. Este domingo tengo que viajar y no sé si nos vamos a volver a ver."
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "neutral",
+                    "Text": " Ya… A mí me da un poco de pena que tengas que irte tan pronto, la verdad… Pero tienes que pensar que te va a venir genial, es una oportunidad única, y tú tienes que florecer. Si te quedas, tu destino aquí es estar estancado, y yo sé que tú vales mucho, y puedes aspirar a mucho más."
+                },
+                {
+                    "Person": 5,
+                    "Emotion": "sad",
+                    "Text": "Tienes toda la razón… Te voy a echar mucho de menos."
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "sad",
+                    "Text": "Isaías…"
+                },
+                {
+                    "Person": 5,
+                    "Emotion": "sad",
+                    "Text": "¿Pero vendrás a visitarme?"
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "sad",
+                    "Text": "Siempre que pueda estaré ahí para ti…"
+                },
+                {
+                    "Person": 5,
+                    "Emotion": "neutral",
+                    "Text": "He pensado siempre que contigo todo habría sido más feliz… Si te parece bien mañana por la mañana quedamos en la Plaza de España y hablamos de todo esto."
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "sad",
+                    "Text": "Sí… allí hablaremos de todo esto y más."
+                },
+                {
+                    "Person": 5,
+                    "Emotion": "sad",
+                    "Text": "Te… quiero…"
+                },
+                {
+                    "Person": 6,
+                    "Emotion": "sad",
+                    "Text": "Y… yo…"
+                }
+            ]
+        },
+        {
+            "Clavijero": 8.0,
+            "Texts": [
+                {
+                    "Person": 7,
+                    "Emotion": "neutral",
+                    "Text": "Buenas, si es tan amable póngame con la Calle de Millán Astray 14, está entre la calle Reatas y la calle Creación.@"
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "sad",
+                    "Text": "Rosario, buenas, ¿qué tal todo? Madre mía lo que te tengo que contar…"
+                },
+                {
+                    "Person": 8,
+                    "Emotion": "neutral",
+                    "Text": "Ay, Dolores, hija mía, yo fenomenal, ¿y tú qué tal? Cuenta, cuenta."
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "neutral",
+                    "Text": "¿Tú te acuerdas que mi marido era de la Guardia Civil, verdad?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Cómo olvidarlo, qué honor para tu familia."
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "angry",
+                    "Text": "Pues ayer mandaron una denuncia en la que se sospechaba que había rojos por el monte.Fue enviada por un ganadero que transitaba la zona"
+                },
+                {
+                    "Person": 8,
+                    "Emotion": "neutral",
+                    "Text": "¿Y…?"
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "angry",
+                    "Text": "Resultó ser cierto, mandaron a una brigada y en cuanto los interceptaron abrieron fuego. No quedó ningún guerrillero vivo."
+                },
+                {
+                    "Person": 8,
+                    "Emotion": "angry",
+                    "Text": "Qué miedo, menos mal que hay gente como tu marido que limpia nuestra España de toda esa plaga de ratas. Orgullo nacional, ¡viva la Guardia Civil y Arriba España!"
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "angry",
+                    "Text": "¡Arriba España, ahora y siempre!"
+                },
+                {
+                    "Person": 8,
+                    "Emotion": "neutral",
+                    "Text": "Lola, tú cuéntame todas estas cosas que en la radio ya no dicen nada. Te dejo, que se me pega el guiso."
+                },
+                {
+                    "Person": 7,
+                    "Emotion": "neutral",
+                    "Text": "Adiós, adiós…"
+                }
+            ]
+        },
+        {
+            "Clavijero": 10.0,
+            "Texts": [
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "Hola, urgente, Calle de la Esperanza 17.@"
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "¿Hola? Hola, hola hola…"
+                },
+                {
+                    "Person": 9,
+                    "Emotion": "neutral",
+                    "Text": "Buenas, ¿qué pasa?"
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "Tenemos un problema, se me ha perdido la regadera, estoy intentando de todas las formas posibles encontrarla, pero no está por ningún sitio, no sé qué hacer."
+                },
+                {
+                    "Person": 9,
+                    "Emotion": "neutral",
+                    "Text": "No fastidie, hombre…"
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "sad",
+                    "Text": "Lo siento, lo siento… ¿podría usted hablar con el jardinero?"
+                },
+                {
+                    "Person": 9,
+                    "Emotion": "angry",
+                    "Text": "Veré lo que puedo hacer, pero esto no le va a salir barato."
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "Por favor, busquen bien, yo ya no sé qué hacer. Sin regadera y abono una semilla no puede crecer.Tengo mucho miedo."
+                },
+                {
+                    "Person": 9,
+                    "Emotion": "angry",
+                    "Text": "No me diga que tampoco tiene abono… Veremos lo que se puede hacer, pondremos ojos por todas partes, pero necesitamos que colabore. Le vuelvo a repetir, esto va a tener un coste adicional. Todo trabajo bien realizado ha de ser remunerado."
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "Prometo seguir buscando, por el amor de Dios."
+                },
+                {
+                    "Person": 9,
+                    "Emotion": "neutral",
+                    "Text": "Estese tranquilo. Lo volveremos a llamar."
+                },
+                {
+                    "Person": 10,
+                    "Emotion": "neutral",
+                    "Text": "Gracias, gracias."
+                }
+            ]
+        },
+        {
+            "Clavijero": 0.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Hola, hermosura, soy de Pedro Domecq 22, que está al norte de la calle Independencia. A ver si me puede poner con la calle de la Esperanza 5, gracias, eh.@"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Encarna, sobrina mía, qué tal, ¿cómo estás?, ¿has abierto ya el libro?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Hola, tía. Todavía no me ha dado por abrir el libro, me acabo de mudar a la casa, no he tenido tiempo."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Vale, no te preocupes, pero miratelo, eh, que te conozco, que siempre dejas todo para luego. ¿La casa bien?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Que sí, que sí. La casa tiene mucha suciedad, pero por el resto bien. Ya he elegido habitación."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Es que llevaba mucho tiempo sin vivir allí y por eso está de aquella manera, lo siento. Espero que te guste, cariño."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Tía, te dejo, se me ha caído una estantería, luego te llamo."
+                }
+            ]
+        },
+        {
+            "Clavijero": 16.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Hola… Queipo de Llano 2, que hace esquina con la calle Canalejas, por favor. Estoy en calle Reatas 68…@"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¿Sí?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Gonzalo, no podemos seguir escondiéndonos, tenemos que fugarnos."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Pero, ¿por qué no?, ¿qué ha pasado?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Le he dicho a mi mujer que he ido a matar maquis en una de nuestras escapadas, para que no sospeche. No sé cuánto tiempo más puedo seguir aguantando esta mentira, escapémonos."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Pero no tienes de qué preocuparte, nadie lo va a saber nunca. Es nuestro pequeño secreto de monte."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Gonzalo, no puedo vivir más de esta manera. Escapémonos, dejemos esta vida atrás, nos van a terminar pillando."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¡¿No ves que no?! Siempre tendremos el monte de Almorada."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Si sigues en este plan, ni eso nos quedará, cobarde."
+                }
+            ]
+        },
+        {
+            "Clavijero": 12.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Póngame si es tan amable con Calle de la Independencia 12. Soy de Esperanza 17.@"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Es un placer saludarle, Yesbeth."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Aquí no hay ninguna Yesbeth creo que usted se ha equivocado."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "No hay equivocación que valga, Yesbeth, déjate de tonterías y presta atención."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "[Pausa] Sí… sí, es verdad, pido disculpas, dónde tendré la cabeza, Dios mío. Se llega a una edad que una ya no recuerda ni cómo se llama. Siempre he sido muy despistada, gran fallo mío."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Pues céntrese de una vez. Le llamaba desde el vivero. Usted tendría que haber acudido hoy y no se le ha visto el polvo, ¿a qué se debe?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Me disculpo nuevamente, hoy he tenido que llevar a mi hijo el más pequeño al médico. Ha amanecido con mucha fiebre y se me ha hecho imposible ir."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Pues más le vale que no se vuelva a repetir, se está ganando el enfado de muchos que la esperaban, y eso no le conviene a usted para nada. Ningún tipo de negligencia será tolerada. Si tu forma de obrar se empantana de lobreguez, no existirá hoja que muestre ni un apículo de lozanía. Tenga en cuenta que el remedio natural siempre es mejor que la medicina moderna, si usted hubiera acudido aquí le podríamos haber ayudado mejor."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "T-tiene usted toda la razón, la próxima vez lo haré de esa manera. P-pero, ¿no existen formas de saldar mi deuda por este nimio descuido?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Nimio yo no lo llamaría, pero sí, formas hay. Cuando venga le comentamos. No falte."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Que mis bellas raíces me conduzcan a una vivificante travesía…"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¡Cállese!"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Perdón."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Que así sea."
+                }
+            ]
+        },
+        {
+            "Clavijero": 13.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Conecte Esperanza 17 con Millán Astray 37.@"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¿Sí?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¿Qué es eso que murmuran sobre que usted está disconforme con la evolución interior?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Son puras habladurías, no es veraz."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Él detesta a los falaces, pero se regocija con aquellos que son fidedignos. El que es inteligente no dice todo lo que sabe; en cambio, el bruto todo lo cuenta. El que trabaja duro se convertirá en líder, pero el perezoso siempre estará obligado a hacer trabajos forzados."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "No entiendo."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Sus ideas se verán dilucidadas pronto, no sea usted impaciente. Su semilla interior aguarda germinar."
+                }
+            ]
+        },
+        {
+            "Clavijero": 17.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Calle de Queipo de Llano nº 61 con el nº 37 , gracias, gracias.@"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¿Sí?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¿Antonio? Soy Martirio"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Sí, dime, ¿qué pasa?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "¿Está tu mujer y los niños en casa?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "No, ¿por?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Pues diles que vuelvan ahora mismo, dios mío, que se han cargado al vecino, al guardia civil. Está la calle muy peligrosa."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¡No me diga! ¿Pero qué ha pasado? ¿Quiénes lo han matado?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Los camisas azules lo han matado, por maricón. Lo pillaron en la Almorada con otro guardia civil, los siguieron, les metieron dos tiros, y… hasta ahí."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "¿Maricones? Qué pena, ojalá y Dios pueda perdonarlos, guiarlos y que los tenga en su gloria. Qué miedo… Oye, ¿y qué habrá pasado con La Lola?"
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Qué pena más grande Dios mío, está toda la familia destrozada. Voy a rezar diez padrenuestros, cuando lleguen la mujer y los niños cuéntalo, y que tengan cuidado, que últimamente está la cosa muy fea."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Sí, sí, yo se lo digo. Gracias por avisar, que mal cuerpo se me ha quedado… Hasta luego, Martirio."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Adiós, adiós, adiós…"
+                }
+            ]
+        },
+        {
+            "Clavijero": 10.0,
+            "Texts": [
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Buenas, si me hace el favor, Independencia 34 con Esperanza 17, gracias.@"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Hola, buenas, tengo un problema. Soy Rut."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Buenas, ¿Referente a…?"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Mi vástago rechaza inundar su interior con la savia."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Ya veo… esto supone un problema…"
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "No sé qué hacer, no lo acepta, no me escucha. Quien dijera que hay que susurrar melodías ajenas a las plantas mentía."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Mentir, lo que se conoce como mentir, no mentía. Si por medio de agua, sol y tonadas no hay florecimiento, habrá que optar por otros medios."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Lo que sea."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Haga uso de la Piper methysticum en una dosis altamente concentrada y lleve la planta al vivero. El jardinero se encargará de lo demás. Para ser plenamente consciente muchas veces lo único que hay que hacer es apagar los sentidos y abrir la psique. La única forma de salir es hacia adentro."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Mil gracias."
+                },
+                {
+                    "Person": 0,
+                    "Emotion": "neutral",
+                    "Text": "Su retoño es el que estará eternamente agradecido cuando despierte. El jardinero llena todo de su incesante y generoso amor, permitiendo hacer ver con los ojos del corazón."
+                },
+                {
+                    "Person": 1,
+                    "Emotion": "neutral",
+                    "Text": "Que así sea."
+                }
+            ]
+        }
+    ]
+}

@@ -1,80 +1,64 @@
 extends Node2D
+class_name Posit
 
-var mousePos: Vector2
-var pressed: bool = false
 @onready var label: Label = $Label
 @onready var text_edit: TextEdit = $TextEdit
-var basura : Area2D = null
-var to_delete : bool = false
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	#print("Postit Creado")
-	basura = get_node("/root/SceneManager/MesaScene/Basura/Area2D")
-	pass # Replace with function body.
+var _mouse_pos: Vector2
+var _pressed: bool = false
+var to_delete: bool = false
 
+const MAX_CHARS: int = 12
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	if pressed:
-		position = mousePos
-	if to_delete:
-		# SONIDO AQUI
-		Global.SceneManager.sfx.stream = load("res://Sounds/papel/409098__kash15__cigerette-being-put-out-in-water-sound.wav")
-		Global.SceneManager.sfx.play()
-		queue_free()
+var _prev_text: String = ""
+var _prev_caret_line: int = 0
+var _prev_caret_col: int = 0
+
+func _process(_delta: float) -> void:
+	if _pressed:
+		position = _mouse_pos
 
 func _input(event: InputEvent) -> void:
-	if event is InputEventKey:
-		if event.pressed and (event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER):
-			_intro()
-			# SONIDO AQUI
-			Global.SceneManager.sfx.stream = load("res://Sounds/papel/181052__jakobhandersen__pencil_check_mark_1.wav")
-			Global.SceneManager.sfx.play()
 	if event is InputEventMouseMotion:
-		mousePos = event.position
-	if not text_edit.has_focus():
-		_intro()
+		_mouse_pos = event.position
+	
+	elif event is InputEventKey and event.pressed:
+		if event.keycode in [KEY_ENTER, KEY_KP_ENTER]:
+			_apply_text()
 
-func _intro():
-	#print("intro")
-	if not text_edit.text == "":
-		label.text = text_edit.text
+func _apply_text() -> void:
+	if text_edit.visible == false: return
+	var new_text := text_edit.text.strip_edges()
+	if new_text != "":
+		label.text = new_text
 		text_edit.hide()
-
+		# SONIDO AQUI
+		AudioManager.play_sfx("event:/SFX/Escribir")
 
 func _on_button_button_down() -> void:
-	pressed = true
+	_pressed = true
+	# SONIDO AQUI
+	AudioManager.play_sfx("event:/SFX/CogerPapel")
 
 func _on_button_button_up() -> void:
-	pressed = false
-	#comprobar si esta encima de un collider para borrarse
-	Global.SceneManager.sfx.stream = load("res://Sounds/papel/428652__jomse__postit1.wav")
-	Global.SceneManager.sfx.play()
-	var bodies = basura.get_overlapping_areas()
-	if (bodies.has($Sprite2D) or bodies.has(self) or bodies.has($Area2D) or bodies.has($Area2D/CollisionShape2D)):
-		to_delete = true;
+	_pressed = false
+	if to_delete:
+		queue_free()
+		# SONIDO AQUI
+		AudioManager.play_sfx("event:/SFX/EliminarPapel")
 
-var currentText = ""
-var LIMIT: int = 12
-var cursor_line = 0
-var cursor_column = 0
-
-func _on_TextEdit_text_changed():
-	var new_text : String = text_edit.text
-	if new_text.length() > LIMIT:
-		text_edit.text = currentText
-		# when replacing the text, the cursor will get moved to the beginning of the
-		# text, so move it back to where it was 
-		text_edit.set_caret_line(cursor_line)
-		text_edit.set_caret_column(cursor_column)
-
-	currentText = text_edit.text
-	# save current position of cursor for when we have reached the limit
-	cursor_line = text_edit.get_caret_line()
-	cursor_column = text_edit.get_caret_column()
+func _on_TextEdit_text_changed() -> void:
+	var new_text: String = text_edit.text
+	if new_text.length() > MAX_CHARS:
+		# Restaurar texto anterior y posiciOn del cursor.
+		text_edit.text = _prev_text
+		text_edit.set_caret_line(_prev_caret_line)
+		text_edit.set_caret_column(_prev_caret_col)
+	else:
+		_prev_text = new_text
+		_prev_caret_line = text_edit.get_caret_line()
+		_prev_caret_col = text_edit.get_caret_column()
+	# Oculta scrollbars si existen
 	for child in get_children():
-		if child is VScrollBar:
+		if child is VScrollBar or child is HScrollBar:
 			child.visible = false
-		elif child is HScrollBar:
-			child.visible = false 

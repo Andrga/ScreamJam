@@ -5,24 +5,32 @@
 		"Context": "21 November, 1946\nTomillar del Alba\nSpain",
 		"Papers": "<- Papers",
 		"Discarts": "Discards ->",
-		"Clue": "c/Reatas 15"
+		"Map": "Mapa de la ciudad",
+		"Clue": "Cattle Blvd , 15",
+		"Clue2": "Hope st, 5"
 	},
 	"Persons": [
 		{
-			"Name":"",
+			"Name": "M.A.I.T.E.",
 			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
 			"Sound": {
 				"neutral": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozMAITE.wav"
 				],
 				"happy": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozMAITE.wav"
 				],
 				"sad": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozMAITE.wav"
 				],
 				"angry": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozMAITE.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozMAITE.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozMAITE.wav"
 				]
 			},
 			"Color": {
@@ -33,26 +41,508 @@
 			}
 		},
 		{
-			"Name":"",
+			"Name": "Juan Marcos",
 			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
 			"Sound": {
 				"neutral": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozJuan.wav"
 				],
 				"happy": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozJuan.wav"
 				],
 				"sad": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozJuan.wav"
 				],
 				"angry": [
-					"res://Sounds/Placeholders/SonidoPH1.wav"
+					"res://Sounds/voces/vozJuan.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozJuan.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozJuan.wav"
+				]
+			},
+			"Color": {
+				"R": 0.8235294117647058,
+				"G": 0.0,
+				"B": 1.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Zacarías",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozZacarias.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozZacarias.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozZacarias.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozZacarias.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozZacarias.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozZacarias.wav"
+				]
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.5254901960784314,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Francisco",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozFrancisco.wav"
+				]
+			},
+			"Color": {
+				"R": 0.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Jorge",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozJorge.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozJorge.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozJorge.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozJorge.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozJorge.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozJorge.wav"
 				]
 			},
 			"Color": {
 				"R": 1.0,
 				"G": 0.0,
 				"B": 1.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Isaías",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozIsaias.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozIsaias.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozIsaias.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozIsaias.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozIsaias.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozIsaias.wav"
+				]
+			},
+			"Color": {
+				"R": 0.0,
+				"G": 1.0,
+				"B": 0.5019607843137255,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Magdalena",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozMagdalena.wav"
+				]
+			},
+			"Color": {
+				"R": 0.0,
+				"G": 0.8235294117647058,
+				"B": 1.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Dolores",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozDolores.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozDolores.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozDolores.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozDolores.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozDolores.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozDolores.wav"
+				]
+			},
+			"Color": {
+				"R": 0.8509803921568627,
+				"G": 1.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Rosario",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozRosario.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozRosario.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozRosario.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozRosario.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozRosario.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozRosario.wav"
+				]
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.8745098039215686,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "???",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozAnonimo1.wav"
+				]
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "???",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozAnonimo2.wav"
+				]
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.8509803921568627,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Sagrario",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozSagrario.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozSagrario.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozSagrario.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozSagrario.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozSagrario.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozSagrario.wav"
+				]
+			},
+			"Color": {
+				"R": 0.023529411764705882,
+				"G": 1.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Encarna",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozEncarna.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozEncarna.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozEncarna.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozEncarna.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozEncarna.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozEncarna.wav"
+				]
+			},
+			"Color": {
+				"R": 0.0,
+				"G": 1.0,
+				"B": 0.8,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Felipe",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozFelipe.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozFelipe.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozFelipe.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozFelipe.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozFelipe.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozFelipe.wav"
+				]
+			},
+			"Color": {
+				"R": 0.9764705882352941,
+				"G": 1.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Gonzalo",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozGonzalo.wav"
+				]
+			},
+			"Color": {
+				"R": 0.4745098039215686,
+				"G": 1.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Yesbeth",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozYesbeth.wav"
+				]
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 1.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Antonio",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozAntonio.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozAntonio.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozAntonio.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozAntonio.wav"
+				],
+				"surprised": [
+					"res://Sounds/voces/vozAntonio.wav"
+				],
+				"suspicius": [
+					"res://Sounds/voces/vozAntonio.wav"
+				]
+			},
+			"Color": {
+				"R": 0.7490196078431373,
+				"G": 1.0,
+				"B": 0.0,
+				"A": 1.0
+			}
+		},
+		{
+			"Name": "Rut",
+			"Font": "res://Fonts/Jersey20Charted-Regular.ttf",
+			"Sound": {
+				"neutral": [
+					"res://Sounds/voces/vozRut.wav"
+				],
+				"happy": [
+					"res://Sounds/voces/vozRut.wav"
+				],
+				"sad": [
+					"res://Sounds/voces/vozRut.wav"
+				],
+				"angry": [
+					"res://Sounds/voces/vozRut.wav"
+				],
+				"surprised": [],
+				"suspicius": []
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.0,
+				"B": 0.4745098039215686,
 				"A": 1.0
 			}
 		}
@@ -64,22 +554,26 @@
 				{
 					"Person": 0,
 					"Emotion": "neutral",
-					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect Creation Street, number 114, with the Cattle Boulevard number 15."
+					"Text": "Greetings! I am D.A.I.S.Y (Displayed artificial intelligence system)! You are listening to a pre-recorded call. We shall commence. To start, connect me with the Cattle Boulevard number 15.",
+					"Callbacks": []
 				},
 				{
 					"Person": 0,
 					"Emotion": "neutral",
-					"Text": "The lightbulb indicates the peg with an incoming call, tap it to listen to the caller's indications. You may proceed by linking the peg matching the lightbulb number to the plug 2E. Please flick the switch beside the pegs to check the connection.@"
+					"Text": "The lightbulb indicates the peg with an incoming call, tap it to listen to the caller's indications. You may proceed by linking the peg matching the lightbulb number to the plug 2E. Please flick the switch beside the pegs to check the connection.@",
+					"Callbacks": []
 				},
 				{
 					"Person": 0,
 					"Emotion": "neutral",
-					"Text": "Excellent! You've already gotten the hang of it! Truthfully, there's not much left to teach you. You’ve already learnt the basics of what your work entails. Connecting wires, that is! Have you any questions, see the detailed map available at “Thyme of the Dawn”, our county!"
+					"Text": "Excellent! You've already gotten the hang of it! Truthfully, there's not much left to teach you. You’ve already learnt the basics of what your work entails. Connecting wires, that is! Have you any questions, see the detailed map available at “Thyme of the Dawn”, our county!",
+					"Callbacks": []
 				},
 				{
 					"Person": 0,
 					"Emotion": "neutral",
-					"Text": "Have a wonderful day, goodbye!"
+					"Text": "Have a wonderful day, goodbye!",
+					"Callbacks": []
 				}
 			]
 		},
@@ -87,49 +581,58 @@
 			"Clavijero": 19,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 1,
 					"Emotion": "neutral",
-					"Text": "Hello, please connect the Channeled Avenue number 23 with Cattle Boulevard number 89 for me… My residence is on the far southeast part of the village.@"
-				},
-				{
-					"Person": 0,
-					"Emotion": "neutral",
-					"Text": "Hey, is this Zacarías?"
+					"Text": "Hello, please connect me with Cattle Boulevard number 89. It's on the far southeast part of the village.@",
+					"Callbacks": []
 				},
 				{
 					"Person": 1,
 					"Emotion": "neutral",
-					"Text": "Hello, yes. Greetings. With whom do I have the pleasure of speaking?"
+					"Text": "Hey, is this Zacarías?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 2,
 					"Emotion": "neutral",
-					"Text": "Juan Marcos. Remember me?"
-				},
-				{
-					"Person": 1,
-					"Emotion": "neutral",
-					"Text": "Why, yes, of course. Of course I remember. Pray tell, what is it that you need?"
-				},
-				{
-					"Person": 0,
-					"Emotion": "neutral",
-					"Text": "Well, you see… I need your help with acquiring fertilizer for this Sunday. Ive found it hard to do so by myself… and so I thought you might lend me a hand, Zacharias."
+					"Text": "Hello, yes. Greetings. With whom do I have the pleasure of speaking?",
+					"Callbacks": []
 				},
 				{
 					"Person": 1,
 					"Emotion": "neutral",
-					"Text": "I see… I’ll see what I can do. Either way I was planning to go to the greenhouse later this evening. Stop by and we may talk about this more in depth. Is this ok with you?"
+					"Text": "Juan Marcos. Remember me?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 2,
 					"Emotion": "neutral",
-					"Text": "Oh, sure! Fine by me. I’ll see you there- Have a good day, thanks!"
+					"Text": "Why, yes, of course. Of course I remember. Pray tell, what is it that you need?",
+					"Callbacks": []
 				},
 				{
 					"Person": 1,
 					"Emotion": "neutral",
-					"Text": "You too! See you in a bit."
+					"Text": "Well, you see… I need your help with acquiring fertilizer for this Sunday. Ive found it hard to do so by myself… and so I thought you might lend me a hand, Zacharias.",
+					"Callbacks": []
+				},
+				{
+					"Person": 2,
+					"Emotion": "neutral",
+					"Text": "I see… I’ll see what I can do. Either way I was planning to go to the greenhouse later this evening. Stop by and we may talk about this more in depth. Is this ok with you?",
+					"Callbacks": []
+				},
+				{
+					"Person": 1,
+					"Emotion": "neutral",
+					"Text": "Oh, sure! Fine by me. I’ll see you there- Have a good day, thanks!",
+					"Callbacks": []
+				},
+				{
+					"Person": 2,
+					"Emotion": "neutral",
+					"Text": "You too! See you in a bit.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -137,44 +640,52 @@
 			"Clavijero": 7,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Hello. May you please connect the Creation 60 street with the Pedro Domecq 64 Street? The latter is towards the center, a bit to the north.@"
+					"Text": "Hello. May you please connect me with the Pedro Domecq 64 Street? It's towards the center, a bit to the north.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Good afternoon Jorge, how’s it going? It's Francisco speaking."
+					"Text": "Good afternoon Jorge, how’s it going? It's Francisco speaking.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Greetings, Francisco. I'm stupendously well. How's everything on your end?"
+					"Text": "Greetings, Francisco. I'm stupendously well. How's everything on your end?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Honestly, so far so good. I was wondering… Would you want to go this Saturday to the city? I've got a ticket to see Concha Piquer live- She's just released a new record."
+					"Text": "Honestly, so far so good. I was wondering… Would you want to go this Saturday to the city? I've got a ticket to see Concha Piquer live- She's just released a new record.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Is that so? Oh, that sounds wonderful! I'd be delighted- My wife will be green with envy when she hears, she loves her music! Count me in!"
+					"Text": "Is that so? Oh, that sounds wonderful! I'd be delighted- My wife will be green with envy when she hears, she loves her music! Count me in!",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Got it. We can get down to the details later. Cheers!"
+					"Text": "Got it. We can get down to the details later. Cheers!",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "For sure. Thank you so much. Take care. Cheers!"
+					"Text": "For sure. Thank you so much. Take care. Cheers!",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "See you!"
+					"Text": "See you!",
+					"Callbacks": []
 				}
 			]
 		},
@@ -182,74 +693,88 @@
 			"Clavijero": 11,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "Good afternoon… Would you be so kind as to please connect the Hope Avenue 46 with the Independence Street number 34 for me? Independence Street is around the village center, facing the west just a smidge. It corners with Hope Avenue 46.@"
+					"Text": "Good afternoon… Would you be so kind as to please connect me with the Independence Street number 34? Independence Street is around the village center, facing the west just a smidge. It corners with Hope Avenue.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "Yes? Who is this?"
+					"Text": "Yes? Who is this?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "Hi Magdalene, I'm Isaiah. Do you recognize my voice?"
+					"Text": "Hi Magdalene, I'm Isaiah. Do you recognize my voice?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "Why… yes, I do… Is something the matter?"
+					"Text": "Why… yes, I do… Is something the matter?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "Oh, nothing… I was just calling to ask if we could go out for a coffee before I leave… as a farwell. I'm embarking on a trip this Sunday and I don't know if we'll see each other again."
+					"Text": "Oh, nothing… I was just calling to ask if we could go out for a coffee before I leave… as a farwell. I'm embarking on a trip this Sunday and I don't know if we'll see each other again.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "Indeed… Truthfully, it quite saddens me that you have to leave so soon… But you  have got to look on the bright side- this is going to be good for you, it’s a completely unique opportunity for you to bloom! Were you to stay here, you would stagnate… And I know you can aim a lot higher than that- you are worth so much more!"
+					"Text": "Indeed… Truthfully, it quite saddens me that you have to leave so soon… But you  have got to look on the bright side- this is going to be good for you, it’s a completely unique opportunity for you to bloom! Were you to stay here, you would stagnate… And I know you can aim a lot higher than that- you are worth so much more!",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "Yes, you are completely right… I’m going to miss you."
+					"Text": "Yes, you are completely right… I’m going to miss you.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "Isaiah…"
+					"Text": "Isaiah…",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "Will you come visit me, though?"
+					"Text": "Will you come visit me, though?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "I will do everything in my power to be there for you."
+					"Text": "I will do everything in my power to be there for you.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "I've always thought I would've been happier were I to have been with you… If it's ok, we could meet tomorrow morning at Plaza de España and discuss everything."
+					"Text": "I've always thought I would've been happier were I to have been with you… If it's ok, we could meet tomorrow morning at Plaza de España and discuss everything.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "Yes… Let's talk about it all."
+					"Text": "Yes… Let's talk about it all.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 5,
 					"Emotion": "neutral",
-					"Text": "I love you…"
+					"Text": "I love you…",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 6,
 					"Emotion": "neutral",
-					"Text": "And I… you."
+					"Text": "And I… you.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -257,64 +782,76 @@
 			"Clavijero": 8,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "Good Afternoon… If you are so kind as to link me with the Millán Astray 14 Street… it's the one between Cattle Boulevard and Creation Street… I am from Cattle Boulevard number 68.@"
+					"Text": "Good Afternoon… If you are so kind as to link me with the Millán Astray 14 Street… it's the one between Cattle Boulevard and Creation Street.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "Rosario, hey, how's it going? My god, the stuff I've got for you to hear…"
+					"Text": "Rosario, hey, how's it going? My god, the stuff I've got for you to hear…",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Oh, Dolores, I'm a happy camper! How about you? And, pray tell!"
+					"Text": "Oh, Dolores, I'm a happy camper! How about you? And, pray tell!",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "You remember that my husband worked in the police force, yes?"
+					"Text": "You remember that my husband worked in the police force, yes?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "How could I ever forget! Such an honor for your family."
+					"Text": "How could I ever forget! Such an honor for your family.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "Well… just yesterday they sent out a warning… a complaint about commies…. a sighting near the mountains! It was a Shepard, one passing through, the one who saw them first-hand."
+					"Text": "Well… just yesterday they sent out a warning… a complaint about commies…. a sighting near the mountains! It was a Shepard, one passing through, the one who saw them first-hand.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "So…"
+					"Text": "So…",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "So it was true! They sent out a workforce and as soon as they saw them, they opened fire, of course. No gangsters left alive!"
+					"Text": "So it was true! They sent out a workforce and as soon as they saw them, they opened fire, of course. No gangsters left alive!",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Just terrifying! Thank heavens for your husband and his kind- our national pride-those who cleanse our Spain of the filth. Those plagues… rats! Long live Spain and its police!"
+					"Text": "Just terrifying! Thank heavens for your husband and his kind- our national pride-those who cleanse our Spain of the filth. Those plagues… rats! Long live Spain and its police!",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "Long live Spain, now and forever!"
+					"Text": "Long live Spain, now and forever!",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Lola, you better tell me everything anytime something like this happens- they just don’t mention anything on the radio these days! Dear, I’ve gotta go, I have something on the stove."
+					"Text": "Lola, you better tell me everything anytime something like this happens- they just don’t mention anything on the radio these days! Dear, I’ve gotta go, I have something on the stove.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 7,
 					"Emotion": "neutral",
-					"Text": "Bye, bye!"
+					"Text": "Bye, bye!",
+					"Callbacks": []
 				}
 			]
 		},
@@ -322,64 +859,78 @@
 			"Clavijero": 10,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "Hello, this is of the most utmost importance. Hope Avenue Number 17, please. I'm from Creation street number 10.@"
+					"Text": "Hello, this is of the most utmost importance. Hope Avenue Number 17, please.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "Hello? Hello, hi, hello…"
+					"Text": "Hello? Hello, hi, hello…",
+					"Callbacks": [
+						"emit_advance_story"
+					]
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Good evening. What's up?"
+					"Text": "Good evening. What's up?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "We’ve got a problem, I've misplaced my watering can… I've looked for it everywhere, but I can't find it for the life of me… I don't know what to do…"
+					"Text": "We’ve got a problem, I've misplaced my watering can… I've looked for it everywhere, but I can't find it for the life of me… I don't know what to do…",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "You've gotta be kidding me…"
+					"Text": "You've gotta be kidding me…",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "I'm sorry, I'm sorry…! May I speak to the Gardner?"
+					"Text": "I'm sorry, I'm sorry…! May I speak to the Gardner?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "I'll see what I can do… but this won't be cheap."
+					"Text": "I'll see what I can do… but this won't be cheap.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "Please search for it dutifully… with intent… I don't know what to do anymore. No seed can grow without a watering can nor fertilizer… I'm scared. Deeply so."
+					"Text": "Please search for it dutifully… with intent… I don't know what to do anymore. No seed can grow without a watering can nor fertilizer… I'm scared. Deeply so.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Don't tell me you're missing fertilizer, too.. I'll see what can be arranged, we’ll keep our peepers open, but you have to do your part, too. I'll repeat myself: This won't be done free of charge. There will be an additional fee. Every dutiful job must be dutifully rewarded."
+					"Text": "Don't tell me you're missing fertilizer, too.. I'll see what can be arranged, we’ll keep our peepers open, but you have to do your part, too. I'll repeat myself: This won't be done free of charge. There will be an additional fee. Every dutiful job must be dutifully rewarded.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "I'll keep looking for it, for the love of God."
+					"Text": "I'll keep looking for it, for the love of God.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "You sir tight, sir. We’ll call you back."
+					"Text": "You sir tight, sir. We’ll call you back.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "Thank you. Thank you."
+					"Text": "Thank you. Thank you.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -387,39 +938,46 @@
 			"Clavijero": 0,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 11,
 					"Emotion": "neutral",
-					"Text": "Hello, darling, I call from Pedro Domecq 22, it's north from Independence Street. I wonder if you would link me with Hope Street number 5, thank you in advance.@"
+					"Text": "Hello, darling, I wonder if you would link me with Hope Street number 5, thank you in advance.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 11,
 					"Emotion": "neutral",
-					"Text": "Encarna, niece of mine, you. How's everything? Have you taken a gander at the book already?"
+					"Text": "Encarna, niece of mine, you. How's everything? Have you taken a gander at the book already?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 12,
 					"Emotion": "neutral",
-					"Text": "Hi, auntie. Not yet, no… I've just moved, I haven't had the time."
+					"Text": "Hi, auntie. Not yet, no… I've just moved, I haven't had the time.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 11,
 					"Emotion": "neutral",
-					"Text": "That's fine, love, but find the time, yes? I know how you always leave everything for the last minute… is the house to your liking?"
+					"Text": "That's fine, love, but find the time, yes? I know how you always leave everything for the last minute… is the house to your liking?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 12,
 					"Emotion": "neutral",
-					"Text": "Of course, auntie! And yeah, the house is fine- I mean, minus the filth. I've already chosen my room, though."
+					"Text": "Of course, auntie! And yeah, the house is fine- I mean, minus the filth. I've already chosen my room, though.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 11,
 					"Emotion": "neutral",
-					"Text": "Oh dear… well,  you know how It's been forever since I had lived there… Sorry it was left in such a state. I do hope you grow to like it, even still, my love."
+					"Text": "Oh dear… well,  you know how It's been forever since I had lived there… Sorry it was left in such a state. I do hope you grow to like it, even still, my love.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 12,
 					"Emotion": "neutral",
-					"Text": "Auntie, I'll call you back. I think one of my shelves fell off."
+					"Text": "Auntie, I'll call you back. I think one of my shelves fell off.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -427,49 +985,58 @@
 			"Clavijero": 16,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Evening…  Queipo Plains 2, which borders Channeled Street, please… I am in Cattle Boulevard 68…@"
+					"Text": "Evening…  Queipo Plains 2, which borders Channeled Street, please…@",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Hello?"
+					"Text": "Hello?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Gonzalo, we can't continue this whole hiding thing. We've gotta leave."
+					"Text": "Gonzalo, we can't continue this whole hiding thing. We've gotta leave.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "What? Why? Has anything happened?"
+					"Text": "What? Why? Has anything happened?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "I've been telling my wife that I’ve been hunting for commies during our escapades… just so she keeps her nose out of it… I don't know how much longer I can stomach living a lie. Let 's just leave."
+					"Text": "I've been telling my wife that I’ve been hunting for commies during our escapades… just so she keeps her nose out of it… I don't know how much longer I can stomach living a lie. Let 's just leave.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "You've got nothing to worry about, come on. It's our little mountain secret, that's all."
+					"Text": "You've got nothing to worry about, come on. It's our little mountain secret, that's all.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Gonzalo, I cannot bear living like this anymore. Let's run away, leave our lives behind… We're going to end up getting caught."
+					"Text": "Gonzalo, I cannot bear living like this anymore. Let's run away, leave our lives behind… We're going to end up getting caught.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 14,
 					"Emotion": "neutral",
-					"Text": "Can't you see how paranoid you're being?! We’ll always have Almorada mountains."
+					"Text": "Can't you see how paranoid you're being?! We’ll always have Almorada mountains.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 13,
 					"Emotion": "neutral",
-					"Text": "Not for much longer if you keep on having that mindset. Coward."
+					"Text": "Not for much longer if you keep on having that mindset. Coward.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -477,74 +1044,90 @@
 			"Clavijero": 12,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "If you could be so kind…put me on call with Independence Street 12, please. I'm from Hope Street 17@"
+					"Text": "If you could be so kind…put me on call with Independence Street 12, please.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "It's a pleasure greeting you, Yesbeth"
+					"Text": "It's a pleasure greeting you, Yesbeth",
+					"Callbacks": [
+						"emit_advance_story"
+					]
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "I believe you are mistaken, sir. There is no such Yesbeth here."
+					"Text": "I believe you are mistaken, sir. There is no such Yesbeth here.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "No, this is no error. Stop it with this foolishness, Yesbeth, and pay attention."
+					"Text": "No, this is no error. Stop it with this foolishness, Yesbeth, and pay attention.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "Yes… Yes, you are right.. I forgive myself- gosh, just where is my mind these days… My god! You reach an age where you simply forget your own name, yes? I've always had my head on the clouds… My bad."
+					"Text": "Yes… Yes, you are right.. I forgive myself- gosh, just where is my mind these days… My god! You reach an age where you simply forget your own name, yes? I've always had my head on the clouds… My bad.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "You better focus on the now. I call you from the greenhouse. You should've been here today. And yet nobody's seen a hide or hair of you. What gives?"
+					"Text": "You better focus on the now. I call you from the greenhouse. You should've been here today. And yet nobody's seen a hide or hair of you. What gives?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "I apologize once more, sir… today I had to take my youngest to the doctor… He woke up at dawn burning with fever… it has been impossible for me to attend."
+					"Text": "I apologize once more, sir… today I had to take my youngest to the doctor… He woke up at dawn burning with fever… it has been impossible for me to attend.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "This better be a one time occurrence. You are earning the hatred of those who awaited you, and that shall not do any good for you. Under no circumstance shall any kind of negligence be tolerated. Shall your way of work fog with murkiness and gloom, there shall be no leaf revealing itself to be lush. Do not forget- the natural remedy always heals what modern medicine does not. Had you come here, we would've helped you properly."
+					"Text": "This better be a one time occurrence. You are earning the hatred of those who awaited you, and that shall not do any good for you. Under no circumstance shall any kind of negligence be tolerated. Shall your way of work fog with murkiness and gloom, there shall be no leaf revealing itself to be lush. Do not forget- the natural remedy always heals what modern medicine does not. Had you come here, we would've helped you properly.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "R-Right you are, as always…I shall do that next time, sir. B-But, is there perhaps a way to somehow repair my innocuous wrongdoing?"
+					"Text": "R-Right you are, as always…I shall do that next time, sir. B-But, is there perhaps a way to somehow repair my innocuous wrongdoing?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Innocuous I would deem it not. Indeed, though, there are ways. We’ll discuss them once you come see us. Don't miss it."
+					"Text": "Innocuous I would deem it not. Indeed, though, there are ways. We’ll discuss them once you come see us. Don't miss it.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "May my wondrous roots lead me to the most exhilarating of journeys…"
+					"Text": "May my wondrous roots lead me to the most exhilarating of journeys…",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Silence!"
+					"Text": "Silence!",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 15,
 					"Emotion": "neutral",
-					"Text": "Forgive me."
+					"Text": "Forgive me.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "So be it."
+					"Text": "So be it.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -552,39 +1135,48 @@
 			"Clavijero": 13,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Link Hope 17 with Millán Astray 37.@"
+					"Text": "Link me with Millán Astray 37.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "Hello?"
+					"Text": "Hello?",
+					"Callbacks": [
+						"emit_advance_story"
+					]
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "What’s all this mumbling about you being against the interior evolution?"
+					"Text": "What’s all this mumbling about you being against the interior evolution?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "That is nothing but mere hearsay. It doesn't stand to truth as there is no truth to it."
+					"Text": "That is nothing but mere hearsay. It doesn't stand to truth as there is no truth to it.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "The lord detests lying lips, but he delights in people who are trustworthy. A prudent man concealeth knowledge… But the heart of fools proclaimeth foolishness. The hand of the diligent shall bear rule; But the slothful shall be put under taskwork."
+					"Text": "The lord detests lying lips, but he delights in people who are trustworthy. A prudent man concealeth knowledge… But the heart of fools proclaimeth foolishness. The hand of the diligent shall bear rule; But the slothful shall be put under taskwork.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 10,
 					"Emotion": "neutral",
-					"Text": "I’m afraid I do not understand."
+					"Text": "I’m afraid I do not understand.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Your ideas shall soon be elucidated, don't you worry. Your inner seed awaits blooming in the soil."
+					"Text": "Your ideas shall soon be elucidated, don't you worry. Your inner seed awaits blooming in the soil.",
+					"Callbacks": []
 				}
 			]
 		},
@@ -592,69 +1184,82 @@
 			"Clavijero": 17,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Queipo Plains number 61 with number 37, thanks, thanks.@"
+					"Text": "Queipo Plains number 37, thanks, thanks.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "Yes?"
+					"Text": "Yes?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Antonio? It's Martirio."
+					"Text": "Antonio? It's Martirio.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "Yes, tell me, what's going on?"
+					"Text": "Yes, tell me, what's going on?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Are your wife and children at home?"
+					"Text": "Are your wife and children at home?",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "No, why?"
+					"Text": "No, why?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Tell them they have to go home right away, God! our neighbour, the police officer, has been killed. It's dangerous to be on the streets."
+					"Text": "Tell them they have to go home right away, God! our neighbour, the police officer, has been killed. It's dangerous to be on the streets.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "Don't you say! What in the world happened? Who killed him?"
+					"Text": "Don't you say! What in the world happened? Who killed him?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "The blue shirts killed him for being a fag. They caught him in Almorada with other officer, they chased them, shot them twice... and that's it."
+					"Text": "The blue shirts killed him for being a fag. They caught him in Almorada with other officer, they chased them, shot them twice... and that's it.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "Fags? What a pity, I wish God forgives them, guides them and have them in his glory. So scary... Hey, what could have happened with Lola?"
+					"Text": "Fags? What a pity, I wish God forgives them, guides them and have them in his glory. So scary... Hey, what could have happened with Lola?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "What a great shame, the whole family is devastated. I'm going to pray Our Father ten times, when your family gets home tell them, and they be careful. Things are getting ugly lately."
+					"Text": "What a great shame, the whole family is devastated. I'm going to pray Our Father ten times, when your family gets home tell them, and they be careful. Things are getting ugly lately.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 16,
 					"Emotion": "neutral",
-					"Text": "Yes, I will tell them. Thank you for calling and telling me, it has left me feeling awful... See you, Martirio."
+					"Text": "Yes, I will tell them. Thank you for calling and telling me, it has left me feeling awful... See you, Martirio.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 8,
 					"Emotion": "neutral",
-					"Text": "Bye, bye..."
+					"Text": "Bye, bye...",
+					"Callbacks": []
 				}
 			]
 		},
@@ -662,64 +1267,78 @@
 			"Clavijero": 10,
 			"Texts": [
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "Good day, if you do me the favour, link Independence Street number 34 with Hope Street number 17. Thank you.@"
+					"Text": "Good day, if you do me the favour, link me with Hope Street number 17. Thank you.@",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "Hi there, I have a problem. I'm Rut."
+					"Text": "Hi there, I have a problem. I'm Rut.",
+					"Callbacks": [
+						"emit_advance_story"
+					]
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Hello, adressing what?"
+					"Text": "Hello, adressing what?",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "My offspring refuses to flood its interior with sap."
+					"Text": "My offspring refuses to flood its interior with sap.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "I see... This means trouble."
+					"Text": "I see... This means trouble.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "I don't know what to do, they won't accept it, he won't listen to me. Whoever said that you have to whisper foreign melodies to plants was lying."
+					"Text": "I don't know what to do, they won't accept it, he won't listen to me. Whoever said that you have to whisper foreign melodies to plants was lying.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Well, they weren't doing what is known as lying. If there is no flowering through water, sun and chants, other means will have to be chosen. "
+					"Text": "Well, they weren't doing what is known as lying. If there is no flowering through water, sun and chants, other means will have to be chosen. ",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "Anything."
+					"Text": "Anything.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "Make use of Piper methysticum in a highly concentrated dose and take the plant to the nursery garden. The gardener will take care of the rest. To be fully conscious sometimes the only thing to do is turn off your senses and open the psyche. The only way out is towards the inside."
+					"Text": "Make use of Piper methysticum in a highly concentrated dose and take the plant to the nursery garden. The gardener will take care of the rest. To be fully conscious sometimes the only thing to do is turn off your senses and open the psyche. The only way out is towards the inside.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "Thank you so much."
+					"Text": "Thank you so much.",
+					"Callbacks": []
 				},
 				{
-					"Person": 1,
+					"Person": 9,
 					"Emotion": "neutral",
-					"Text": "It will be your sprout who will be eternally grateful when it wakes up. The gardener fills everything with his neverending and generous love, allowing one to see with the heart's eyes."
+					"Text": "It will be your sprout who will be eternally grateful when it wakes up. The gardener fills everything with his neverending and generous love, allowing one to see with the heart's eyes.",
+					"Callbacks": []
 				},
 				{
-					"Person": 0,
+					"Person": 17,
 					"Emotion": "neutral",
-					"Text": "So be it."
+					"Text": "So be it.",
+					"Callbacks": []
 				}
 			]
 		}

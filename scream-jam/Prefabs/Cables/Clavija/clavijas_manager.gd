@@ -1,4 +1,5 @@
 extends Node
+class_name ClavijasManager
 
 @export var weight : int = 5
 @export var separacion:int = 100
@@ -39,7 +40,7 @@ func setCallID():
 func setBombillas(bombillas = []):
 	for i in bombillas.size():
 		_clavijas[i].bombilla = bombillas[i]
-		_clavijas[i].bombilla.llamadaID = _clavijas[i].llamadaID
+		_clavijas[i].bombilla.setCall(_clavijas[i].llamadaID)
 		#print("LLAMADA ASIGNADA A BOMBILLA "+str(i) +"/"+ str(_clavijas[i].llamadaID))
 
 func find_closest_enchufe(point: Vector2, max_distance: float = INF) -> Node2D:

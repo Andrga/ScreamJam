@@ -8,17 +8,27 @@
 
 config_version=5
 
+[Fmod]
+
+General/banks_path="res://FMOD/banks"
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="Scream-Jam"
 run/main_scene="res://Scenes/Managers/SceneManager.tscn"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://Scripts/global.gd"
 JsonParser="*res://Scripts/JsonParser/JsonParser.gd"
+AudioManager="*res://Scripts/Base/AudioManager.tscn"
+FmodManager="*res://Addons/fmod/FmodManager.gd"
 
 [display]
 
@@ -34,6 +44,10 @@ window/stretch/aspect="expand"
 [dotnet]
 
 project/assembly_name="Scream-Jam"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 
 [input]
 

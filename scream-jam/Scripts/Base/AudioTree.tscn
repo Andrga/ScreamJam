@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b84c8eme8t4a7"]
+
+[ext_resource type="Script" uid="uid://c5vxpfob8rk6" path="res://Scripts/Base/AudioManager.gd" id="1_j5v7l"]
+
+[node name="AudioTree" type="Node" unique_id=1567479014]
+script = ExtResource("1_j5v7l")
+
+[node name="FmodListener2D" type="FmodListener2D" parent="." unique_id=1306027340]
+
+[node name="FmodBankLoader" type="FmodBankLoader" parent="." unique_id=1091268310]
+bank_paths = ["res://FMOD/banks/Master.strings.bank", "res://FMOD/banks/Master.bank", "res://FMOD/banks/Ambiente.bank", "res://FMOD/banks/Musica.bank", "res://FMOD/banks/SFX.bank", "res://FMOD/banks/Voices.bank"]

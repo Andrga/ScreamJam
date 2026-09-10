@@ -4,7 +4,6 @@ class_name NarrativeBLock
 var callbacks : Array[Callable]
 var condition_continue: Callable = Callable()
 var text := ""
-var soundChannel := -1
 var character : NarrativeCharacter
 var emotion : NarrativeCharacter.Emotion
 var continue_ := true
@@ -22,31 +21,26 @@ static func empty_block() -> NarrativeBLock:
 	var block = NarrativeBLock.new()
 	# No ponemos character, no ponemos texto → queda “vacío”
 	block.character = null
-	block.emotion = NarrativeCharacter.Emotion.NULL
+	block.emotion = NarrativeCharacter.Emotion.NEUTRAL
 	block.text = ""
 	return block
 
 ## Cambia el texto a mostrar
 ## [code]txt[code] (String) texto a mostrar
-func set_text(txt:= "") -> void:
-	text = txt
-
-## Cambia el canal de reproduccion del sonido
-## [code]channel[code] (int) canal por el que quieres que salga, se asigna automaticamente
-func set_sound_channel(channel:= -1) -> void:
-	soundChannel = channel
+func set_text(_txt:= "") -> void:
+	text = _txt
 
 ## Aniade un callback que se ejecutara al reproducir
 ## [code]call[code] (Callable) metodo
-func add_callable(call:Callable) -> void:
-	if call:
-		callbacks.append(call)
+func add_callable(_callable:Callable) -> void:
+	if _callable:
+		callbacks.append(_callable)
 
 ## Aniade un callback condicion para continuar al siguiente dialogo
 ## [code]call[code] (Callable) metodo
-func add_condition(call:Callable) -> void:
-	if call.is_valid():
-		condition_continue = call
+func add_condition(_callable:Callable) -> void:
+	if _callable.is_valid():
+		condition_continue = _callable
 
 ## Configura la label segun el hablante
 func configure_label(label: Label) ->void:
@@ -64,6 +58,9 @@ func can_continue() -> bool:
 func reproduce() -> String:
 	for c in callbacks:
 		c.call()
-	# SONIDO AQUI
-	#SoundSystem.play_sfx(character.get_sound(emotion), soundChannel)
+	
+	if text != "":
+		# SONIDO AQUI
+		AudioManager.play_voice(int(character.id), int(emotion))
+	
 	return text

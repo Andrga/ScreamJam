@@ -1,15 +1,15 @@
 extends Node
 
 # SENYALES
-signal totransition
+signal totransition(Scenes)
 signal transitioned
+signal endedCall(int)
 signal nextLevel # senial para avanzar el nivel
-signal endedCall(index) # Senial para notificar cuando se ha acabado una llamada
-signal startGame
+signal narrativeLoaded # Senial para marcar cuando se han cargado las narrativas
+signal startTutorial
+signal advance_story
 # FLUJO
-enum Scenes { MAIN_MENU, CLAVIJAS, MESA, PUERTA, CREDITS, INTRO, CONTEXT, NULL }
-var to_scene : Scenes = 0
-var current_scene : Scenes = 0
+enum Scenes {INTRO, MAIN_MENU, CONTEXT, CLAVIJAS, MESA, PUERTA, CREDITS, NULL }
 
 enum BombillaState { ENCENDIDA, APAGADA, BIEN, MAL }
 
@@ -30,6 +30,9 @@ var narrativas: Array = [] # Array para almacenar objetos Narrative
 var enchufes: Array = [] # Array de enchufes para obtener su callable
 var soluciones: Array = []
 
+var nPersonas: int
+var nextNPersonas: float
+
 ## Funcion para generar las narrativas del juego.
 func generate_narrative() -> void:
 	var persons = JsonParser.json_data["Persons"]
@@ -47,36 +50,49 @@ func generate_narrative() -> void:
 			# Por si hay varios sonidos para la emocion.
 			if paths is Array:
 				character.sounds[emo_enum] = paths.duplicate()
+		character.id = characters.size()
 		characters.push_back(character)
 	
 	# Guardamos los dialogos.
 	for narr_data in dialogos:
 		var narrative = Narrative.new()
-		var clavijero_esperado: int = narr_data["Clavijero"] # Obtener el valor objetivo del enchufe objetivo.
+		var clavijero_esperado: int = narr_data["Clavijero"] # Obtener el enchufe objetivo.
 		soluciones.append(clavijero_esperado)
 		
 		# Funcion lambda (Callable) para la condicion
-		# Se coge como argumento el clavijero_actual que se le pasara al verificar la narrativa.
-		# Devuelve true si el clavijero_actual es igual al clavijero_esperado.
+		# Coge la funcion "correcta" dentro del enchufe esperado.
 		var condition_lambda = Callable(enchufes[clavijero_esperado], "correcta")
 		
-		for blq in narr_data["Texts"]: # Usar "Texts" que es donde están los bloques en el JSON
+		# Carga los textos.
+		for blq in narr_data["Texts"]:
 			var bloq = NarrativeBLock.new(characters[blq["Person"]], NarrativeCharacter.Emotion[blq["Emotion"].to_upper()], blq["Text"])
 			if "@" in blq["Text"]:
 				bloq.add_condition(condition_lambda)
 				bloq.set_text(blq["Text"].replace("@", ""))
+			for cb_name in blq.get("Callbacks", []):
+				if cb_name == "emit_advance_story":
+					bloq.add_callable(func(): Global.advance_story.emit())
 			narrative.add_block(bloq)
 		
-		#narrative.add_block(NarrativeBLock.empty_block())
 		narrativas.push_back(narrative)
-
-
-# Esta funcion comprueba si el clavijero actual es el esperado para pasar al siguiente dialogo.
-# current_clavijero se pasa en ejecucion y expected_clavijero al crear la funcion (el valor del JSON).
-func _check_clavijero_condition(clavijeroEsperado:int) -> bool:
-	return true
+	
+	narrativeLoaded.emit()
 
 func _poner_los_creditos()->void:
-	current_scene = Scenes.CLAVIJAS
-	to_scene = Scenes.CREDITS
-	totransition.emit()
+	totransition.emit(Scenes.CREDITS)
+
+# Para preparar el aleatorio de gente en sala.
+func _ready() -> void:
+	nPersonas = (randi() % 5) # Random entre 0 y 4 personas.
+	nextNPersonas = randfn(1.0, 10.0) # Tiempo para el siguente checkeo de nPersonas.
+	return
+
+# Para actualizar el aleatorio de gente en sala.
+func _process(_delta: float) -> void:
+	if nextNPersonas <= 0:
+		nPersonas = (randi() % 5) # Random entre 0 y 4 personas.
+		AudioManager.set_ambience_param("Gente", nPersonas)
+		nextNPersonas = randfn(1.0, 10.0) # Tiempo para el siguente checkeo de nPersonas.	
+	else:
+		nextNPersonas -= _delta
+	return

@@ -1,4 +1,4 @@
-extends Node2D
+extends Scene
 
 #fin de juego
 var noMasLlamadas: bool = false
@@ -24,6 +24,7 @@ var rng = RandomNumberGenerator.new()
 
 func _ready() -> void:
 	Global.connect("endedCall",_endedCall)
+	Global.connect("startTutorial", _start_tutorial)
 	
 	# Genera las estructuras de datos de las narrativas.
 	enchufes_manager.start()
@@ -32,11 +33,12 @@ func _ready() -> void:
 	bombillas_manager.start()
 	
 	clavijas_manager.setBombillas(bombillas_manager._bombillas)
-	Global.startGame.connect(_startGame)
 
-func _startGame() ->void:
-	Global.generate_narrative()
-	_new_level()
+func on_enable() -> void:
+	# SONIDO AQUI
+	AudioManager.set_ambience_param("Mirada", 0)
+	if Global.nivel < 0:
+		_startGame()
 
 # --- METODOS PUBLICOS --------------------------------------------------------
 func check():
@@ -50,21 +52,23 @@ func play_call(id:int):
 	
 # --- METODOS PRIVADOS --------------------------------------------------------
 # Contador de llamadas atendidas
-func _endedCall(id: int) ->void:
+func _endedCall(_id:int) ->void:
 	completedCalls += 1
 	if completedCalls >= Global.niveles[Global.nivel]:
 		_new_level()
 		completedCalls = 0
+
 # Empieza el siguiente nivel
 func _new_level():
 	Global.nivel += 1
+	# SONIDO AQUI
+	AudioManager.set_ambience_param("Nivel", 5)
+	await get_tree().create_timer(2.0).timeout  # Espera 2 segundo
 	# Se han completado todos los niveles.
 	if Global.nivel >= len(Global.niveles):
 		noMasLlamadas = true
 		# TRANSICION A LA ESCENA FINAL.
-		Global.current_scene = Global.Scenes.CLAVIJAS
-		Global.to_scene = Global.Scenes.CREDITS
-		Global.totransition.emit()
+		Global.totransition.emit(Global.Scenes.CREDITS)
 		return
 	# Empieza nivel nuevo
 	await get_tree().create_timer(2.0).timeout  # Espera 1 segundo
@@ -72,4 +76,13 @@ func _new_level():
 
 # --- CONEXIONES --------------------------------------------------------
 func _on_check_clavijas_button_down() -> void:
+	# SONIDO AQUI
+	AudioManager.play_sfx("event:/SFX/Checker")
 	check()
+
+func _start_tutorial():
+	$Fondo/DialogueBox.start_narrative_ID(0)
+
+func _startGame() ->void:
+	Global.generate_narrative()
+	_new_level()

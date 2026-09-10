@@ -27,12 +27,11 @@ func setCallID(callId: int) -> void:
 		bombilla.setCall(callId)
 
 func check(correct):
-	if bombilla!= null:
+	if bombilla!= null and llamadaID != -1:
 		bombilla.check(correct)
 
 # CUANDO SUELTAS UNA CLAVIJA
 func unPlug() -> void:
-	#SONIDO AQUI
 	if bombilla!= null:
 		bombilla.unPlug()
 

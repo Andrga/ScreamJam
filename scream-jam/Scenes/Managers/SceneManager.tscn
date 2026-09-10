@@ -1,6 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://dkeruh02gg7es"]
+[gd_scene load_steps=10 format=3 uid="uid://dkeruh02gg7es"]
 
-[ext_resource type="Script" uid="uid://oc2qmpbeqtjj" path="res://Scripts/Flujo/scene_manager.gd" id="1_iv1q4"]
+[ext_resource type="Script" uid="uid://oc2qmpbeqtjj" path="res://Scripts/Base/scene_manager.gd" id="1_iv1q4"]
 [ext_resource type="PackedScene" uid="uid://whxja3o8nmc6" path="res://Scenes/Flujo/CreditsScene.tscn" id="2_y28pb"]
 [ext_resource type="PackedScene" uid="uid://blbnh2wfdgbxj" path="res://Scenes/Flujo/PuertaScene.tscn" id="3_66sb8"]
 [ext_resource type="PackedScene" uid="uid://dyph5mqd443d5" path="res://Scenes/Flujo/MainMenuScene.tscn" id="3_b721g"]
@@ -9,25 +9,14 @@
 [ext_resource type="PackedScene" uid="uid://c6ixnnj7d48qe" path="res://Scenes/Flujo/ClavijasScene.tscn" id="5_p2e8t"]
 [ext_resource type="PackedScene" uid="uid://1wce6sj1bl8d" path="res://Scenes/Flujo/ContextoScene.tscn" id="6_ce53t"]
 [ext_resource type="PackedScene" uid="uid://dnysdn0d3o7b2" path="res://Scenes/Flujo/IntroScene.tscn" id="7_qf5p5"]
-[ext_resource type="AudioStream" uid="uid://bfbtd3txlu21k" path="res://Sounds/sonidillosOfi.mp3" id="8_dg2h0"]
-[ext_resource type="AudioStream" uid="uid://ch57l0blpkljd" path="res://Sounds/ambiente.mp3" id="8_vnte0"]
 
 [node name="SceneManager" type="Node"]
 script = ExtResource("1_iv1q4")
 
-[node name="Credits" parent="." instance=ExtResource("2_y28pb")]
-process_mode = 4
+[node name="Intro" parent="." instance=ExtResource("7_qf5p5")]
 visible = false
 
-[node name="PuertaScene" parent="." instance=ExtResource("3_66sb8")]
-process_mode = 4
-visible = false
-
-[node name="MesaScene" parent="." instance=ExtResource("4_w2nar")]
-process_mode = 4
-visible = false
-
-[node name="level_manager" parent="." instance=ExtResource("5_p2e8t")]
+[node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
 process_mode = 4
 visible = false
 
@@ -35,27 +24,19 @@ visible = false
 process_mode = 4
 visible = false
 
-[node name="MainMenu" parent="." instance=ExtResource("3_b721g")]
+[node name="ClavijasScene" parent="." instance=ExtResource("5_p2e8t")]
+visible = false
+
+[node name="MesaScene" parent="." instance=ExtResource("4_w2nar")]
 process_mode = 4
 visible = false
 
-[node name="Intro" parent="." instance=ExtResource("7_qf5p5")]
+[node name="PuertaScene" parent="." instance=ExtResource("3_66sb8")]
+process_mode = 4
+visible = false
+
+[node name="Credits" parent="." instance=ExtResource("2_y28pb")]
+process_mode = 4
+visible = false
 
 [node name="FadeScene" parent="." instance=ExtResource("4_88r4u")]
-
-[node name="AmbientSound2" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_vnte0")
-volume_db = 15.423
-
-[node name="AmbientSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("8_dg2h0")
-volume_db = 5.0
-
-[node name="SFX" type="AudioStreamPlayer2D" parent="."]
-
-[node name="SFX2" type="AudioStreamPlayer2D" parent="."]
-
-[connection signal="transitioned" from="FadeScene" to="." method="_on_fade_scene_transitioned"]
-[connection signal="transitioned" from="FadeScene" to="MainMenu" method="_on_fade_scene_transitioned"]
-
-[editable path="level_manager"]

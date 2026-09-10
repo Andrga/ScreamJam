@@ -1,7 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://blbnh2wfdgbxj"]
+[gd_scene load_steps=7 format=3 uid="uid://blbnh2wfdgbxj"]
 
+[ext_resource type="Script" uid="uid://cyudbiqwdrdso" path="res://Scenes/Flujo/puerta_scene.gd" id="1_g1tu1"]
 [ext_resource type="Texture2D" uid="uid://cjg05jclufg5g" path="res://Images/puerta.png" id="1_x8256"]
 [ext_resource type="PackedScene" uid="uid://dcod2yvxj0ak3" path="res://Prefabs/TransicionInGame/TransitionAreaManager.tscn" id="2_fsl0f"]
+[ext_resource type="Shader" uid="uid://creo1si3n27qq" path="res://Shaders/CombineShaders.gdshader" id="5_j7d8k"]
+[ext_resource type="Script" uid="uid://12p840co11hu" path="res://Scripts/Base/combination_shader.gd" id="6_d7p6w"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d7p6w"]
+shader = ExtResource("5_j7d8k")
+shader_parameter/intensity = 0.01
+shader_parameter/r_displacement = Vector2(3, 0)
+shader_parameter/g_displacement = Vector2(0, 0)
+shader_parameter/b_displacement = Vector2(-3, 0)
+shader_parameter/wave_count = 2.0000000475
+shader_parameter/speed = 0.50000002375
+shader_parameter/height = 0.003
 
 [node name="PuertaScene" type="Control"]
 layout_mode = 3
@@ -11,6 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+script = ExtResource("1_g1tu1")
 
 [node name="Backcolor" type="TextureRect" parent="."]
 layout_mode = 1
@@ -33,9 +47,27 @@ theme_override_font_sizes/font_size = 36
 text = "Puerta
 "
 
+[node name="PostProcessing" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_d7p6w")
+
+[node name="CombinationShader" type="ColorRect" parent="PostProcessing"]
+material = SubResource("ShaderMaterial_d7p6w")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
 [node name="TransitionAreaManager" parent="." instance=ExtResource("2_fsl0f")]
 layout_mode = 0
-current_scene = 3
-to_scene_left = 1
-to_scene_right = 1
-to_scene_down = 2
+to_scene_left = 3
+to_scene_right = 3

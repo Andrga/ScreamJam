@@ -10,7 +10,6 @@ anchors_preset = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_g6hcm")
-current_scene = 1
 to_scene = 2
 metadata/_edit_use_anchors_ = true
 

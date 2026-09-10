@@ -1,13 +1,15 @@
 extends RefCounted
 class_name NarrativeCharacter
 
-enum Emotion {NEUTRAL, HAPPY, SAD, ANGRY, NULL}
+enum Emotion {NEUTRAL, HAPPY, SAD, ANGRY, SURPRISED, SUSPICIUS}
 var sounds: Dictionary[Emotion,Array]
+var id:int = 0
 var name := ""
 var color := Color.BLACK
 var font : Font
 
-func _init(name:= "", clr:= Color.BLACK ) -> void:
+func _init(_name:= "", clr:= Color.BLACK ) -> void:
+	name = _name
 	color = clr
 
 ## Cambia el color del bloque de texto
